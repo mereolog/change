@@ -16,10 +16,6 @@
 # #################################################################
 # 
 # 
-# http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of
-
-<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of> a owl:AnnotationProperty .
-# 
 # http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#constant-participant
 
 <http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#constant-participant> a owl:AnnotationProperty .
@@ -27,10 +23,6 @@
 # http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality
 
 <http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality> a owl:AnnotationProperty .
-# 
-# http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#q-location
-
-<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#q-location> a owl:AnnotationProperty .
 # 
 # 
 # 
@@ -59,6 +51,35 @@
 # 
 # #################################################################
 # #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature
+
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> a owl:Class .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
+
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> a owl:Class .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state
+
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state> a owl:Class .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q
+
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> a owl:Class .
+# 
+# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval
+
+<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Individuals
 # #
 # #################################################################
@@ -77,16 +98,16 @@
 # http://onto.kul.pl/change/dolce#part1230_value_temporallocation_settlement_1_location_1
 
 <http://onto.kul.pl/change/dolce#part1230_value_temporallocation_settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
 	<http://onto.kul.pl/change/dolce#hasDateTimeValue> "1230-01-01T00:00:00"^^xsd:dateTime ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
-	rdfs:label "moment trwania stanu geoprzestrzennego Nieszawy 1 stycznia 1900 r."@pl .
+	rdfs:label "moment trwania stanu geoprzestrzennego Nieszawy 1 stycznia 1230 r."@pl .
 # 
 # http://onto.kul.pl/change/dolce#part1424_value_temporallocation_settlement_1_location_1
 
 <http://onto.kul.pl/change/dolce#part1424_value_temporallocation_settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> ;
 	<http://onto.kul.pl/change/dolce#hasDateTimeValue> "1424-01-01T00:00:00"^^xsd:dateTime ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#atomic-part-of> <http://onto.kul.pl/change/dolce#part1424_value_temporallocation_settlement_1_location_1> ;
-	rdfs:label "moment trwania stanu geoprzestrzennego Nieszawy 1 stycznia 1950 r."@pl .
+	rdfs:label "moment trwania stanu geoprzestrzennego Nieszawy 1 stycznia 1240 r."@pl .
 # 
 # http://onto.kul.pl/change/dolce#settlement_1
 
@@ -96,8 +117,8 @@
 # http://onto.kul.pl/change/dolce#settlement_1_location_1
 
 <http://onto.kul.pl/change/dolce#settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state> ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#constant-participant> <http://onto.kul.pl/change/dolce#location_1> , <http://onto.kul.pl/change/dolce#settlement_1> ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality> <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#constant-participant> <http://onto.kul.pl/change/dolce#location_1> , <http://onto.kul.pl/change/dolce#settlement_1> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality> <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> ;
 	rdfs:label "stan geoprzestrzenny Nieszawy w lokalizacji 1"@pl .
 # 
 # http://onto.kul.pl/change/dolce#settlement_1_location_2
@@ -110,13 +131,13 @@
 # http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1
 
 <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
 	rdfs:label "czasowa charakterystyka stanu geoprzestrzennego Nieszawy w lokalizacji 1"@pl .
 # 
 # http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2
 
 <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> ;
-	<http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> ;
+	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> ;
 	rdfs:label "czasowa charakterystyka stanu geoprzestrzennego Nieszawy w lokalizacji 2"@pl .
 # 
 # http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1

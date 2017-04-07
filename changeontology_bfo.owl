@@ -1,134 +1,254 @@
-@prefix : <http://onto.kul.pl/change/bfo#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.metaontology.pl/timeontology_bfo#"
+     xml:base="http://www.metaontology.pl/timeontology_bfo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bfo="http://onto.kul.pl/change/bfo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://onto.kul.pl/change/bfo">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
 
-<http://onto.kul.pl/change/bfo> a owl:Ontology ;
-	owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> .
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# http://onto.kul.pl/change/bfo#hasHistory
 
-:hasHistory a owl:ObjectProperty ;
-	owl:inverseOf :isHistoryOf ;
-	a owl:FunctionalProperty ;
-	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
-	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000182> ;
-	rdfs:label "has history"@en , "ma historię"@pl .
-# 
-# http://onto.kul.pl/change/bfo#isHistoryOf
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-:isHistoryOf a owl:ObjectProperty ;
-	rdfs:label "is history of"@en , "jest historią"@pl .
-# 
-# http://onto.kul.pl/change/bfo#isPartOf
+    
 
-:isPartOf a owl:ObjectProperty ;
-	rdfs:subPropertyOf :isProductOf ;
-	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
-	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
-	rdfs:label "jest częścią"@pl .
-# 
-# http://onto.kul.pl/change/bfo#isProductOf
 
-:isProductOf a owl:ObjectProperty ;
-	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
-	rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
-	rdfs:label "is mereological product of"@en , "jest (mereologiczną) częścią wspólną"@pl .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# http://onto.kul.pl/change/bfo#hasDataTimeValue
+    <!-- http://onto.kul.pl/change/bfo#hasHistory -->
 
-:hasDataTimeValue a owl:DatatypeProperty , owl:FunctionalProperty ;
-	rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
-	rdfs:range xsd:dateTime ;
-	rdfs:label "ma wartość"@pl .
-# 
-# http://onto.kul.pl/change/bfo#includesDateTimeValue
+    <owl:ObjectProperty rdf:about="http://onto.kul.pl/change/bfo#hasHistory">
+        <owl:inverseOf rdf:resource="http://onto.kul.pl/change/bfo#isHistoryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:label xml:lang="pl">ma historię</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-:includesDateTimeValue a owl:DatatypeProperty ;
-	rdfs:label "zawiera moment, który ma wartość"@pl .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# http://onto.kul.pl/change/bfo#history_location_1
 
-:history_location_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000182> ;
-	rdfs:label "historia lokalizacji 1"@pl .
-# 
-# http://onto.kul.pl/change/bfo#history_location_2
+    <!-- http://onto.kul.pl/change/bfo#hasParts -->
 
-:history_location_2 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000182> ;
-	rdfs:label "historia lokalizacji 2"@pl .
-# 
-# http://onto.kul.pl/change/bfo#history_settlement_1
+    <owl:ObjectProperty rdf:about="http://onto.kul.pl/change/bfo#hasParts">
+        <owl:inverseOf rdf:resource="http://onto.kul.pl/change/bfo#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="pl">ma części</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-:history_settlement_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000182> ;
-	rdfs:label "historia Nieszawy"@pl .
-# 
-# http://onto.kul.pl/change/bfo#location_1
 
-:location_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000029> ;
-	:hasHistory :history_location_1 ;
-	rdfs:label "lokalizacja 1"@pl .
-# 
-# http://onto.kul.pl/change/bfo#location_2
+    <!-- http://onto.kul.pl/change/bfo#isHistoryOf -->
 
-:location_2 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000029> ;
-	:hasHistory :history_location_2 ;
-	rdfs:label "lokalizacja 2"@pl .
-# 
-# http://onto.kul.pl/change/bfo#moment1900_in_product_histories_settlement_1_location_1
+    <owl:ObjectProperty rdf:about="http://onto.kul.pl/change/bfo#isHistoryOf">
+        <rdfs:label xml:lang="pl">jest historią</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-:moment1900_in_product_histories_settlement_1_location_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000015> ;
-	:isPartOf :product_histories_settlement_1_location_1 ;
-	rdfs:label "część wspólna historii Nieszawy i lokalizacji 1 w dniu 1 stycznia 1900 r."@pl .
-# 
-# http://onto.kul.pl/change/bfo#moment1950_in_product_histories_settlement_1_location_1
 
-:moment1950_in_product_histories_settlement_1_location_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000015> ;
-	rdfs:label "część wspólna historii Nieszawy i lokalizacji 1 w dniu 1 stycznia 1950 r."@pl .
-# 
-# http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1
+    <!-- http://onto.kul.pl/change/bfo#isPartOf -->
 
-:product_histories_settlement_1_location_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000015> ;
-	:isProductOf :history_location_1 , :history_settlement_1 ;
-	rdfs:label "część wspólna historii Nieszawy i lokalizacji 1"@pl .
-# 
-# http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2
+    <owl:ObjectProperty rdf:about="http://onto.kul.pl/change/bfo#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:label xml:lang="pl">jest częścią</rdfs:label>
+    </owl:ObjectProperty>
+    
 
-:product_histories_settlement_1_location_2 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000015> ;
-	:isProductOf :history_location_2 , :history_settlement_1 ;
-	rdfs:label "część wspólna historii Nieszawy i lokalizacji 2"@pl .
-# 
-# http://onto.kul.pl/change/bfo#settlement_1
 
-:settlement_1 a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000030> ;
-	:hasHistory :history_settlement_1 ;
-	rdfs:label "Nieszawa"@pl .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#existsAlsoAt -->
+
+    <owl:DatatypeProperty rdf:about="http://onto.kul.pl/change/bfo#existsAlsoAt">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="pl">istnieje (także) w</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#existsAt -->
+
+    <owl:DatatypeProperty rdf:about="http://onto.kul.pl/change/bfo#existsAt">
+        <rdfs:subPropertyOf rdf:resource="http://onto.kul.pl/change/bfo#existsAlsoAt"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="pl">istnieje w</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#history_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#history_location_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:label xml:lang="pl">historia lokalizacji 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#history_location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#history_location_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:label xml:lang="pl">historia lokalizacji 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#history_settlement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#history_settlement_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:label xml:lang="pl">historia Nieszawy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#location_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <bfo:hasHistory rdf:resource="http://onto.kul.pl/change/bfo#history_location_1"/>
+        <rdfs:label xml:lang="pl">lokalizacja 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#location_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <bfo:hasHistory rdf:resource="http://onto.kul.pl/change/bfo#history_location_2"/>
+        <rdfs:label xml:lang="pl">lokalizacja 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#moment1230_in_product_histories_settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#moment1230_in_product_histories_settlement_1_location_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1"/>
+        <bfo:existsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1230-01-01T00:00:00</bfo:existsAt>
+        <rdfs:label xml:lang="pl">część części wspólnej historii Nieszawy i lokalizacji 1 &quot;z dnia 1 stycznia 1230 r.&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#moment1424_in_product_histories_settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#moment1424_in_product_histories_settlement_1_location_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1"/>
+        <bfo:existsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1424-01-01T00:00:00</bfo:existsAt>
+        <rdfs:label xml:lang="pl">część części wspólnej historii Nieszawy i lokalizacji 1 &quot;z dnia 1 stycznia 1424 r.&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#history_location_1"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#history_settlement_1"/>
+        <bfo:existsAlsoAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1230-01-01T00:00:00</bfo:existsAlsoAt>
+        <bfo:existsAlsoAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1424-01-01T00:00:00</bfo:existsAlsoAt>
+        <rdfs:comment xml:lang="pl">Relacja do typu danych xsd:dateTime jest zamodelowana na dwa, dysjunktywne, sposoby.</rdfs:comment>
+        <rdfs:label xml:lang="pl">część wspólna historii Nieszawy i lokalizacji 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#history_location_2"/>
+        <bfo:isPartOf rdf:resource="http://onto.kul.pl/change/bfo#history_settlement_1"/>
+        <bfo:existsAlsoAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1460-01-01T00:00:00</bfo:existsAlsoAt>
+        <rdfs:label xml:lang="pl">część wspólna historii Nieszawy i lokalizacji 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/bfo#settlement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#settlement_1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <bfo:hasHistory rdf:resource="http://onto.kul.pl/change/bfo#history_settlement_1"/>
+        <rdfs:label xml:lang="pl">Nieszawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#location_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#moment1230_in_product_histories_settlement_1_location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#moment1424_in_product_histories_settlement_1_location_1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

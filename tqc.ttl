@@ -1,0 +1,270 @@
+@prefix : <http://onto.kul.pl/change/bfo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://onto.kul.pl/change/bfo/> a owl:Ontology ;
+	rdfs:label "BFO plus theory of TCQ."@en ;
+	owl:versionInfo "varion 1.0"@en ;
+	rdfs:comment """Following \"K. Fine (1999). Things and their parts\" GLEIO divides all entities into: 
+- variable entities, i.e. the entities that have different manifestations at different times, and 
+- non-variable entities that do not have different manifestations as different objects at dif- ferent times. 
+
+Among non-variable entities are manifestations of variable entities. Each such manifestation has its time stamp (being its beginning of existence). The following assumptions introduced by Kit Fine and generalized by \"F. Moltmann (2016). Variable Objects and Truth-Making\" have been adopted in GLEIO:
+- Each variable entity (e.g. legal entity) has its last (or current if the entity exists) manifestation.
+- If a variable entity is manifested at time t by some entity manifestation m, then it exists at t, takes a geographical location of m and has all properties possessed by m in t.
+- If all manifestations of a variable entity have some property, then the variable entity possesses the property necessarily (technically speaking the property can be directly attributed to the variable entity)."""@en , """Created by MakoLab S.A.
+
+Contact:
+Robert Trypuz (robert.trypuz@makolab.pl)"""@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+
+skos:scopeNote a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/bfo/TQCOf
+
+:TQCOf a owl:ObjectProperty ;
+	rdfs:label "TQC of"@en .
+# 
+# http://onto.kul.pl/change/bfo/existsAt
+
+:existsAt a owl:ObjectProperty ;
+	rdfs:label "exists at"@en .
+# 
+# http://onto.kul.pl/change/bfo/hasHistory
+
+:hasHistory a owl:ObjectProperty ;
+	owl:inverseOf :historyOf .
+# 
+# http://onto.kul.pl/change/bfo/hasOccurrentPart
+
+:hasOccurrentPart a owl:ObjectProperty .
+# 
+# http://onto.kul.pl/change/bfo/historyOf
+
+:historyOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf :phaseOf .
+# 
+# http://onto.kul.pl/change/bfo/occupiesSpatialRegionAt
+
+:occupiesSpatialRegionAt a owl:ObjectProperty .
+# 
+# http://onto.kul.pl/change/bfo/phaseOf
+
+:phaseOf a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/bfo/hasBeginning
+
+:hasBeginning a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasDate ;
+	a owl:FunctionalProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has beginning"@en ;
+	skos:definition "The property assigns to a variable entity manifestation date and time information about it was most recently updated."@en .
+# 
+# http://onto.kul.pl/change/bfo/hasDate
+
+:hasDate a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has date"@en .
+# 
+# http://onto.kul.pl/change/bfo/hasEnd
+
+:hasEnd a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasDate ;
+	a owl:FunctionalProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has end"@en ;
+	skos:definition "The property assigns to a variable entity manifestation date and time information about it was most recently updated."@en .
+# 
+# http://onto.kul.pl/change/bfo/hasTimeStamp
+
+:hasTimeStamp a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasDate ;
+	a owl:FunctionalProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has time stamp"@en ;
+	skos:definition "The property assigns to a variable entity manifestation date and time..."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/bfo/Continuant
+
+:Continuant a owl:Class ;
+	owl:disjointWith :Occurent ;
+	rdfs:label "variable entity"@en ;
+	skos:definition "Variable entities are entities that have different manifestations as different objects at different times and in different worlds or situations. If a variable entity e is manifested at time t by some variable entity manifestation m, then e exists at t, takes a geographical location of m and has all qualities possessed by m in t. A variable entity possesses a quality q (without temporal reference) if all of its manifestations have this quality q."@en .
+# 
+# http://onto.kul.pl/change/bfo/History
+
+:History a owl:Class ;
+	rdfs:subClassOf :Process .
+# 
+# http://onto.kul.pl/change/bfo/ImmaterialEntity
+
+:ImmaterialEntity a owl:Class ;
+	rdfs:subClassOf :IndependentContinuant .
+# 
+# http://onto.kul.pl/change/bfo/IndependentContinuant
+
+:IndependentContinuant a owl:Class ;
+	rdfs:subClassOf :Continuant .
+# 
+# http://onto.kul.pl/change/bfo/MaterialEntity
+
+:MaterialEntity a owl:Class ;
+	rdfs:subClassOf :IndependentContinuant .
+# 
+# http://onto.kul.pl/change/bfo/Object
+
+:Object a owl:Class ;
+	rdfs:subClassOf :MaterialEntity .
+# 
+# http://onto.kul.pl/change/bfo/Occurent
+
+:Occurent a owl:Class ;
+	rdfs:label "non-variable entity"@en ;
+	skos:definition "Non-variable entities are entities that do not have different manifestations as different objects at different times and in different worlds or situations."@en .
+# 
+# http://onto.kul.pl/change/bfo/Phase
+
+:Phase a owl:Class ;
+	rdfs:subClassOf :Process .
+# 
+# http://onto.kul.pl/change/bfo/Process
+
+:Process a owl:Class ;
+	rdfs:subClassOf :Occurent .
+# 
+# http://onto.kul.pl/change/bfo/SpatialRegion
+
+:SpatialRegion a owl:Class ;
+	rdfs:subClassOf :ImmaterialEntity .
+# 
+# http://onto.kul.pl/change/bfo/TQC
+
+:TQC a owl:Class ;
+	rdfs:subClassOf :Continuant .
+# 
+# http://onto.kul.pl/change/bfo/TemporalRegion
+
+:TemporalRegion a owl:Class ;
+	rdfs:subClassOf :Occurent .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/bfo/location1
+
+:location1 a owl:NamedIndividual , :SpatialRegion .
+# 
+# http://onto.kul.pl/change/bfo/location2
+
+:location2 a owl:NamedIndividual , :SpatialRegion .
+# 
+# http://onto.kul.pl/change/bfo/settlement1
+
+:settlement1 a owl:NamedIndividual , :Continuant ;
+	:hasHistory :settlement1History .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-Phase1
+
+:settlement1-Phase1 a owl:NamedIndividual , :Object ;
+	:existsAt :temporalRegion1 ;
+	:phaseOf :settlement1-TQC1 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-Phase2
+
+:settlement1-Phase2 a owl:NamedIndividual , :Phase ;
+	:existsAt :temporalRegion2 ;
+	:phaseOf :settlement1-TQC2 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-Phase3
+
+:settlement1-Phase3 a owl:NamedIndividual , :Phase ;
+	:existsAt :temporalRegion3 ;
+	:phaseOf :settlement1-TQC3 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-TQC1
+
+:settlement1-TQC1 a owl:NamedIndividual , :TQC ;
+	:TQCOf :settlement1 ;
+	:occupiesSpatialRegionAt :location1 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-TQC2
+
+:settlement1-TQC2 a owl:NamedIndividual , :TQC ;
+	:TQCOf :settlement1 ;
+	:occupiesSpatialRegionAt :location1 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1-TQC3
+
+:settlement1-TQC3 a owl:NamedIndividual , :TQC ;
+	:TQCOf :settlement1 ;
+	:occupiesSpatialRegionAt :location2 .
+# 
+# http://onto.kul.pl/change/bfo/settlement1History
+
+:settlement1History a owl:NamedIndividual , :History ;
+	:hasOccurrentPart :settlement1-Phase1 , :settlement1-Phase2 , :settlement1-Phase3 .
+# 
+# http://onto.kul.pl/change/bfo/temporalRegion1
+
+:temporalRegion1 a owl:NamedIndividual , :TemporalRegion .
+# 
+# http://onto.kul.pl/change/bfo/temporalRegion2
+
+:temporalRegion2 a owl:NamedIndividual , :TemporalRegion .
+# 
+# http://onto.kul.pl/change/bfo/temporalRegion3
+
+:temporalRegion3 a owl:NamedIndividual , :TemporalRegion .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

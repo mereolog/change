@@ -1,4 +1,4 @@
-@prefix : <http://www.metaontology.pl/timeontology_temporalisedrelations#> .
+@prefix : <http://onto.kul.pl/change/temporalisedrelations#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -15,11 +15,16 @@
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/temporalisedrelations#limitedToDateTime
+# http://onto.kul.pl/change/temporalisedrelations#hasBegining
 
-<http://onto.kul.pl/change/temporalisedrelations#limitedToDateTime> a owl:AnnotationProperty ;
-	rdfs:label "jest ograniczona do"@pl ;
+:hasBegining a owl:AnnotationProperty ;
+	rdfs:label "has begining at"@en , "ma początek w"@pl ;
 	rdfs:range xsd:dateTime .
+# 
+# http://onto.kul.pl/change/temporalisedrelations#hasEnd
+
+:hasEnd a owl:AnnotationProperty ;
+	rdfs:label "has end at"@en , "ma koniec w"@pl .
 # 
 # 
 # 
@@ -32,34 +37,28 @@
 # 
 # http://onto.kul.pl/change/temporalisedrelations#hasLocation
 
-<http://onto.kul.pl/change/temporalisedrelations#hasLocation> a owl:ObjectProperty ;
-	rdfs:domain <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> ;
-	rdfs:range <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> ;
+:hasLocation a owl:ObjectProperty ;
+	rdfs:domain <http://www.onto.kul.pl/change/temporalisedrelations#physical-object> ;
+	rdfs:range <http://www.onto.kul.pl/change/temporalisedrelations#feature> ;
 	rdfs:label "ma lokalizację geoprzestrzenną"@pl .
 # 
 # http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1230
 
-<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1230> a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://onto.kul.pl/change/temporalisedrelations#hasLocation> ;
+:hasLocationAt1230 a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasLocation ;
 	a owl:FunctionalProperty ;
-	<http://onto.kul.pl/change/temporalisedrelations#limitedToDateTime> "1230-01-01T00:00:00"^^xsd:dateTime ;
-	rdfs:label "ma lokalizację geoprzestrzenną 1 stycznia 1230 r."@pl .
+	owl:propertyDisjointWith :hasLocationAt1424 ;
+	:hasBegining "1245-01-01T00:00:00"^^xsd:dateTime ;
+	:hasEnd "1259-12-31T00:00:00"^^xsd:dateTime ;
+	rdfs:label "has location between 1245 and 1260" , "ma lokalizację geoprzestrzenną pomiędzy 1245 a 1260 r."@pl .
 # 
 # http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1424
 
-<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1424> a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://onto.kul.pl/change/temporalisedrelations#hasLocation> ;
+:hasLocationAt1424 a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasLocation ;
 	a owl:FunctionalProperty ;
-	<http://onto.kul.pl/change/temporalisedrelations#limitedToDateTime> "1424-01-01T00:00:00"^^xsd:dateTime ;
-	rdfs:label "ma lokalizację geoprzestrzenną 1 stycznia 1424 r."@pl .
-# 
-# http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1460
-
-<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1460> a owl:ObjectProperty ;
-	rdfs:subPropertyOf <http://onto.kul.pl/change/temporalisedrelations#hasLocation> ;
-	a owl:FunctionalProperty ;
-	<http://onto.kul.pl/change/temporalisedrelations#limitedToDateTime> "1460-01-01T00:00:00"^^xsd:dateTime ;
-	rdfs:label "ma lokalizację geoprzestrzenną 1 stycznia 1460 r."@pl .
+	:hasBegining "1460-01-01T00:00:00"^^xsd:dateTime ;
+	rdfs:label "has location after 1260"@en , "ma lokalizację geoprzestrzenną po 1260 r."@pl .
 # 
 # 
 # 
@@ -70,17 +69,17 @@
 # #################################################################
 # 
 # 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature
+# http://www.onto.kul.pl/change/temporalisedrelations#feature
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> a owl:Class .
+<http://www.onto.kul.pl/change/temporalisedrelations#feature> a owl:Class .
 # 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
+# http://www.onto.kul.pl/change/temporalisedrelations#physical-object
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> a owl:Class ;
+<http://www.onto.kul.pl/change/temporalisedrelations#physical-object> a owl:Class ;
 	rdfs:subClassOf _:genid1 .
 
 _:genid1 a owl:Restriction ;
-	owl:onProperty <http://onto.kul.pl/change/temporalisedrelations#hasLocation> ;
+	owl:onProperty :hasLocation ;
 	owl:someValuesFrom owl:Thing .
 # 
 # 
@@ -94,20 +93,20 @@ _:genid1 a owl:Restriction ;
 # 
 # http://www.metaontology.pl/timeontology_dolce#location_1
 
-<http://www.metaontology.pl/timeontology_dolce#location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> ;
-	rdfs:label "lokalizacja 1"@pl .
+<http://www.metaontology.pl/timeontology_dolce#location_1> a owl:NamedIndividual , <http://www.onto.kul.pl/change/temporalisedrelations#feature> ;
+	rdfs:label "1st location of Nieszawa"@en , "pierwsza lokalizacja Nieszawy"@pl .
 # 
 # http://www.metaontology.pl/timeontology_dolce#location_2
 
-<http://www.metaontology.pl/timeontology_dolce#location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> ;
-	rdfs:label "lokalizacja 2"@pl .
+<http://www.metaontology.pl/timeontology_dolce#location_2> a owl:NamedIndividual , <http://www.onto.kul.pl/change/temporalisedrelations#feature> ;
+	rdfs:comment "2nd location of Nieszawa"@en ;
+	rdfs:label "druga lokalizacja Nieszawy"@pl .
 # 
 # http://www.metaontology.pl/timeontology_dolce#settlement_1
 
-<http://www.metaontology.pl/timeontology_dolce#settlement_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> ;
-	<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1230> <http://www.metaontology.pl/timeontology_dolce#location_1> ;
-	<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1424> <http://www.metaontology.pl/timeontology_dolce#location_1> ;
-	<http://onto.kul.pl/change/temporalisedrelations#hasLocationAt1460> <http://www.metaontology.pl/timeontology_dolce#location_2> ;
-	rdfs:label "Nieszawa"@pl .
+<http://www.metaontology.pl/timeontology_dolce#settlement_1> a owl:NamedIndividual , <http://www.onto.kul.pl/change/temporalisedrelations#physical-object> ;
+	:hasLocationAt1230 <http://www.metaontology.pl/timeontology_dolce#location_1> ;
+	:hasLocationAt1424 <http://www.metaontology.pl/timeontology_dolce#location_2> ;
+	rdfs:label "Nieszawa"@en , "Nieszawa"@pl .
 # 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

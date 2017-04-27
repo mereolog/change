@@ -1,4 +1,5 @@
-@prefix : <http://onto.kul.pl/change/oc/> .
+@prefix : <http://onto.kul.pl/change/manifestation/> .
+@prefix oc: <http://ontologies.makolab.com/oc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,7 +7,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://onto.kul.pl/change/oc/> a owl:Ontology ;
+<http://onto.kul.pl/change/manifestation/> a owl:Ontology ;
+	owl:imports <http://ontologies.makolab.com/oc/> ;
 	owl:versionInfo "varion 1.0"@en ;
 	rdfs:comment """Following \"K. Fine (1999). Things and their parts\" GLEIO divides all entities into: 
 - variable entities, i.e. the entities that have different manifestations at different times, and 
@@ -46,65 +48,57 @@ skos:scopeNote a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/oc/hasLastManifestation
-
-:hasLastManifestation a owl:ObjectProperty ;
-	rdfs:subPropertyOf :hasManifestation ;
-	owl:inverseOf :isLastManifestationOf ;
-	rdfs:label "has last manifestation"@en ;
-	skos:definition "The property assigns the last manifestation to a variable entity."@en .
-# 
-# http://onto.kul.pl/change/oc/hasLocation
+# http://onto.kul.pl/change/manifestation/hasLocation
 
 :hasLocation a owl:ObjectProperty .
 # 
-# http://onto.kul.pl/change/oc/hasManifestation
+# http://ontologies.makolab.com/oc/hasLastManifestation
 
-:hasManifestation a owl:ObjectProperty ;
-	owl:inverseOf :isManifestationOf ;
-	rdfs:domain :VariableEntity ;
-	rdfs:range :VariableEntityManifestation ;
+oc:hasLastManifestation a owl:ObjectProperty ;
+	rdfs:subPropertyOf oc:hasManifestation ;
+	owl:inverseOf oc:isLastManifestationOf ;
+	rdfs:label "has last manifestation"@en ;
+	skos:definition "The property assigns the last manifestation to a variable entity."@en .
+# 
+# http://ontologies.makolab.com/oc/hasManifestation
+
+oc:hasManifestation a owl:ObjectProperty ;
+	owl:inverseOf oc:isManifestationOf ;
+	rdfs:domain oc:VariableEntity ;
+	rdfs:range oc:VariableEntityManifestation ;
 	rdfs:label "has manifestation"@en ;
 	skos:definition "The property assigns a manifestation to a variable entity."@en .
 # 
-# http://onto.kul.pl/change/oc/hasPredecessorEntityManifestation
+# http://ontologies.makolab.com/oc/hasPredecessorEntityManifestation
 
-:hasPredecessorEntityManifestation a owl:ObjectProperty ;
-	owl:inverseOf :isPredecessorEntityManifestationOf ;
-	rdfs:domain :VariableEntityManifestation ;
-	rdfs:range :VariableEntityManifestation ;
-	rdfs:label "has predecessor entity manifestation"@en ;
+oc:hasPredecessorEntityManifestation a owl:ObjectProperty ;
+	owl:inverseOf oc:isPredecessorEntityManifestationOf ;
+	rdfs:domain oc:VariableEntityManifestation ;
+	rdfs:range oc:VariableEntityManifestation ;
+	rdfs:label "is predecessor entity manifestation of"@en ;
 	skos:definition "The property establishes the temporal linear order of the manifestations of an entity."@en .
 # 
-# http://onto.kul.pl/change/oc/hasSuccessorEntity
+# http://ontologies.makolab.com/oc/isLastManifestationOf
 
-:hasSuccessorEntity a owl:ObjectProperty ;
-	rdfs:domain :VariableEntityManifestation ;
-	rdfs:range :VariableEntity ;
-	rdfs:label "has successor entity"@en ;
-	skos:definition "The property assigns to an entity other entity that supersedes or subsumes it."@en .
-# 
-# http://onto.kul.pl/change/oc/isLastManifestationOf
-
-:isLastManifestationOf a owl:ObjectProperty ;
-	rdfs:subPropertyOf :isManifestationOf ;
+oc:isLastManifestationOf a owl:ObjectProperty ;
+	rdfs:subPropertyOf oc:isManifestationOf ;
 	rdfs:label "is last manifestation of"@en ;
 	skos:definition "The property indicates which manifestations of a variable entities are last."@en .
 # 
-# http://onto.kul.pl/change/oc/isManifestationOf
+# http://ontologies.makolab.com/oc/isManifestationOf
 
-:isManifestationOf a owl:ObjectProperty ;
-	rdfs:domain :VariableEntityManifestation ;
-	rdfs:range :VariableEntity ;
+oc:isManifestationOf a owl:ObjectProperty ;
+	rdfs:domain oc:VariableEntityManifestation ;
+	rdfs:range oc:VariableEntity ;
 	rdfs:label "is manifestation of"@en ;
 	skos:definition "The property indicates to each manifestation the variable entity it is a manifestation of."@en .
 # 
-# http://onto.kul.pl/change/oc/isPredecessorEntityManifestationOf
+# http://ontologies.makolab.com/oc/isPredecessorEntityManifestationOf
 
-:isPredecessorEntityManifestationOf a owl:ObjectProperty ;
-	rdfs:domain :VariableEntityManifestation ;
-	rdfs:range :VariableEntityManifestation ;
-	rdfs:label "is predecessor entity manifestation of"@en ;
+oc:isPredecessorEntityManifestationOf a owl:ObjectProperty ;
+	rdfs:domain oc:VariableEntityManifestation ;
+	rdfs:range oc:VariableEntityManifestation ;
+	rdfs:label "has predecessor entity manifestation"@en ;
 	skos:definition "The property establishes the temporal linear order of the manifestations of an entity."@en .
 # 
 # 
@@ -116,38 +110,38 @@ skos:scopeNote a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/oc/hasBeginning
+# http://onto.kul.pl/change/manifestation/hasBeginning
 
 :hasBeginning a owl:DatatypeProperty ;
 	rdfs:subPropertyOf :hasDate ;
 	a owl:FunctionalProperty ;
-	rdfs:domain :VariableEntityManifestation ;
+	rdfs:domain oc:VariableEntityManifestation ;
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has beginning"@en ;
 	skos:definition "The property assigns to a variable entity manifestation date and time information about it was most recently updated."@en .
 # 
-# http://onto.kul.pl/change/oc/hasDate
+# http://onto.kul.pl/change/manifestation/hasDate
 
 :hasDate a owl:DatatypeProperty ;
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has date"@en .
 # 
-# http://onto.kul.pl/change/oc/hasEnd
+# http://onto.kul.pl/change/manifestation/hasEnd
 
 :hasEnd a owl:DatatypeProperty ;
 	rdfs:subPropertyOf :hasDate ;
 	a owl:FunctionalProperty ;
-	rdfs:domain :VariableEntityManifestation ;
+	rdfs:domain oc:VariableEntityManifestation ;
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has end"@en ;
 	skos:definition "The property assigns to a variable entity manifestation date and time information about it was most recently updated."@en .
 # 
-# http://onto.kul.pl/change/oc/hasTimeStamp
+# http://onto.kul.pl/change/manifestation/hasTimeStamp
 
 :hasTimeStamp a owl:DatatypeProperty ;
 	rdfs:subPropertyOf :hasDate ;
 	a owl:FunctionalProperty ;
-	rdfs:domain :VariableEntityManifestation ;
+	rdfs:domain oc:VariableEntityManifestation ;
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has time stamp"@en ;
 	skos:definition "The property assigns to a variable entity manifestation date and time..."@en .
@@ -161,41 +155,41 @@ skos:scopeNote a owl:AnnotationProperty .
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/oc/Location
+# http://onto.kul.pl/change/manifestation/Location
 
 :Location a owl:Class ;
 	rdfs:label "location"@en .
 # 
-# http://onto.kul.pl/change/oc/NonVariableEntity
+# http://ontologies.makolab.com/oc/NonVariableEntity
 
-:NonVariableEntity a owl:Class ;
-	owl:disjointWith :VariableEntity ;
+oc:NonVariableEntity a owl:Class ;
+	owl:disjointWith oc:VariableEntity ;
 	rdfs:label "non-variable entity"@en ;
 	skos:definition "Non-variable entities are entities that do not have different manifestations as different objects at different times and in different worlds or situations."@en .
 # 
-# http://onto.kul.pl/change/oc/VariableEntity
+# http://ontologies.makolab.com/oc/VariableEntity
 
-:VariableEntity a owl:Class ;
+oc:VariableEntity a owl:Class ;
 	rdfs:subClassOf _:genid1 .
 
 _:genid1 a owl:Restriction ;
-	owl:onProperty :hasManifestation ;
-	owl:someValuesFrom :VariableEntityManifestation .
+	owl:onProperty oc:hasManifestation ;
+	owl:someValuesFrom oc:VariableEntityManifestation .
 
-:VariableEntity rdfs:label "variable entity"@en ;
+oc:VariableEntity rdfs:label "variable entity"@en ;
 	skos:definition "Variable entities are entities that have different manifestations as different objects at different times and in different worlds or situations. If a variable entity e is manifested at time t by some variable entity manifestation m, then e exists at t, takes a geographical location of m and has all qualities possessed by m in t. A variable entity possesses a quality q (without temporal reference) if all of its manifestations have this quality q."@en .
 # 
-# http://onto.kul.pl/change/oc/VariableEntityManifestation
+# http://ontologies.makolab.com/oc/VariableEntityManifestation
 
-:VariableEntityManifestation a owl:Class ;
+oc:VariableEntityManifestation a owl:Class ;
 	rdfs:subClassOf _:genid2 .
 
 _:genid2 a owl:Restriction ;
-	owl:onProperty :isManifestationOf ;
+	owl:onProperty oc:isManifestationOf ;
 	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-	owl:onClass :VariableEntity .
+	owl:onClass oc:VariableEntity .
 
-:VariableEntityManifestation rdfs:label "variable entity manifestation"@en ;
+oc:VariableEntityManifestation rdfs:label "variable entity manifestation"@en ;
 	skos:definition "A variable entity manifestation is a manifestation (in particular time and space with a particular collection of qualities) of a variable entity."@en .
 # 
 # 
@@ -207,34 +201,36 @@ _:genid2 a owl:Restriction ;
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/oc/location1
+# http://onto.kul.pl/change/manifestation/location1
 
-:location1 a owl:NamedIndividual , :Location .
+:location1 a owl:NamedIndividual , :Location ;
+	rdfs:label "localization 1"@en , "lokalizacja 1"@pl .
 # 
-# http://onto.kul.pl/change/oc/location2
+# http://onto.kul.pl/change/manifestation/location2
 
-:location2 a owl:NamedIndividual , :Location .
+:location2 a owl:NamedIndividual , :Location ;
+	rdfs:label "localization 2"@en , "lokalizacja 2"@pl .
 # 
-# http://onto.kul.pl/change/oc/settlement1
+# http://onto.kul.pl/change/manifestation/settlement1
 
-:settlement1 a owl:NamedIndividual , :VariableEntity .
+:settlement1 a owl:NamedIndividual , oc:VariableEntity ;
+	rdfs:label "Nieszawa"@en , "Nieszawa"@pl .
 # 
-# http://onto.kul.pl/change/oc/settlement1-Manifestation1
+# http://onto.kul.pl/change/manifestation/settlement1_manifestation1
 
-:settlement1-Manifestation1 a owl:NamedIndividual , :VariableEntityManifestation ;
+:settlement1_manifestation1 a owl:NamedIndividual , oc:VariableEntityManifestation ;
 	:hasLocation :location1 ;
-	:isManifestationOf :settlement1 .
+	oc:isManifestationOf :settlement1 ;
+	:hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+	:hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+	rdfs:label "manifestacja 1 Nieszawy"@pl , "manifestation 1 of Nieszawa"@en .
 # 
-# http://onto.kul.pl/change/oc/settlement1-Manifestation2
+# http://onto.kul.pl/change/manifestation/settlement1_manifestation2
 
-:settlement1-Manifestation2 a owl:NamedIndividual , :VariableEntityManifestation ;
-	:hasLocation :location1 ;
-	:isManifestationOf :settlement1 .
-# 
-# http://onto.kul.pl/change/oc/settlement1-Manifestation3
-
-:settlement1-Manifestation3 a owl:NamedIndividual , :VariableEntityManifestation ;
+:settlement1_manifestation2 a owl:NamedIndividual , oc:VariableEntityManifestation ;
 	:hasLocation :location2 ;
-	:isManifestationOf :settlement1 .
+	oc:isManifestationOf :settlement1 ;
+	:hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
+	rdfs:label "manifestacja 2 Nieszawy"@pl , "manifestation 2 of Nieszawa"@en .
 # 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

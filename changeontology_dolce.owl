@@ -1,168 +1,266 @@
-@prefix : <http://www.metaontology.pl/timeontology_dolce#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.metaontology.pl/timeontology_dolce#"
+     xml:base="http://www.metaontology.pl/timeontology_dolce"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dolce="http://onto.kul.pl/change/dolce#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DOLCE-Lite="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#">
+    <owl:Ontology rdf:about="http://onto.kul.pl/change/dolce">
+        <owl:imports rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl"/>
+    </owl:Ontology>
+    
 
-<http://onto.kul.pl/change/dolce> a owl:Ontology ;
-	owl:imports <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl> .
-# 
-# 
-# #################################################################
-# #
-# #    Data properties
-# #
-# #################################################################
-# 
-# 
-# http://onto.kul.pl/change/dolce#hasBegining
 
-<http://onto.kul.pl/change/dolce#hasBegining> a owl:DatatypeProperty , owl:FunctionalProperty ;
-	rdfs:domain <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
-	rdfs:range xsd:dateTime ;
-	rdfs:label "has begining"@en , "ma początek"@pl .
-# 
-# http://onto.kul.pl/change/dolce#hasEnd
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<http://onto.kul.pl/change/dolce#hasEnd> a owl:DatatypeProperty , owl:FunctionalProperty ;
-	rdfs:label "has end"@en , "ma koniec"@pl .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature
+    
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> a owl:Class .
-# 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> a owl:Class .
-# 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#constant-participant -->
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state> a owl:Class .
-# 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q
+    <owl:AnnotationProperty rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#constant-participant"/>
+    
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> a owl:Class .
-# 
-# http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval
 
-<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> a owl:Class .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# http://onto.kul.pl/change/dolce#location_1
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality -->
 
-<http://onto.kul.pl/change/dolce#location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> ;
-	rdfs:label "1st location of Nieszawa"@en , "pierwsza lokalizacja Nieszawy"@pl .
-# 
-# http://onto.kul.pl/change/dolce#location_2
+    <owl:AnnotationProperty rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality"/>
+    
 
-<http://onto.kul.pl/change/dolce#location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature> ;
-	rdfs:label "2nd location of Nieszawa"@en , "druga lokalizacja Nieszawy"@pl .
-# 
-# http://onto.kul.pl/change/dolce#settlement_1
 
-<http://onto.kul.pl/change/dolce#settlement_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object> ;
-	rdfs:label "Nieszawa"@en , "Nieszawa"@pl .
-# 
-# http://onto.kul.pl/change/dolce#settlement_1_location_1
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location -->
 
-<http://onto.kul.pl/change/dolce#settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#constant-participant> <http://onto.kul.pl/change/dolce#location_1> , <http://onto.kul.pl/change/dolce#settlement_1> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality> <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> ;
-	rdfs:label "stan Nieszawy w lokalizacji 1"@pl , "state of Nieszawa in 1st location"@en .
-# 
-# http://onto.kul.pl/change/dolce#settlement_1_location_2
+    <owl:AnnotationProperty rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location"/>
+    
 
-<http://onto.kul.pl/change/dolce#settlement_1_location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#constant-participant> <http://onto.kul.pl/change/dolce#location_2> , <http://onto.kul.pl/change/dolce#settlement_1> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality> <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2> ;
-	rdfs:label "stan Nieszawy w lokalizacji 2"@pl , "state of Nieszawa in 2nd location"@en .
-# 
-# http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1
 
-<http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
-	rdfs:label "czasowa charakterystyka stanu Nieszawy w lokalizacji 1"@pl , "temporal quality of state of Nieszawa in 1st location"@en .
-# 
-# http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q> ;
-	<http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#q-location> <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> ;
-	rdfs:label "czasowa charakterystyka stanu Nieszawy w lokalizacji 2"@pl , "temporal quality of state of Nieszawa in 2nd location"@en .
-# 
-# http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1
+    
 
-<http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
-	<http://onto.kul.pl/change/dolce#hasBegining> "1425-01-01T00:00:00"^^xsd:dateTime ;
-	<http://onto.kul.pl/change/dolce#hasEnd> "1459-12-31T23:59:59"^^xsd:dateTime ;
-	rdfs:label "czas trwania stanu Nieszawy w lokalizacji 1"@pl , "temporal duration of state of Nieszawa in 1st location"@en .
-# 
-# http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2
 
-<http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> a owl:NamedIndividual , <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval> ;
-	<http://onto.kul.pl/change/dolce#hasBegining> "1460-01-01T00:00:00"^^xsd:dateTime ;
-	rdfs:label "czas trwania stanu Nieszawy w lokalizacji 2"@pl , "temporal duration of state of Nieszawa in 2nd location"@en .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    General axioms
-# #
-# #################################################################
-# 
-# 
+    <!-- http://onto.kul.pl/change/dolce#hasBegining -->
 
-_:genid1 a owl:AllDifferent ;
-	owl:distinctMembers _:genid3 .
+    <owl:DatatypeProperty rdf:about="http://onto.kul.pl/change/dolce#hasBegining">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">has begining</rdfs:label>
+        <rdfs:label xml:lang="pl">ma początek</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
-_:genid3 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#settlement_1_location_1> ;
-	rdf:rest _:genid2 .
 
-_:genid2 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#settlement_1_location_2> ;
-	rdf:rest rdf:nil .
-# 
+    <!-- http://onto.kul.pl/change/dolce#hasEnd -->
 
-_:genid4 a owl:AllDifferent ;
-	owl:distinctMembers _:genid6 .
+    <owl:DatatypeProperty rdf:about="http://onto.kul.pl/change/dolce#hasEnd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has end</rdfs:label>
+        <rdfs:label xml:lang="pl">ma koniec</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
-_:genid6 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1> ;
-	rdf:rest _:genid5 .
 
-_:genid5 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2> ;
-	rdf:rest rdf:nil .
-# 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-_:genid7 a owl:AllDifferent ;
-	owl:distinctMembers _:genid9 .
+    
 
-_:genid9 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1> ;
-	rdf:rest _:genid8 .
 
-_:genid8 a rdf:List ;
-	rdf:first <http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2> ;
-	rdf:rest rdf:nil .
-# 
-# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#location_1">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature"/>
+        <rdfs:label xml:lang="en">1st location of Nieszawa</rdfs:label>
+        <rdfs:label xml:lang="pl">pierwsza lokalizacja Nieszawy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#location_2">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#feature"/>
+        <rdfs:label xml:lang="en">2nd location of Nieszawa</rdfs:label>
+        <rdfs:label xml:lang="pl">druga lokalizacja Nieszawy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#settlement_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#settlement_1">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#physical-object"/>
+        <rdfs:label xml:lang="en">Nieszawa</rdfs:label>
+        <rdfs:label xml:lang="pl">Nieszawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#settlement_1_location_1">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state"/>
+        <DOLCE-Lite:constant-participant rdf:resource="http://onto.kul.pl/change/dolce#location_1"/>
+        <DOLCE-Lite:constant-participant rdf:resource="http://onto.kul.pl/change/dolce#settlement_1"/>
+        <DOLCE-Lite:has-quality rdf:resource="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1"/>
+        <rdfs:label xml:lang="pl">stan Nieszawy w lokalizacji 1</rdfs:label>
+        <rdfs:label xml:lang="en">state of Nieszawa in 1st location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#settlement_1_location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#settlement_1_location_2">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#state"/>
+        <DOLCE-Lite:constant-participant rdf:resource="http://onto.kul.pl/change/dolce#location_2"/>
+        <DOLCE-Lite:constant-participant rdf:resource="http://onto.kul.pl/change/dolce#settlement_1"/>
+        <DOLCE-Lite:has-quality rdf:resource="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2"/>
+        <rdfs:label xml:lang="pl">stan Nieszawy w lokalizacji 2</rdfs:label>
+        <rdfs:label xml:lang="en">state of Nieszawa in 2nd location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q"/>
+        <DOLCE-Lite:q-location rdf:resource="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1"/>
+        <rdfs:label xml:lang="pl">czasowa charakterystyka stanu Nieszawy w lokalizacji 1</rdfs:label>
+        <rdfs:label xml:lang="en">temporal quality of state of Nieszawa in 1st location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#temporal-location_q"/>
+        <DOLCE-Lite:q-location rdf:resource="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2"/>
+        <rdfs:label xml:lang="pl">czasowa charakterystyka stanu Nieszawy w lokalizacji 2</rdfs:label>
+        <rdfs:label xml:lang="en">temporal quality of state of Nieszawa in 2nd location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
+        <dolce:hasBegining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1425-01-01T00:00:00</dolce:hasBegining>
+        <dolce:hasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1459-12-31T23:59:59</dolce:hasEnd>
+        <rdfs:label xml:lang="pl">czas trwania stanu Nieszawy w lokalizacji 1</rdfs:label>
+        <rdfs:label xml:lang="en">temporal duration of state of Nieszawa in 1st location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2">
+        <rdf:type rdf:resource="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#time-interval"/>
+        <dolce:hasBegining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1460-01-01T00:00:00</dolce:hasBegining>
+        <rdfs:label xml:lang="pl">czas trwania stanu Nieszawy w lokalizacji 2</rdfs:label>
+        <rdfs:label xml:lang="en">temporal duration of state of Nieszawa in 2nd location</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#settlement_1_location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#settlement_1_location_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#temporallocation_settlement_1_location_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/dolce#value_temporallocation_settlement_1_location_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

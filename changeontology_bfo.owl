@@ -149,9 +149,9 @@
     
 
 
-    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1 -->
+    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement1_location1 -->
 
-    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1">
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#location1_history"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#settlement1_history"/>
@@ -163,9 +163,9 @@
     
 
 
-    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2 -->
+    <!-- http://onto.kul.pl/change/bfo#product_histories_settlement1_location2 -->
 
-    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2">
+    <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#location2_history"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#settlement1_history"/>
@@ -215,8 +215,8 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_1"/>
-            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement_1_location_2"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location1"/>
+            <rdf:Description rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location2"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>

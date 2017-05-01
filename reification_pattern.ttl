@@ -1,0 +1,173 @@
+@prefix : <http://onto.kul.pl/change/reification/> .
+@prefix oc: <http://ontologies.makolab.com/oc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://onto.kul.pl/change/reification/> a owl:Ontology ;
+	rdfs:label "Reification pattern"@en ;
+	rdfs:comment """Created by W3C Working Group Note on 12 April 2006
+
+See: Defining N-ary Relations on the Semantic Web
+
+https://www.w3.org/TR/swbp-n-aryRelations/"""@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+
+skos:scopeNote a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/reification/hasLocation
+
+:hasLocation a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:domain :LocaitonRelation ;
+	rdfs:range :Location ;
+	rdfs:label "has location"@en .
+# 
+# http://onto.kul.pl/change/reification/hasLocationDistinguishedParticipant
+
+:hasLocationDistinguishedParticipant a owl:ObjectProperty ;
+	owl:inverseOf :hasLocationRelation ;
+	rdfs:domain :LocaitonRelation ;
+	rdfs:range :MaterialObject ;
+	rdfs:label "has location distinguished participant"@en .
+# 
+# http://onto.kul.pl/change/reification/hasLocationRelation
+
+:hasLocationRelation a owl:ObjectProperty ;
+	rdfs:domain :MaterialObject ;
+	rdfs:range :LocaitonRelation .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/reification/hasBeginning
+
+:hasBeginning a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty ;
+	a owl:FunctionalProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has beginning"@en .
+# 
+# http://onto.kul.pl/change/reification/hasEnd
+
+:hasEnd a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty ;
+	a owl:FunctionalProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:label "has end"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/reification/LocaitonRelation
+
+:LocaitonRelation a owl:Class ;
+	rdfs:subClassOf _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :hasLocation ;
+	owl:someValuesFrom :Location .
+
+:LocaitonRelation rdfs:subClassOf _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :hasLocationDistinguishedParticipant ;
+	owl:someValuesFrom :MaterialObject .
+
+:LocaitonRelation rdfs:label "location relation"@en .
+# 
+# http://onto.kul.pl/change/reification/Location
+
+:Location a owl:Class ;
+	rdfs:label "location"@en .
+# 
+# http://onto.kul.pl/change/reification/MaterialObject
+
+:MaterialObject a owl:Class ;
+	rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :hasLocationRelation ;
+	owl:allValuesFrom :LocaitonRelation .
+
+:MaterialObject rdfs:label "settlement"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://onto.kul.pl/change/reification/location1
+
+:location1 a owl:NamedIndividual , :Location ;
+	rdfs:label "localization 1"@en , "lokalizacja 1"@pl .
+# 
+# http://onto.kul.pl/change/reification/location2
+
+:location2 a owl:NamedIndividual , :Location ;
+	rdfs:label "localization 2"@en , "lokalizacja 2"@pl .
+# 
+# http://onto.kul.pl/change/reification/settlement1
+
+:settlement1 a owl:NamedIndividual , :MaterialObject ;
+	:hasLocationRelation :settlement1_location_relation1 , :settlement1_location_relation2 ;
+	rdfs:label "Nieszawa"@en , "Nieszawa"@pl .
+# 
+# http://onto.kul.pl/change/reification/settlement1_location_relation1
+
+:settlement1_location_relation1 a owl:NamedIndividual , :LocaitonRelation ;
+	:hasLocation :location1 ;
+	:hasLocationDistinguishedParticipant :settlement1 ;
+	:hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+	:hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+	rdfs:label "manifestacja 1 Nieszawy"@pl , "manifestation 1 of Nieszawa"@en .
+# 
+# http://onto.kul.pl/change/reification/settlement1_location_relation2
+
+:settlement1_location_relation2 a owl:NamedIndividual , :LocaitonRelation ;
+	:hasLocation :location2 ;
+	:hasLocationDistinguishedParticipant :settlement1 ;
+	:hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
+	rdfs:label "manifestacja 2 Nieszawy"@pl , "manifestation 2 of Nieszawa"@en .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

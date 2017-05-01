@@ -85,17 +85,17 @@ tqc:66ab4d5f-130c-5369-95b5-6a7668842497 a owl:ObjectProperty , owl:InverseFunct
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/bfo/hasBeginning
+# http://onto.kul.pl/change/bfo-tqc/hasBeginning
 
-<http://onto.kul.pl/change/bfo/hasBeginning> a owl:DatatypeProperty ;
+<http://onto.kul.pl/change/bfo-tqc/hasBeginning> a owl:DatatypeProperty ;
 	rdfs:subPropertyOf owl:topDataProperty ;
 	a owl:FunctionalProperty ;
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has beginning"@en .
 # 
-# http://onto.kul.pl/change/bfo/hasEnd
+# http://onto.kul.pl/change/bfo-tqc/hasEnd
 
-<http://onto.kul.pl/change/bfo/hasEnd> a owl:DatatypeProperty ;
+<http://onto.kul.pl/change/bfo-tqc/hasEnd> a owl:DatatypeProperty ;
 	rdfs:subPropertyOf owl:topDataProperty ;
 	a owl:FunctionalProperty ;
 	rdfs:range xsd:dateTime ;
@@ -204,53 +204,53 @@ following characteristics:
 # #################################################################
 # 
 # 
-# http://onto.kul.pl/change/bfo/location1
+# http://onto.kul.pl/change/bfo-tqc/location1
 
-<http://onto.kul.pl/change/bfo/location1> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000006> ;
+<http://onto.kul.pl/change/bfo-tqc/location1> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000006> ;
 	rdfs:label "localization 1"@en , "spatial region 1"@en .
 # 
-# http://onto.kul.pl/change/bfo/location2
+# http://onto.kul.pl/change/bfo-tqc/location2
 
-<http://onto.kul.pl/change/bfo/location2> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000006> ;
+<http://onto.kul.pl/change/bfo-tqc/location2> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000006> ;
 	rdfs:label "lokalizacja 2"@pl , "spatial region 2"@en .
 # 
-# http://onto.kul.pl/change/bfo/settlement1
+# http://onto.kul.pl/change/bfo-tqc/settlement1
 
-<http://onto.kul.pl/change/bfo/settlement1> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000030> ;
-	<http://purl.obolibrary.org/obo/BFO_0000185> <http://onto.kul.pl/change/bfo/settlement1_history> ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000030> ;
+	<http://purl.obolibrary.org/obo/BFO_0000185> <http://onto.kul.pl/change/bfo-tqc/settlement1_history> ;
 	rdfs:label "Nieszawa"@en , "Nieszawa"@pl .
 # 
-# http://onto.kul.pl/change/bfo/settlement1_TQC1
+# http://onto.kul.pl/change/bfo-tqc/settlement1_TQC1
 
-<http://onto.kul.pl/change/bfo/settlement1_TQC1> a owl:NamedIndividual , tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
-	<http://purl.obolibrary.org/obo/BFO_0000083> <http://onto.kul.pl/change/bfo/location1> ;
-	<http://onto.kul.pl/change/bfo/hasBeginning> "1425-01-01T00:00:00"^^xsd:dateTime ;
-	<http://onto.kul.pl/change/bfo/hasEnd> "1459-12-31T23:59:59"^^xsd:dateTime ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1_TQC1> a owl:NamedIndividual , tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+	<http://purl.obolibrary.org/obo/BFO_0000083> <http://onto.kul.pl/change/bfo-tqc/location1> ;
+	<http://onto.kul.pl/change/bfo-tqc/hasBeginning> "1425-01-01T00:00:00"^^xsd:dateTime ;
+	<http://onto.kul.pl/change/bfo-tqc/hasEnd> "1459-12-31T23:59:59"^^xsd:dateTime ;
 	rdfs:label "czasowo kwalifikowana Nieszawa 1"@pl , "temporally qualified Nieszawa 1"@en .
 # 
-# http://onto.kul.pl/change/bfo/settlement1_TQC2
+# http://onto.kul.pl/change/bfo-tqc/settlement1_TQC2
 
-<http://onto.kul.pl/change/bfo/settlement1_TQC2> a owl:NamedIndividual , tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
-	<http://purl.obolibrary.org/obo/BFO_0000083> <http://onto.kul.pl/change/bfo/location2> ;
-	<http://onto.kul.pl/change/bfo/hasBeginning> "1460-01-01T00:00:00"^^xsd:dateTime ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1_TQC2> a owl:NamedIndividual , tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+	<http://purl.obolibrary.org/obo/BFO_0000083> <http://onto.kul.pl/change/bfo-tqc/location2> ;
+	<http://onto.kul.pl/change/bfo-tqc/hasBeginning> "1460-01-01T00:00:00"^^xsd:dateTime ;
 	rdfs:label "czasowo kwalifikowana Nieszawa 2"@pl , "temporally qualified Nieszawa 2"@en .
 # 
-# http://onto.kul.pl/change/bfo/settlement1_history
+# http://onto.kul.pl/change/bfo-tqc/settlement1_history
 
-<http://onto.kul.pl/change/bfo/settlement1_history> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000182> ;
-	<http://purl.obolibrary.org/obo/BFO_0000117> <http://onto.kul.pl/change/bfo/settlement1_phase1> , <http://onto.kul.pl/change/bfo/settlement1_phase2> ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1_history> a owl:NamedIndividual , <http://purl.obolibrary.org/obo/BFO_0000182> ;
+	<http://purl.obolibrary.org/obo/BFO_0000117> <http://onto.kul.pl/change/bfo-tqc/settlement1_phase1> , <http://onto.kul.pl/change/bfo-tqc/settlement1_phase2> ;
 	rdfs:label "historia (życia) Nieszawy"@pl , "history (life) of Nieszawa"@en .
 # 
-# http://onto.kul.pl/change/bfo/settlement1_phase1
+# http://onto.kul.pl/change/bfo-tqc/settlement1_phase1
 
-<http://onto.kul.pl/change/bfo/settlement1_phase1> a owl:NamedIndividual , tqc:2a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
-	tqc:1669f0c5-4cde-5cbc-94e3-ffb2281d885a <http://onto.kul.pl/change/bfo/settlement1_TQC1> ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1_phase1> a owl:NamedIndividual , tqc:2a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
+	tqc:1669f0c5-4cde-5cbc-94e3-ffb2281d885a <http://onto.kul.pl/change/bfo-tqc/settlement1_TQC1> ;
 	rdfs:label "phase 1 of Nieszawa"@en .
 # 
-# http://onto.kul.pl/change/bfo/settlement1_phase2
+# http://onto.kul.pl/change/bfo-tqc/settlement1_phase2
 
-<http://onto.kul.pl/change/bfo/settlement1_phase2> a owl:NamedIndividual , tqc:2a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
-	tqc:1669f0c5-4cde-5cbc-94e3-ffb2281d885a <http://onto.kul.pl/change/bfo/settlement1_TQC2> ;
+<http://onto.kul.pl/change/bfo-tqc/settlement1_phase2> a owl:NamedIndividual , tqc:2a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
+	tqc:1669f0c5-4cde-5cbc-94e3-ffb2281d885a <http://onto.kul.pl/change/bfo-tqc/settlement1_TQC2> ;
 	rdfs:label "phase 2 of Nieszawa"@en .
 # 
 # Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

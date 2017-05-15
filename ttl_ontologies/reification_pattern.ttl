@@ -47,13 +47,13 @@ skos:scopeNote a owl:AnnotationProperty .
 	rdfs:range :Location ;
 	rdfs:label "has location"@en .
 # 
-# http://onto.kul.pl/change/reification/hasLocationDistinguishedParticipant
+# http://onto.kul.pl/change/reification/hasLocationParticipant
 
-:hasLocationDistinguishedParticipant a owl:ObjectProperty ;
+:hasLocationParticipant a owl:ObjectProperty ;
 	owl:inverseOf :hasLocationRelation ;
 	rdfs:domain :LocationRelation ;
 	rdfs:range :MaterialObject ;
-	rdfs:label "has location distinguished participant"@en .
+	rdfs:label "has location participant"@en .
 # 
 # http://onto.kul.pl/change/reification/hasLocationRelation
 
@@ -113,7 +113,7 @@ _:genid1 a owl:Restriction ;
 :LocationRelation rdfs:subClassOf _:genid2 .
 
 _:genid2 a owl:Restriction ;
-	owl:onProperty :hasLocationDistinguishedParticipant ;
+	owl:onProperty :hasLocationParticipant ;
 	owl:someValuesFrom :MaterialObject .
 
 :LocationRelation rdfs:label "location relation"@en .
@@ -158,7 +158,7 @@ _:genid3 a owl:Restriction ;
 
 :settlement1_location_relation1 a owl:NamedIndividual , :LocationRelation ;
 	:hasLocation :location1 ;
-	:hasLocationDistinguishedParticipant :settlement1 ;
+	:hasLocationParticipant :settlement1 ;
 	:hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
 	:hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
 	rdfs:label "manifestacja 1 Nieszawy"@pl , "manifestation 1 of Nieszawa"@en .
@@ -167,7 +167,7 @@ _:genid3 a owl:Restriction ;
 
 :settlement1_location_relation2 a owl:NamedIndividual , :LocationRelation ;
 	:hasLocation :location2 ;
-	:hasLocationDistinguishedParticipant :settlement1 ;
+	:hasLocationParticipant :settlement1 ;
 	:hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
 	rdfs:label "manifestacja 2 Nieszawy"@pl , "manifestation 2 of Nieszawa"@en .
 # 

@@ -60,6 +60,26 @@
     
 
 
+    <!-- http://onto.kul.pl/change/bfo#HistoryOverlap -->
+
+    <owl:Class rdf:about="http://onto.kul.pl/change/bfo#HistoryOverlap">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000138"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label xml:lang="en">history overlap</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -152,7 +172,7 @@
     <!-- http://onto.kul.pl/change/bfo#product_histories_settlement1_location1 -->
 
     <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location1">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdf:type rdf:resource="http://onto.kul.pl/change/bfo#HistoryOverlap"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#location1_history"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#settlement1_history"/>
         <hasBegining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1425-01-01T00:00:00</hasBegining>
@@ -166,7 +186,7 @@
     <!-- http://onto.kul.pl/change/bfo#product_histories_settlement1_location2 -->
 
     <owl:NamedIndividual rdf:about="http://onto.kul.pl/change/bfo#product_histories_settlement1_location2">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdf:type rdf:resource="http://onto.kul.pl/change/bfo#HistoryOverlap"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#location2_history"/>
         <obo:BFO_0000132 rdf:resource="http://onto.kul.pl/change/bfo#settlement1_history"/>
         <hasBegining rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1460-01-01T00:00:00</hasBegining>

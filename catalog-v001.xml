@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1498806885017" name="http://onto.kul.pl/change/bfo" uri="changeontology_bfo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1498806885017" name="http://onto.kul.pl/change/dolce" uri="changeontology_dolce.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1498806885017" name="http://onto.kul.pl/change/gfo" uri="changeontology_gfo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1498806885017" name="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl" uri="DOLCE-Lite.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499496499058" name="http://onto.kul.pl/change/bfo" uri="changeontology_bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499496499058" name="http://onto.kul.pl/change/dolce" uri="changeontology_dolce.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499496499058" name="http://onto.kul.pl/change/gfo" uri="changeontology_gfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1499496499058" name="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl" uri="DOLCE-Lite.owl"/>
     </group>
 </catalog>

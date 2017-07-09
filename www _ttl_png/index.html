@@ -4,7 +4,7 @@
 <title>Representation of tensed relations in OWL</title>
 
 <style>
-table, li, h1 {
+table, li, h1, h3, p  {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -32,10 +32,11 @@ tr:nth-child(odd) {
 
 	<li><a href="#changeontology_temporalisedrelations">Simple Pattern</a></li>
 
-	<li>Philosopically-Laden Patterns</li>
+	<li><font color="red"><b>Philosopically-Laden Patterns</b></font></li>
 		<ul>
 			<li>Endurantist Patterns</li>
 				<ul>
+				    <li><a href="#trope">Trope-Based Endurantist Pattern</a></li>
 					<li><a href="#manifestation">Manifestation-Based Endurantist Pattern</a></li>
 					<li><a href="#tqc">Temporally Qualified Continuants Pattern</a></li>
 					<li><a href="#changeontology_dolce">State-Based Endurantist Pattern</a></li>
@@ -46,30 +47,44 @@ tr:nth-child(odd) {
 		</ul>
 </ol>
 
+<br><br><hr><br><br>
+<h3>Nieszawa case study</h3>
+
+<p>To  illustrate  the  issue  more  palatable  we  will  use  in  this  paper  the  following running  example.  The  contemporary  city  of  Nieszawa  was  first  mentioned  in historical records around 1425 as located at N52<sup>o</sup>59.48' E18<sup>o</sup>30.28' - we will call this location location 1. Around 1460 Nieszawa was relocated to N52<sup>o</sup>50.12' E18<sup>o</sup>54.05' -  we will call this location "location 2". In short:</p>
+<ol>
+<li> Nieszawa is located at location 1 from 1425 to 1459.</li>
+<li> Nieszawa is located at location 2 from 1460 to the present day.</li>
+</ol>
+<p>In each solution Nieszawa is represented as the OWL individual ":settlement1" and  the  two  locations  as ":location1" and ":location2".  Using  this  minimal data set  each  pattern  was  implemented  as  an  OWL  ontology  for  the  running example.</p>
+
+
 <br><br><hr><br><br><br>
 
 
 <table border="1">
 	<tr><td><h3 id="reification_pattern">Reification Pattern(s) [<a href="./ttl_ontologies/reification_pattern.ttl">download ttl file</a>]</h3> <a href="#">Go to top</a></td></tr>	
-	<tr><td><center><img src="./graphml_files/reification.png"></center></td></tr>
+	<tr><td><center><img src="./png/reification.png"></center></td></tr>
 
 	<tr><td><h3 id="changeontology_temporalisedrelations">Simple Pattern [<a href="./ttl_ontologies/changeontology_temporalisedrelations.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/temporalisedrelations.png"></center></td></tr>
+	<tr><td><center><img src="./png/temporalisedrelations.png"></center></td></tr>
+
+	<tr><td><h3 id="trope">Trope-Based Endurantist Pattern [<a href="./ttl_ontologies/changeontology_tropes.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
+	<tr><td><center><img src="./png/tropes.png"></center></td></tr>
 
 	<tr><td><h3 id="manifestation">Manifestation-Based Endurantist Pattern [<a href="./ttl_ontologies/manifestation.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/manifestacje.png"></center></td></tr>
+	<tr><td><center><img src="./png/manifestacje.png"></center></td></tr>
 
 	<tr><td><h3 id="tqc">Temporally Qualified Continuants Pattern [<a href="./ttl_ontologies/tqc.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/tqc.png"></center></td></tr>
+	<tr><td><center><img src="./png/tqc.png"></center></td></tr>
 
 	<tr><td><h3 id="changeontology_dolce">State-Based Endurantist Pattern [<a href="./ttl_ontologies/changeontology_dolce.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/dolce2.png"></center></td></tr>
+	<tr><td><center><img src="./png/dolce2.png"></center></td></tr>
 
 	<tr><td><h3 id="changeontology_bfo">History-Based Endurantist Pattern [<a href="./ttl_ontologies/changeontology_bfo.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/changeontology_bfo.png"></center></td></tr>
+	<tr><td><center><img src="./png/changeontology_bfo.png"></center></td></tr>
 
 	<tr><td><h3 id="changeontology_gfo">Perdurantist Pattern [<a href="./ttl_ontologies/changeontology_gfo.ttl">download ttl file</a>]</h3><a href="#">Go to top</a></td></tr>
-	<tr><td><center><img src="./graphml_files/changeontology_gfo.png"></center></td></tr>
+	<tr><td><center><img src="./png/changeontology_gfo.png"></center></td></tr>
 </table>
 
 

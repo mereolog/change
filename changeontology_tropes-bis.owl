@@ -64,6 +64,11 @@
 	rdfs:range xsd:dateTime ;
 	rdfs:label "has end at"@en , "ma koniec w"@pl .
 # 
+# http://onto.kul.pl/change/tropes/hasValue
+
+<http://onto.kul.pl/change/tropes/hasValue> a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:domain :Quality .
+# 
 # 
 # 
 # #################################################################
@@ -191,6 +196,16 @@ _:genid12 a owl:Restriction ;
 	owl:onProperty <http://onto.kul.pl/change/tropes/mediates> ;
 	owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
 	owl:onClass :individual .
+
+<http://onto.kul.pl/change/tropes/Relator> rdfs:subClassOf _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty _:genid14 .
+
+_:genid14 owl:inverseOf <http://onto.kul.pl/change/tropes/partOf> .
+
+_:genid13 owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://onto.kul.pl/change/tropes/QuaIndividual> .
 
 <http://onto.kul.pl/change/tropes/Relator> rdfs:comment "Relator: a moment that is existentially dependent on two or more individuals (e.g., a marriage, an enrollment). In this case, the moment is said to mediate its bearers and capturing all the relational properties that individuals bear in the scope a relation."@en ;
 	rdfs:label "Relator"@en .

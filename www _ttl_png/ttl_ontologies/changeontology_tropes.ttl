@@ -61,6 +61,12 @@
                    "ma koniec w"@pl .
 
 
+###  http://onto.kul.pl/change/tropes/hasValue
+<http://onto.kul.pl/change/tropes/hasValue> rdf:type owl:DatatypeProperty ,
+                                                     owl:FunctionalProperty ;
+                                            rdfs:domain :Quality .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -75,6 +81,11 @@
                                  ] ;
                  owl:disjointWith <http://onto.kul.pl/change/tropes/Relator> ;
                  rdfs:label "Intrinsic Moment"@en .
+
+
+###  http://onto.kul.pl/change/tropes#Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Object .
 
 
 ###  http://onto.kul.pl/change/tropes#Moment
@@ -152,6 +163,12 @@
                                                              owl:onProperty <http://onto.kul.pl/change/tropes/mediates> ;
                                                              owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                              owl:onClass :individual
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf <http://onto.kul.pl/change/tropes/partOf>
+                                                                            ] ;
+                                                             owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass <http://onto.kul.pl/change/tropes/QuaIndividual>
                                                            ] ;
                                            rdfs:comment "Relator: a moment that is existentially dependent on two or more individuals (e.g., a marriage, an enrollment). In this case, the moment is said to mediate its bearers and capturing all the relational properties that individuals bear in the scope a relation."@en ;
                                            rdfs:label "Relator"@en .
@@ -163,7 +180,7 @@
 
 ###  http://onto.kul.pl/change/tropes#location_1
 :location_1 rdf:type owl:NamedIndividual ,
-                     :Object ;
+                     :Location ;
             :hasTimeExtent :settlement1_position1_te ;
             <http://onto.kul.pl/change/tropes/inheresIn> :settlement1 ;
             rdfs:label "1st location of Nieszawa"@en ,
@@ -172,7 +189,7 @@
 
 ###  http://onto.kul.pl/change/tropes#location_2
 :location_2 rdf:type owl:NamedIndividual ,
-                     :Object ;
+                     :Location ;
             :hasTimeExtent :settlement1_position2_te ;
             <http://onto.kul.pl/change/tropes/inheresIn> :settlement1 ;
             rdfs:label "2nd location of Nieszawa"@en ,

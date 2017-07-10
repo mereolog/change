@@ -86,6 +86,11 @@ _:genid1 a owl:Restriction ;
 :IntrinsicMoment owl:disjointWith <http://onto.kul.pl/change/tropes/Relator> ;
 	rdfs:label "Intrinsic Moment"@en .
 # 
+# http://onto.kul.pl/change/tropes#Location
+
+:Location a owl:Class ;
+	rdfs:subClassOf :Object .
+# 
 # http://onto.kul.pl/change/tropes#Moment
 
 :Moment a owl:Class ;
@@ -201,14 +206,14 @@ _:genid12 a owl:Restriction ;
 # 
 # http://onto.kul.pl/change/tropes#location_1
 
-:location_1 a owl:NamedIndividual , :Object ;
+:location_1 a owl:NamedIndividual , :Location ;
 	:hasTimeExtent :settlement1_position1_te ;
 	<http://onto.kul.pl/change/tropes/inheresIn> :settlement1 ;
 	rdfs:label "1st location of Nieszawa"@en , "pierwsza lokalizacja Nieszawy"@pl .
 # 
 # http://onto.kul.pl/change/tropes#location_2
 
-:location_2 a owl:NamedIndividual , :Object ;
+:location_2 a owl:NamedIndividual , :Location ;
 	:hasTimeExtent :settlement1_position2_te ;
 	<http://onto.kul.pl/change/tropes/inheresIn> :settlement1 ;
 	rdfs:label "2nd location of Nieszawa"@en , "druga lokalizacja Nieszawy"@pl .

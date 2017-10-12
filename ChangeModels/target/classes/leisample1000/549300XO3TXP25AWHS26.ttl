@@ -1,0 +1,140 @@
+﻿@base <graph://lei.info/549300XO3TXP25AWHS26>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300XO3TXP25AWHS26> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-12-09T01:37:57.626Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20170106>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20160119>,
+                                                                                <http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20170106>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300XO3TXP25AWHS26"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300XO3TXP25AWHS26#BLEIManifestation-20160119> <http://lei.info/gleio/hasBusinessIdentifierCode> "C2035672"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-19T01:56:18.839Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300XO3TXP25AWHS26#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300XO3TXP25AWHS26#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300XO3TXP25AWHS26#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300XO3TXP25AWHS26#BLEIManifestation-20160119>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300XO3TXP25AWHS26#BLEIManifestation-20160119>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/US005>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/US005>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "C2035672"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20160119> <http://lei.info/gleio/hasGLEICode> "549300XO3TXP25AWHS26"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-12T14:37:48.444Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-19T01:56:18.839Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300XO3TXP25AWHS26>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20170106> <http://lei.info/gleio/hasGLEICode> "549300XO3TXP25AWHS26"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-12-28T17:49:03.288Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300XO3TXP25AWHS26#GLEIManifestation-20160119>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-01-06T01:51:31.118Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300XO3TXP25AWHS26>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300XO3TXP25AWHS26>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "LBI Media, Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-01-19T01:56:18.839Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300XO3TXP25AWHS26>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "LBI Media, Inc."^^xsd:string.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Burbank"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "91504"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Burbank"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "91504"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "LBI Media, Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-01-06T01:51:31.118Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300XO3TXP25AWHS26>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300XO3TXP25AWHS26#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "LBI Media, Inc."^^xsd:string.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Burbank"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "91504"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Burbank"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "91504"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Burbank"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "91504"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Lenard D Liberman
+11845 Empire Avenue"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Burbank"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "91504"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300XO3TXP25AWHS26#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20160119>,
+                                                                                       <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300XO3TXP25AWHS26#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300XO3TXP25AWHS26>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300XO3TXP25AWHS26#LegalEntityManifestation-20170106-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "LBI Media, Inc."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300XO3TXP25AWHS26#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "LBI Media, Inc."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "LBI Media, Inc."^^xsd:string.

@@ -1,0 +1,234 @@
+﻿@base <graph://lei.info/5XGKDHLH62U8HHSAE460>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5XGKDHLH62U8HHSAE460> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-06-11T00:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20161027>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20151029>,
+                                                                                <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20160405>,
+                                                                                <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20161027>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/635400DZBUIMTBCXGA12#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/635400DZBUIMTBCXGA12#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5XGKDHLH62U8HHSAE460"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20151029> <http://lei.info/gleio/hasBusinessIdentifierCode> "353402 SE"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-29T12:01:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20161027> <http://lei.info/gleio/hasBusinessIdentifierCode> "353402"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20151029>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-27T15:27:11Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20161027>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20151029>,
+                                                                                                              <http://lei.info/5XGKDHLH62U8HHSAE460#BLEIManifestation-20161027>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IE_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IE_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "353402"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20151029> <http://lei.info/gleio/hasGLEICode> "5XGKDHLH62U8HHSAE460"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-24T01:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-29T12:01:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20160405> <http://lei.info/gleio/hasGLEICode> "5XGKDHLH62U8HHSAE460"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-24T01:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20151029>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-04-05T15:19:40Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20161027> <http://lei.info/gleio/hasGLEICode> "5XGKDHLH62U8HHSAE460"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-11-24T01:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#GLEIManifestation-20160405>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-27T15:27:11Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-HEADQUARTERS_ADDRESS>,
+                                                                                                                        <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-HEADQUARTERS_ADDRESS1>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Public Limited Company"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/subdivisions/IE-D>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AXIS Specialty Europe SE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-29T12:01:13Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AXIS Specialty Europe SE"^^xsd:string.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "London"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "EC3R 5AZ"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Plantation Place South
+60 Great Tower Street"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Plantation Place South
+60 Great Tower Street"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "London"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "EC3R 5AZ"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-HEADQUARTERS_ADDRESS1> <http://lei.info/gleio/hasCity> "Dublin"^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                               <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Dublin"^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> ""^^xsd:string;
+                                                                                               a <http://lei.info/gleio/Address>,
+                                                                                                 <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Dublin"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Dublin"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> ""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-HEADQUARTERS_ADDRESS>,
+                                                                                                                        <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-HEADQUARTERS_ADDRESS1>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Public Limited Company"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/subdivisions/IE-D>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AXIS Specialty Europe SE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-04-05T15:19:40Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AXIS Specialty Europe SE"^^xsd:string.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "London"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "EC3R 5AZ"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Plantation Place South
+60 Great Tower Street
+London"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-HEADQUARTERS_ADDRESS1> <http://lei.info/gleio/hasCity> "Dublin"^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                               <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                               a <http://lei.info/gleio/Address>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Dublin"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS>,
+                                                                                                                        <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS1>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Public Limited Company"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/subdivisions/IE-D>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AXIS Specialty Europe SE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-27T15:27:11Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5XGKDHLH62U8HHSAE460#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AXIS Specialty Europe SE"^^xsd:string.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "London"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "EC3R 5AZ"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Plantation Place South
+60 Great Tower Street
+London"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Plantation Place South
+60 Great Tower Street
+London"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "London"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "EC3R 5AZ"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS1> <http://lei.info/gleio/hasCity> "N/A"^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                               <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                               <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "N/A"^^xsd:string;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                               <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> ""^^xsd:string;
+                                                                                               a <http://lei.info/gleio/Address>,
+                                                                                                 <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "N/A"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> ""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Mount Herbert Court
+34 Upper Mount Street
+Dublin 2"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "N/A"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> ""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5XGKDHLH62U8HHSAE460#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20151029>,
+                                                                                       <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20160405>,
+                                                                                       <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Public Limited Company"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS>,
+                                                                                                                                                      <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS1>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5XGKDHLH62U8HHSAE460#LegalEntityManifestation-20161027-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "AXIS Specialty Europe SE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "Public Limited Company"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "AXIS Specialty Europe SE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/5XGKDHLH62U8HHSAE460#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "AXIS Specialty Europe SE"^^xsd:string.

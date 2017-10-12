@@ -1,0 +1,190 @@
+﻿@base <graph://lei.info/549300UNTZ7FKYG3CT58>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300UNTZ7FKYG3CT58> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-06-23T01:56:36.711Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20170629>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160623>,
+                                                                                <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160701>,
+                                                                                <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20170629>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300UNTZ7FKYG3CT58"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300UNTZ7FKYG3CT58#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160623> <http://lei.info/gleio/hasGLEICode> "549300UNTZ7FKYG3CT58"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-09T13:35:13.319Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-23T01:56:36.626Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160701> <http://lei.info/gleio/hasGLEICode> "549300UNTZ7FKYG3CT58"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-09T13:35:13.319Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160623>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-07-01T01:54:26.009Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20170629> <http://lei.info/gleio/hasGLEICode> "549300UNTZ7FKYG3CT58"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-06-05T10:39:13.451Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#GLEIManifestation-20160701>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-06-29T02:15:11.232Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETE D'INVESTISSEMENT A CAPITAL VARIABLE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/LU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Lyxor Index Fund-Lyxor USD High Yield Corporate Bonds UCITS ETF"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-23T01:56:36.626Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Lyxor Index Fund-Lyxor USD High Yield Corporate Bonds UCITS ETF"^^xsd:string.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "92800"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Lyxor International Asset Management S.A.S.
+Tour Société Générale,
+17 cours Valmy
+Puteaux"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/FR-92>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Lyxor International Asset Management S.A.S.
+Tour Société Générale,
+17 cours Valmy
+Puteaux"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "92800"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/FR-92>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """28-32 Place de la Gare
+L-1616 Luxembourg"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """28-32 Place de la Gare
+L-1616 Luxembourg"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-LU>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/LU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "LYXOR Index Fund - Lyxor BofAML (USD) High Yield Bond UCITS ETF"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-07-01T01:54:26.009Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "92800"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Lyxor International Asset Management S.A.S.
+Tour Société Générale
+17 cours Valmy
+Puteaux"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/FR-92>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-1616"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "28-32, place de la Gare"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-LU>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/LU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "LYXOR Index Fund - Lyxor BofAML (USD) High Yield Bond UCITS ETF"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-06-29T02:15:11.232Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300UNTZ7FKYG3CT58#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "92800"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Lyxor International Asset Management S.A.S.
+Tour Société Générale
+17 Cours Valmy
+Puteaux"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/FR-92>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Lyxor International Asset Management S.A.S.
+Tour Société Générale
+17 Cours Valmy
+Puteaux"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "92800"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/FR-92>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-1616"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "28-32, place de la Gare"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "28-32, place de la Gare"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "L-1616"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-LU>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300UNTZ7FKYG3CT58#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160623>,
+                                                                                       <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20160701>,
+                                                                                       <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETE D'INVESTISSEMENT A CAPITAL VARIABLE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300UNTZ7FKYG3CT58#LegalEntityManifestation-20170629-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300UNTZ7FKYG3CT58#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Lyxor Index Fund-Lyxor USD High Yield Corporate Bonds UCITS ETF"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "LYXOR Index Fund - Lyxor BofAML $ High Yield Bond UCITS ETF"^^xsd:string.

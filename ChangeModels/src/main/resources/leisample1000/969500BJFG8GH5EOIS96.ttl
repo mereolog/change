@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/969500BJFG8GH5EOIS96>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/969500BJFG8GH5EOIS96> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-10-29T23:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500BJFG8GH5EOIS96#GLEIManifestation-20131030>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/969500BJFG8GH5EOIS96#GLEIManifestation-20131030>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500BJFG8GH5EOIS96#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "969500BJFG8GH5EOIS96"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/969500BJFG8GH5EOIS96#BLEIManifestation-20131030> <http://lei.info/gleio/hasBusinessIdentifierCode> "324237254"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2013-10-30T18:30:08Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500BJFG8GH5EOIS96#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500BJFG8GH5EOIS96#BLEIManifestation-20131030>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/969500BJFG8GH5EOIS96#BLEIManifestation-20131030>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/969500BJFG8GH5EOIS96#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/FR001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/FR001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500BJFG8GH5EOIS96#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "324237254"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/969500BJFG8GH5EOIS96#GLEIManifestation-20131030> <http://lei.info/gleio/hasGLEICode> "969500BJFG8GH5EOIS96"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2014-10-30T00:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2013-10-30T18:30:08Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "ROUSSELET CENTRIFUGATION"@fr;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Société anonyme à directoire"@fr;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/FR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ROUSSELET CENTRIFUGATION"@fr,
+                                                                                                              "ROUSSELET CENTRIFUGATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2013-10-30T18:30:08Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500BJFG8GH5EOIS96>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500BJFG8GH5EOIS96#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ROUSSELET CENTRIFUGATION"@fr.
+<http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "ANNONAY"@fr;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "07100"@fr;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """45 AV RHIN ET DANUBE
+07100 ANNONAY"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """45 AV RHIN ET DANUBE
+07100 ANNONAY"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ANNONAY"@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "07100"@fr;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "ANNONAY"@fr;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "07100"@fr;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """45 AV RHIN ET DANUBE
+07100 ANNONAY"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """45 AV RHIN ET DANUBE
+07100 ANNONAY"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ANNONAY"@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "07100"@fr;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500BJFG8GH5EOIS96#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500BJFG8GH5EOIS96#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Société anonyme à directoire"@fr;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/969500BJFG8GH5EOIS96>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/969500BJFG8GH5EOIS96#LegalEntityManifestation-20131030-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/969500BJFG8GH5EOIS96#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "ROUSSELET CENTRIFUGATION"@fr,
+                                                                                                                     "ROUSSELET CENTRIFUGATION"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "ROUSSELET CENTRIFUGATION"@fr.

@@ -1,0 +1,133 @@
+﻿@base <graph://lei.info/8156005CCF70BEF48125>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/8156005CCF70BEF48125> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-13T15:15:31Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20160217>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20150714>,
+                                                                                <http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20160217>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "8156005CCF70BEF48125"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/8156005CCF70BEF48125#BLEIManifestation-20150714> <http://lei.info/gleio/hasBusinessIdentifierCode> "00790200679"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-07-14T22:26:33Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCF70BEF48125#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCF70BEF48125#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCF70BEF48125#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCF70BEF48125#BLEIManifestation-20150714>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCF70BEF48125#BLEIManifestation-20150714>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "00790200679"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20150714> <http://lei.info/gleio/hasGLEICode> "8156005CCF70BEF48125"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-02-27T12:50:51+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-07-14T22:26:33Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCF70BEF48125>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20160217> <http://lei.info/gleio/hasGLEICode> "8156005CCF70BEF48125"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-02-27T12:50:51+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156005CCF70BEF48125#GLEIManifestation-20150714>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-17T09:29:50Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCF70BEF48125>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCF70BEF48125>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ITALPANNELLI S.R.L."^^xsd:string,
+                                                                                                              "ITALPANNELLI S.R.L."@it;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-07-14T22:26:33Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCF70BEF48125>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ITALPANNELLI S.R.L."@it.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "ANCARANO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "64010"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "STRADA PROVINCIALE BONIFICA KM. 13,500, TE"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "STRADA PROVINCIALE BONIFICA KM. 13,500, TE"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ANCARANO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "64010"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "ANCARANO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "64010"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "STRADA PROVINCIALE BONIFICA KM. 13,500, TE"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "STRADA PROVINCIALE BONIFICA KM. 13,500, TE"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ANCARANO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "64010"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ITALPANNELLI S.R.L."@it,
+                                                                                                              "ITALPANNELLI S.R.L."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-17T09:29:50Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCF70BEF48125>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCF70BEF48125#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ITALPANNELLI S.R.L."@it.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "ANCARANO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "64010"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "STRADA PROVINCIALE BONIFICA KM. 13,500"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-TE>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "ANCARANO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "64010"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "STRADA PROVINCIALE BONIFICA KM. 13,500"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-TE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCF70BEF48125#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714>,
+                                                                                       <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20160217>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCF70BEF48125#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/8156005CCF70BEF48125>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/8156005CCF70BEF48125#LegalEntityManifestation-20150714-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/8156005CCF70BEF48125#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "ITALPANNELLI S.R.L."@it,
+                                                                                                                     "ITALPANNELLI S.R.L."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "ITALPANNELLI S.R.L."@it.

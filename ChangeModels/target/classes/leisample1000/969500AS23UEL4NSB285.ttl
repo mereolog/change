@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/969500AS23UEL4NSB285>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/969500AS23UEL4NSB285> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-06-14T18:00:50Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500AS23UEL4NSB285#GLEIManifestation-20160817>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/969500AS23UEL4NSB285#GLEIManifestation-20160817>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500AS23UEL4NSB285#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "969500AS23UEL4NSB285"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/969500AS23UEL4NSB285#BLEIManifestation-20160817> <http://lei.info/gleio/hasBusinessIdentifierCode> "784199036"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-08-17T18:00:51Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500AS23UEL4NSB285#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500AS23UEL4NSB285#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500AS23UEL4NSB285#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500AS23UEL4NSB285#BLEIManifestation-20160817>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/969500AS23UEL4NSB285#BLEIManifestation-20160817>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/969500AS23UEL4NSB285#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500AS23UEL4NSB285#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "784199036"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/969500AS23UEL4NSB285#GLEIManifestation-20160817> <http://lei.info/gleio/hasGLEICode> "969500AS23UEL4NSB285"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-08-17T11:38:18+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-08-17T18:00:51Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500AS23UEL4NSB285>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500AS23UEL4NSB285>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "UNION MUTUALISTE NAT COMPLEMENTAIRE"@fr;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Organisme mutualiste"@fr;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/FR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "UNION MUTUALISTE NAT COMPLEMENTAIRE"@fr,
+                                                                                                              "UNION MUTUALISTE NAT COMPLEMENTAIRE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-08-17T18:00:51Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500AS23UEL4NSB285>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500AS23UEL4NSB285#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500AS23UEL4NSB285#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "UNION MUTUALISTE NAT COMPLEMENTAIRE"@fr.
+<http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "NOGENT SUR MARNE"@fr;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "94130"@fr;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """5 RUE MARCEAU
+94130 NOGENT SUR MARNE"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """5 RUE MARCEAU
+94130 NOGENT SUR MARNE"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "NOGENT SUR MARNE"@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "94130"@fr;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "NOGENT SUR MARNE"@fr;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "94130"@fr;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """5 RUE MARCEAU
+94130 NOGENT SUR MARNE"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """5 RUE MARCEAU
+94130 NOGENT SUR MARNE"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "NOGENT SUR MARNE"@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "94130"@fr;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500AS23UEL4NSB285#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500AS23UEL4NSB285#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Organisme mutualiste"@fr;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/969500AS23UEL4NSB285>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/969500AS23UEL4NSB285#LegalEntityManifestation-20160817-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/969500AS23UEL4NSB285#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "UNION MUTUALISTE NAT COMPLEMENTAIRE"^^xsd:string,
+                                                                                                                     "UNION MUTUALISTE NAT COMPLEMENTAIRE"@fr;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "UNION MUTUALISTE NAT COMPLEMENTAIRE"@fr.

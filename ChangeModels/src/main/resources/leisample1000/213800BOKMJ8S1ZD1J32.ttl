@@ -1,0 +1,96 @@
+﻿@base <graph://lei.info/213800BOKMJ8S1ZD1J32>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/213800BOKMJ8S1ZD1J32> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-10-17T00:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#GLEIManifestation-20161017>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#GLEIManifestation-20161017>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800BOKMJ8S1ZD1J32#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "213800BOKMJ8S1ZD1J32"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#BLEIManifestation-20161017> <http://lei.info/gleio/hasBusinessIdentifierCode> "03144924"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-17T12:55:36.85Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#BLEIManifestation-20161017>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#BLEIManifestation-20161017>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/213800BOKMJ8S1ZD1J32#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/COMPANIES-HOUSE>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/COMPANIES-HOUSE>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800BOKMJ8S1ZD1J32#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "03144924"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#GLEIManifestation-20161017> <http://lei.info/gleio/hasGLEICode> "213800BOKMJ8S1ZD1J32"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-10-17T00:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-17T12:55:36.85Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "PRIVATE LIMITED COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "TRYCARE LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-17T12:55:36.85Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800BOKMJ8S1ZD1J32>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800BOKMJ8S1ZD1J32#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TRYCARE LIMITED"^^xsd:string.
+<http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "CLAYTON, BRADFORD"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "BD14 6JA"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """RIALTO BUILDINGS
+STATION ROAD"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """RIALTO BUILDINGS
+STATION ROAD"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "CLAYTON, BRADFORD"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "BD14 6JA"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "CLAYTON, BRADFORD"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "BD14 6JA"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """RIALTO BUILDINGS
+STATION ROAD"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """RIALTO BUILDINGS
+STATION ROAD"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "CLAYTON, BRADFORD"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "BD14 6JA"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800BOKMJ8S1ZD1J32#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800BOKMJ8S1ZD1J32#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/213800BOKMJ8S1ZD1J32>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/213800BOKMJ8S1ZD1J32#LegalEntityManifestation-20161017-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "TRYCARE LIMITED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "PRIVATE LIMITED COMPANY"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/213800BOKMJ8S1ZD1J32#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "TRYCARE LIMITED"^^xsd:string.

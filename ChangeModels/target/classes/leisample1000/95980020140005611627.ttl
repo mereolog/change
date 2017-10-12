@@ -1,0 +1,127 @@
+﻿@base <graph://lei.info/95980020140005611627>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/95980020140005611627> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-03-03T11:25:58.597Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005611627#GLEIManifestation-20160615>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005611627#GLEIManifestation-20150616>,
+                                                                                <http://lei.info/95980020140005611627#GLEIManifestation-20160615>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/95980020140005611627#LegalEntityManifestation-20160615>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140005611627#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "95980020140005611627"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/95980020140005611627#BLEIManifestation-20150616> <http://lei.info/gleio/hasBusinessIdentifierCode> "M-483523"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-06-16T07:20:47.9554773Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005611627#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005611627#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140005611627#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005611627#BLEIManifestation-20150616>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005611627#BLEIManifestation-20150616>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/95980020140005611627#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/MADRID-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/MADRID-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140005611627#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "M-483523"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/95980020140005611627#GLEIManifestation-20150616> <http://lei.info/gleio/hasGLEICode> "95980020140005611627"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-06-16T09:20:47.9554773+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-06-16T07:20:47.9554773Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005611627>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140005611627#GLEIManifestation-20160615> <http://lei.info/gleio/hasGLEICode> "95980020140005611627"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-16T09:20:47.9554773+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/95980020140005611627#GLEIManifestation-20150616>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-15T09:53:01.8923801Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005611627>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005611627>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20150616> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Limitada"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "TZ Buenavista, S.L.U."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-06-16T07:20:47.9554773Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140005611627>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005611627#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TZ Buenavista, S.L.U."^^xsd:string.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "MADRID"@es;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "28021"@es;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CABALLERO ANDANTE 8"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CABALLERO ANDANTE 8"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "MADRID"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "28021"@es;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "MADRID"@es;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "28021"@es;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "CABALLERO ANDANTE 8"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CABALLERO ANDANTE 8"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "MADRID"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "28021"@es;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20160615> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20160615-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/95980020140005611627#LegalEntityManifestation-20160615-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Limitada"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/ES>;
+                                                                         <http://lei.info/gleio/hasLegalName> "TZ Buenavista, S.L.U."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-15T09:53:01.8923801Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140005611627>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005611627#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005611627#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TZ Buenavista, S.L.U."^^xsd:string.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20160615-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "MADRID"@es;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "28021"@es;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CABALLERO ANDANTE 8"@es;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005611627#LegalEntityManifestation-20160615-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "MADRID"@es;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "28021"@es;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "CABALLERO ANDANTE 8"@es;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005611627#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616>,
+                                                                                       <http://lei.info/95980020140005611627#LegalEntityManifestation-20160615>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140005611627#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Sociedad Limitada"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/95980020140005611627>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/95980020140005611627#LegalEntityManifestation-20150616-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/95980020140005611627#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "TZ Buenavista, S.L.U."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "TZ Buenavista, S.L.U."^^xsd:string.

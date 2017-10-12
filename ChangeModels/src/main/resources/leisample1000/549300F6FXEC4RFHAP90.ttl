@@ -1,0 +1,182 @@
+﻿@base <graph://lei.info/549300F6FXEC4RFHAP90>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300F6FXEC4RFHAP90> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-08-06T01:46:15.152Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20161105>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20150806>,
+                                                                                <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20160804>,
+                                                                                <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20161105>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300F6FXEC4RFHAP90"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300F6FXEC4RFHAP90#BLEIManifestation-20150806> <http://lei.info/gleio/hasBusinessIdentifierCode> "1166635855"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-08-06T01:46:15.103Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300F6FXEC4RFHAP90#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300F6FXEC4RFHAP90#BLEIManifestation-20150806>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300F6FXEC4RFHAP90#BLEIManifestation-20150806>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/CA010>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/CA010>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "1166635855"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20150806> <http://lei.info/gleio/hasGLEICode> "549300F6FXEC4RFHAP90"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-08-03T18:52:04.027Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-08-06T01:46:15.103Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20160804> <http://lei.info/gleio/hasGLEICode> "549300F6FXEC4RFHAP90"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-08-03T18:52:04.027Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20150806>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-08-04T10:12:41.291Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20161105> <http://lei.info/gleio/hasGLEICode> "549300F6FXEC4RFHAP90"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-11-01T12:19:20.268Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300F6FXEC4RFHAP90#GLEIManifestation-20160804>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-11-05T01:51:11.028Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED / INCORPOREE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CA>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Industries Dettson Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-08-06T01:46:15.103Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Industries Dettson Inc."^^xsd:string.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "180, 3ième Avenue"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "180, 3ième Avenue"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "L'Islet"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "180, 3ième Avenue"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "180, 3ième Avenue"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "L'Islet"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED / INCORPOREE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CA>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Industries Dettson Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-08-04T10:12:41.291Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Industries Dettson Inc."^^xsd:string.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "180, 3ième Avenue"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "180, 3ième Avenue"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED / INCORPOREE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CA>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Industries Dettson Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-11-05T01:51:11.028Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300F6FXEC4RFHAP90#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Industries Dettson Inc."^^xsd:string.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "180, 3ième Avenue"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "180, 3ième Avenue"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "L'Islet"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "L'Islet"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "180, 3E Avenue"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "180, 3E Avenue"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "L'Islet"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "G0R 2C0"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-QC>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300F6FXEC4RFHAP90#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20150806>,
+                                                                                       <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20160804>,
+                                                                                       <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "INCORPORATED / INCORPOREE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300F6FXEC4RFHAP90#LegalEntityManifestation-20161105-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Industries Dettson Inc."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300F6FXEC4RFHAP90#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "INCORPORATED / INCORPOREE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Industries Dettson Inc."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Industries Dettson Inc."^^xsd:string.

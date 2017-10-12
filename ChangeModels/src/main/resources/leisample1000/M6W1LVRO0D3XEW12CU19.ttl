@@ -1,0 +1,137 @@
+﻿@base <graph://lei.info/M6W1LVRO0D3XEW12CU19>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-06-06T15:56:11.235Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20170115>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20160112>,
+                                                                                <http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20170115>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "M6W1LVRO0D3XEW12CU19"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20160112> <http://lei.info/gleio/hasGLEICode> "M6W1LVRO0D3XEW12CU19"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-06T15:37:21.592Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-12T01:51:13.077Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20170115> <http://lei.info/gleio/hasGLEICode> "M6W1LVRO0D3XEW12CU19"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-01-06T15:48:57.774Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#GLEIManifestation-20160112>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-01-15T01:43:30.957Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AG Princess, LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-01-12T01:51:13.077Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AG Princess, LP"^^xsd:string.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10167"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Angelo, Gordon & Co., L.P.
+26th Floor
+245 Park Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AG Princess, LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-01-15T01:43:30.957Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/M6W1LVRO0D3XEW12CU19#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AG Princess, LP"^^xsd:string.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10167"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Angelo, Gordon & Co., L.P.
+26th Floor
+245 Park Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Angelo, Gordon & Co., L.P.
+26th Floor
+245 Park Avenue"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10167"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/M6W1LVRO0D3XEW12CU19#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20160112>,
+                                                                                       <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/M6W1LVRO0D3XEW12CU19#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/M6W1LVRO0D3XEW12CU19>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/M6W1LVRO0D3XEW12CU19#LegalEntityManifestation-20170115-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "AG Princess, LP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/M6W1LVRO0D3XEW12CU19#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "AG Princess, LP"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "AG Princess, LP"^^xsd:string.

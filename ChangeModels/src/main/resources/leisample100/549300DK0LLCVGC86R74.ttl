@@ -1,0 +1,139 @@
+﻿@base <graph://lei.info/549300DK0LLCVGC86R74>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300DK0LLCVGC86R74> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-03-01T13:50:59.679Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20170205>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20160203>,
+                                                                                <http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20170205>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300DK0LLCVGC86R74"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300DK0LLCVGC86R74#BLEIManifestation-20160203> <http://lei.info/gleio/hasBusinessIdentifierCode> "09-09-010546"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-03T01:49:46.888Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300DK0LLCVGC86R74#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DK0LLCVGC86R74#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DK0LLCVGC86R74#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300DK0LLCVGC86R74#BLEIManifestation-20160203>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300DK0LLCVGC86R74#BLEIManifestation-20160203>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/HU001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/HU001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "09-09-010546"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20160203> <http://lei.info/gleio/hasGLEICode> "549300DK0LLCVGC86R74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-26T07:49:00.365Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-03T01:49:46.888Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DK0LLCVGC86R74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20170205> <http://lei.info/gleio/hasGLEICode> "549300DK0LLCVGC86R74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-01-23T14:43:14.686Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DK0LLCVGC86R74#GLEIManifestation-20160203>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-02-05T01:36:53.869Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300DK0LLCVGC86R74>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DK0LLCVGC86R74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "KORLATOLT FELELOSSEGU TARSASAG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/HU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "DEXIUM Ingatlanfejlesztp Korlatolt Felelossegu Tarsasag"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-03T01:49:46.888Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DK0LLCVGC86R74>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Debrecen"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4029"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """IV. em.
+Csapó Utca 30."""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Debrecen"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4029"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Csapó Utca 30."^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "KORLATOLT FELELOSSEGU TARSASAG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/HU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "DEXIUM Ingatlanfejleszto Korlatolt Felelossegu Tarsasag"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-02-05T01:36:53.869Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DK0LLCVGC86R74>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DK0LLCVGC86R74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Debrecen"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4029"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """IV. Emelet
+Csapó Utca 30"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """IV. Emelet
+Csapó Utca 30"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Debrecen"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4029"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Debrecen"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4029"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Csapó Utca 30"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Csapó Utca 30"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Debrecen"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/HU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4029"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/HU-HB>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DK0LLCVGC86R74#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20160203>,
+                                                                                       <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DK0LLCVGC86R74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "KORLATOLT FELELOSSEGU TARSASAG"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300DK0LLCVGC86R74>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300DK0LLCVGC86R74#LegalEntityManifestation-20170205-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300DK0LLCVGC86R74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "KORLATOLT FELELOSSEGU TARSASAG"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "DEXIUM Ingatlanfejlesztő Korlátolt Felelősségű Társaság"^^xsd:string.

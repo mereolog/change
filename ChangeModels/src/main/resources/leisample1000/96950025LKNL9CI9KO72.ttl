@@ -1,0 +1,81 @@
+﻿@base <graph://lei.info/96950025LKNL9CI9KO72>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/96950025LKNL9CI9KO72> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-01-29T23:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/96950025LKNL9CI9KO72#GLEIManifestation-20160203>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/96950025LKNL9CI9KO72#GLEIManifestation-20160203>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/96950025LKNL9CI9KO72#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "96950025LKNL9CI9KO72"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/96950025LKNL9CI9KO72#GLEIManifestation-20160203> <http://lei.info/gleio/hasGLEICode> "96950025LKNL9CI9KO72"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-01-30T00:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-03T19:01:11Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/96950025LKNL9CI9KO72>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/96950025LKNL9CI9KO72>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "CARREFOUR ACTIONS"@fr;
+                                                                         <http://lei.info/gleio/hasFundFamily> <http://lei.info/969500WCY7P9HOJNP063>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Fonds ou compartiment de fonds"@fr;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/FR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CARREFOUR ACTIONS"^^xsd:string,
+                                                                                                              "CARREFOUR ACTIONS"@fr;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-03T19:01:11Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/96950025LKNL9CI9KO72>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/96950025LKNL9CI9KO72#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/96950025LKNL9CI9KO72#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CARREFOUR ACTIONS"@fr.
+<http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "PARIS 13"@fr;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "75013"@fr;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """21 QUAI D AUSTERLITZ
+75013 PARIS 13"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """21 QUAI D AUSTERLITZ
+75013 PARIS 13"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PARIS 13"@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "75013"@fr;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "PARIS 13"@fr;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "75013"@fr;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """21 QUAI D AUSTERLITZ
+75013 PARIS 13"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """21 QUAI D AUSTERLITZ
+75013 PARIS 13"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PARIS 13"@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "75013"@fr;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/96950025LKNL9CI9KO72#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Fonds ou compartiment de fonds"@fr;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/96950025LKNL9CI9KO72>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/96950025LKNL9CI9KO72#LegalEntityManifestation-20160203-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "CARREFOUR ACTIONS"^^xsd:string,
+                                                                                                                     "CARREFOUR ACTIONS"@fr;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "CARREFOUR ACTIONS"@fr.

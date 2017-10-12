@@ -1,0 +1,133 @@
+﻿@base <graph://lei.info/815600DC07EEC68E5C94>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/815600DC07EEC68E5C94> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-10-12T22:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20161004>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20160211>,
+                                                                                <http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20161004>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "815600DC07EEC68E5C94"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/815600DC07EEC68E5C94#BLEIManifestation-20160211> <http://lei.info/gleio/hasBusinessIdentifierCode> "03166211205"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-11T07:55:10Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600DC07EEC68E5C94#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600DC07EEC68E5C94#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600DC07EEC68E5C94#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600DC07EEC68E5C94#BLEIManifestation-20160211>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/815600DC07EEC68E5C94#BLEIManifestation-20160211>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "03166211205"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20160211> <http://lei.info/gleio/hasGLEICode> "815600DC07EEC68E5C94"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-14T14:11:11+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-11T07:55:10Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600DC07EEC68E5C94>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20161004> <http://lei.info/gleio/hasGLEICode> "815600DC07EEC68E5C94"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-10-14T00:00:00+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/815600DC07EEC68E5C94#GLEIManifestation-20160211>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-04T22:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600DC07EEC68E5C94>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600DC07EEC68E5C94>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' PER AZIONI"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "PROGETTO ISOM S.P.A."^^xsd:string,
+                                                                                                              "PROGETTO ISOM S.P.A."@it;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-11T07:55:10Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600DC07EEC68E5C94>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "PROGETTO ISOM S.P.A."@it.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "ZOLA PREDOSA"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "40069"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA UBALDO POLI,4 BO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA UBALDO POLI,4 BO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ZOLA PREDOSA"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "40069"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "ZOLA PREDOSA"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "40069"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA UBALDO POLI,4 BO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA UBALDO POLI,4 BO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "ZOLA PREDOSA"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "40069"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' PER AZIONI"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "PROGETTO ISOM S.P.A."^^xsd:string,
+                                                                                                              "PROGETTO ISOM S.P.A."@it;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-04T22:00:00Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600DC07EEC68E5C94>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600DC07EEC68E5C94#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "PROGETTO ISOM S.P.A."@it.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "ZOLA PREDOSA"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "40069"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA UBALDO POLI, 4"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-BO>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "ZOLA PREDOSA"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "40069"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA UBALDO POLI, 4"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-BO>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600DC07EEC68E5C94#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211>,
+                                                                                       <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20161004>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600DC07EEC68E5C94#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' PER AZIONI"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/815600DC07EEC68E5C94>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/815600DC07EEC68E5C94#LegalEntityManifestation-20160211-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/815600DC07EEC68E5C94#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "PROGETTO ISOM S.P.A."@it,
+                                                                                                                     "PROGETTO ISOM S.P.A."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "PROGETTO ISOM S.P.A."@it.

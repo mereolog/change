@@ -1,0 +1,208 @@
+﻿@base <graph://lei.info/529900XUPSXIUVJROR27>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/529900XUPSXIUVJROR27> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-09-16T05:29:02Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160825>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20151110>,
+                                                                                <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160824>,
+                                                                                <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160825>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "529900XUPSXIUVJROR27"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/529900XUPSXIUVJROR27#BLEIManifestation-20151110> <http://lei.info/gleio/hasBusinessIdentifierCode> "HRB 95098"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900XUPSXIUVJROR27#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900XUPSXIUVJROR27#BLEIManifestation-20151110>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/529900XUPSXIUVJROR27#BLEIManifestation-20151110>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Amtsgericht-Munchen>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Amtsgericht-Munchen>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "HRB 95098"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20151110> <http://lei.info/gleio/hasGLEICode> "529900XUPSXIUVJROR27"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-16T07:29:02+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160824> <http://lei.info/gleio/hasGLEICode> "529900XUPSXIUVJROR27"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-16T07:29:02+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20151110>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-08-24T19:00:02Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160825> <http://lei.info/gleio/hasGLEICode> "529900XUPSXIUVJROR27"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-09-16T07:29:02+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900XUPSXIUVJROR27#GLEIManifestation-20160824>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-08-25T06:13:15Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "iii RE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "iii RE"^^xsd:string.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "München"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "80636"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "München"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "80636"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "iii RE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-08-24T19:00:02Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "iii RE"^^xsd:string.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "iii RE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-08-25T06:13:15Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "iii RE"^^xsd:string.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "iii RE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-27T07:49:58Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900XUPSXIUVJROR27#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "iii RE"^^xsd:string.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "München"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "80636"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "München"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "80636"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o BNP Paribas Real Estate Investment Management Germany GmbH
+Albrechtstraße 14"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "München"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "80636"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900XUPSXIUVJROR27#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20151110>,
+                                                                                       <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160824>,
+                                                                                       <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20160825>,
+                                                                                       <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/529900XUPSXIUVJROR27#LegalEntityManifestation-20161027-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "iii RE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/529900XUPSXIUVJROR27#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "iii RE"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "iii RE"^^xsd:string.

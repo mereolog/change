@@ -1,0 +1,188 @@
+﻿@base <graph://lei.info/549300IDXSHO7W8N7I74>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300IDXSHO7W8N7I74> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-12-04T14:00:54.556Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20170525>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20151021>,
+                                                                                <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20160624>,
+                                                                                <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20170525>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300IDXSHO7W8N7I74"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300IDXSHO7W8N7I74#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20151021> <http://lei.info/gleio/hasGLEICode> "549300IDXSHO7W8N7I74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-18T18:05:04.056Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-21T02:12:04.751Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20160624> <http://lei.info/gleio/hasGLEICode> "549300IDXSHO7W8N7I74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-20T19:41:52.002Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20151021>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-24T01:57:14.478Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20170525> <http://lei.info/gleio/hasGLEICode> "549300IDXSHO7W8N7I74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-05-22T13:13:44.841Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300IDXSHO7W8N7I74#GLEIManifestation-20160624>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-05-25T01:56:51.302Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jet Capital Master Fund LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-21T02:12:04.751Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jet Capital Master Fund LP"^^xsd:string.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """17th Floor
+540 Madison Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """17th Floor
+540 Madison Avenue"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-1111"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jet Capital Management, L.L.C.
+Morgan Stanley Fund Services (Cayman) Ltd.
+PO Box 2681, 2nd Floor
+Boundary Hall, Hutchins Drive, Cricket Square"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jet Capital Management, L.L.C.
+Morgan Stanley Fund Services (Cayman) Ltd.
+PO Box 2681, 2nd Floor
+Boundary Hall, Hutchins Drive, Cricket Square"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "KY1-1111"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jet Capital Master Fund LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-24T01:57:14.478Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jet Capital Master Fund LP"^^xsd:string.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """17th Floor
+540 Madison Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-1111"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jet Capital Management, L.L.C.
+Morgan Stanley Fund Services (Cayman) Ltd.
+PO Box 2681, 2nd Floor
+Boundary Hall, Hutchins Drive, Cricket Square"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jet Capital Master Fund LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-05-25T01:56:51.302Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IDXSHO7W8N7I74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jet Capital Master Fund LP"^^xsd:string.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """17th Floor
+540 Madison Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """17th Floor
+540 Madison Avenue"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-1111"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jet Capital Management, L.L.C.
+Morgan Stanley Fund Services (Cayman) Ltd.
+PO Box 2681, 2nd Floor
+Boundary Hall, Hutchins Drive, Cricket Square"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jet Capital Management, L.L.C.
+Morgan Stanley Fund Services (Cayman) Ltd.
+PO Box 2681, 2nd Floor
+Boundary Hall, Hutchins Drive, Cricket Square"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "KY1-1111"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IDXSHO7W8N7I74#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20151021>,
+                                                                                       <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20160624>,
+                                                                                       <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300IDXSHO7W8N7I74#LegalEntityManifestation-20170525-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Jet Capital Master Fund LP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300IDXSHO7W8N7I74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Jet Capital Master Fund LP"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Jet Capital Master Fund LP"^^xsd:string.

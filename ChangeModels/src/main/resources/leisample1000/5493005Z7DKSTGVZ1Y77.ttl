@@ -1,0 +1,89 @@
+﻿@base <graph://lei.info/5493005Z7DKSTGVZ1Y77>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-12-20T03:07:32.294Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005Z7DKSTGVZ1Y77#GLEIManifestation-20151121>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005Z7DKSTGVZ1Y77#GLEIManifestation-20151121>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005Z7DKSTGVZ1Y77#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493005Z7DKSTGVZ1Y77"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5493005Z7DKSTGVZ1Y77#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005Z7DKSTGVZ1Y77#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#GLEIManifestation-20151121> <http://lei.info/gleio/hasGLEICode> "5493005Z7DKSTGVZ1Y77"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2015-11-20T14:31:20.552Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-21T10:14:54.703Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005Z7DKSTGVZ1Y77>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005Z7DKSTGVZ1Y77>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Trustees of the J Whitaker & Sons Limited Final Salary Plan"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-21T10:14:54.703Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005Z7DKSTGVZ1Y77>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005Z7DKSTGVZ1Y77#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005Z7DKSTGVZ1Y77#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Trustees of the J Whitaker & Sons Limited Final Salary Plan"^^xsd:string.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Kent"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "TN4 0SL"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """High View
+44A Pennington Road
+Tunbridge Wells"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """High View
+44A Pennington Road
+Tunbridge Wells"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Kent"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "TN4 0SL"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "SURREY"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "GU21 6LQ"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """3rd Floor Midas House
+62 Goldsworth Road"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """3rd Floor Midas House
+62 Goldsworth Road"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "SURREY"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "GU21 6LQ"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005Z7DKSTGVZ1Y77#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005Z7DKSTGVZ1Y77#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493005Z7DKSTGVZ1Y77>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493005Z7DKSTGVZ1Y77#LegalEntityManifestation-20151121-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493005Z7DKSTGVZ1Y77#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Trustees of the J Whitaker & Sons Limited Final Salary Plan"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Trustees of the J Whitaker & Sons Limited Final Salary Plan"^^xsd:string.

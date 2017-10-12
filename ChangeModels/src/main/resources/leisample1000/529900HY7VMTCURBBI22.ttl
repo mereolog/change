@@ -1,0 +1,134 @@
+﻿@base <graph://lei.info/529900HY7VMTCURBBI22>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/529900HY7VMTCURBBI22> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-01-20T18:33:42Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160523>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160127>,
+                                                                                <http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160523>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "529900HY7VMTCURBBI22"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/529900HY7VMTCURBBI22#BLEIManifestation-20160127> <http://lei.info/gleio/hasBusinessIdentifierCode> "HRB 9340"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-27T14:41:28Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900HY7VMTCURBBI22#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900HY7VMTCURBBI22#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900HY7VMTCURBBI22#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900HY7VMTCURBBI22#BLEIManifestation-20160127>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/529900HY7VMTCURBBI22#BLEIManifestation-20160127>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Frankfurt-am-Main>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Frankfurt-am-Main>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "HRB 9340"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160127> <http://lei.info/gleio/hasGLEICode> "529900HY7VMTCURBBI22"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-28T15:13:50+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-27T14:41:28Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900HY7VMTCURBBI22>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160523> <http://lei.info/gleio/hasGLEICode> "529900HY7VMTCURBBI22"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-28T15:13:50+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900HY7VMTCURBBI22#GLEIManifestation-20160127>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-05-23T06:32:05Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900HY7VMTCURBBI22>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900HY7VMTCURBBI22>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "Allianz Strategiefonds Wachstum Plus"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "Allianz Strategiefonds Wachstum Plus"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-01-27T14:41:28Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900HY7VMTCURBBI22>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Allianz Strategiefonds Wachstum Plus"^^xsd:string.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60323"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "60323"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "60323"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "60323"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "Allianz Strategiefonds Wachstum Plus"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Allianz Strategiefonds Wachstum Plus"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-05-23T06:32:05Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900HY7VMTCURBBI22>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900HY7VMTCURBBI22#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Allianz Strategiefonds Wachstum Plus"^^xsd:string.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60323"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Frankfurt am Main"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "60323"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o Allianz Global Investors GmbH
+Bockenheimer Landstraße 42-44"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900HY7VMTCURBBI22#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127>,
+                                                                                       <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160523>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900HY7VMTCURBBI22#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Sondervermögen nach deutschem Recht (KAGB)"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/529900HY7VMTCURBBI22>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/529900HY7VMTCURBBI22#LegalEntityManifestation-20160127-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/529900HY7VMTCURBBI22#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Allianz Strategiefonds Wachstum Plus"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Allianz Strategiefonds Wachstum Plus"^^xsd:string.

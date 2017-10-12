@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/724500O3VLKM4L8S4I75>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/724500O3VLKM4L8S4I75> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-04-10T22:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20160317>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20150331>,
+                                                                                <http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20160317>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/724500O3VLKM4L8S4I75#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "724500O3VLKM4L8S4I75"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/724500O3VLKM4L8S4I75#BLEIManifestation-20150331> <http://lei.info/gleio/hasBusinessIdentifierCode> "27372853"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-31T13:47:57.747Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/724500O3VLKM4L8S4I75#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500O3VLKM4L8S4I75#BLEIManifestation-20150331>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/724500O3VLKM4L8S4I75#BLEIManifestation-20150331>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/724500O3VLKM4L8S4I75#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/724500O3VLKM4L8S4I75#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "27372853"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20150331> <http://lei.info/gleio/hasGLEICode> "724500O3VLKM4L8S4I75"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-04-11T11:54:35.795+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-31T13:47:57.747Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20160317> <http://lei.info/gleio/hasGLEICode> "724500O3VLKM4L8S4I75"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-04-11T11:54:35.795+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/724500O3VLKM4L8S4I75#GLEIManifestation-20150331>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-17T10:30:43.538Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Naamloze Vennootschap"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "Delflow N.V."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-03-31T13:47:57.747Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/724500O3VLKM4L8S4I75>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500O3VLKM4L8S4I75#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Delflow N.V."^^xsd:string.
+<http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Zoeterwoude"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "2381NJ"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Weipoortseweg 92"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Weipoortseweg 92"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Zoeterwoude"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "2381NJ"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Zoeterwoude"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "2381NJ"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Weipoortseweg 92"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Weipoortseweg 92"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Zoeterwoude"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "2381NJ"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/724500O3VLKM4L8S4I75#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/724500O3VLKM4L8S4I75#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Naamloze Vennootschap"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/724500O3VLKM4L8S4I75>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/724500O3VLKM4L8S4I75#LegalEntityManifestation-20150331-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/724500O3VLKM4L8S4I75#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Delflow N.V."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Delflow N.V."^^xsd:string.

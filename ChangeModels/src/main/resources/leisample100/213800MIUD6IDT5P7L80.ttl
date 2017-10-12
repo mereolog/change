@@ -1,0 +1,94 @@
+﻿@base <graph://lei.info/213800MIUD6IDT5P7L80>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/213800MIUD6IDT5P7L80> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-01-31T00:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800MIUD6IDT5P7L80#GLEIManifestation-20151026>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/213800MIUD6IDT5P7L80#GLEIManifestation-20151026>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800MIUD6IDT5P7L80#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "213800MIUD6IDT5P7L80"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/213800MIUD6IDT5P7L80#BLEIManifestation-20151026> <http://lei.info/gleio/hasBusinessIdentifierCode> "885.476.376"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-26T12:28:46.383Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800MIUD6IDT5P7L80#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800MIUD6IDT5P7L80#BLEIManifestation-20151026>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/213800MIUD6IDT5P7L80#BLEIManifestation-20151026>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/213800MIUD6IDT5P7L80#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/CENTRAL-ENTERPRISE-DATABANK-BANQUE-CARREFOUR-DES-ENTREPRISES>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/CENTRAL-ENTERPRISE-DATABANK-BANQUE-CARREFOUR-DES-ENTREPRISES>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800MIUD6IDT5P7L80#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "885.476.376"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/213800MIUD6IDT5P7L80#GLEIManifestation-20151026> <http://lei.info/gleio/hasGLEICode> "213800MIUD6IDT5P7L80"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Retired>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2015-01-31T00:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-26T12:28:46.383Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasExpirationDate> "2014-05-02T00:00:00Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/hasExpirationReason> <http://lei.info/gleio/Dissolved>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Inactive>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETE D'INVESTISSEMENT A CAPITAL VARIABLE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "FORTIS B FIX 2007 - EQUITY 49 GEARED CALL"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-26T12:28:46.383Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800MIUD6IDT5P7L80>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800MIUD6IDT5P7L80#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "FORTIS B FIX 2007 - EQUITY 49 GEARED CALL"^^xsd:string.
+<http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "BRUSSELS"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "1210"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "RUE DU PROGRÈS 55"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "RUE DU PROGRÈS 55"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "BRUSSELS"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1210"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "BRUSSELS"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "1000"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "RUE MONTAGNE DU PARC 3"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "RUE MONTAGNE DU PARC 3"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "BRUSSELS"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1000"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800MIUD6IDT5P7L80#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800MIUD6IDT5P7L80#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETE D'INVESTISSEMENT A CAPITAL VARIABLE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/213800MIUD6IDT5P7L80>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/213800MIUD6IDT5P7L80#LegalEntityManifestation-20151026-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/213800MIUD6IDT5P7L80#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "FORTIS B FIX 2007 - EQUITY 49 GEARED CALL"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "FORTIS B FIX 2007 - EQUITY 49 GEARED CALL"^^xsd:string.

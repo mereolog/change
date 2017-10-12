@@ -1,0 +1,136 @@
+﻿@base <graph://lei.info/5493005KH7FO1T5TMX47>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493005KH7FO1T5TMX47> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-01-18T03:03:40.853Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20161021>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20151120>,
+                                                                                <http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20161021>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493005KH7FO1T5TMX47"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493005KH7FO1T5TMX47#BLEIManifestation-20151120> <http://lei.info/gleio/hasBusinessIdentifierCode> "HRB 722"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-20T02:27:07.865Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005KH7FO1T5TMX47#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005KH7FO1T5TMX47#BLEIManifestation-20151120>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005KH7FO1T5TMX47#BLEIManifestation-20151120>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/DE001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/DE001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "HRB 722"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20151120> <http://lei.info/gleio/hasGLEICode> "5493005KH7FO1T5TMX47"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-16T10:48:21.377Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-20T02:27:07.865Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20161021> <http://lei.info/gleio/hasGLEICode> "5493005KH7FO1T5TMX47"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-10-18T06:53:16.022Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493005KH7FO1T5TMX47#GLEIManifestation-20151120>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-21T02:09:57.045Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "AKTIENGESELLSCHAFT"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AachenMünchener Lebensversicherung AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "AachenMunchener Lebensversicherung AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-20T02:27:07.865Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AachenMünchener Lebensversicherung AG"^^xsd:string.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Aachen"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "52064"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Aachen"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "52064"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Aachen"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "52064"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Aachen"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "52064"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "AKTIENGESELLSCHAFT"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AachenMünchener Lebensversicherung AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "AachenMunchener Lebensversicherung AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-21T02:09:57.045Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005KH7FO1T5TMX47#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AachenMünchener Lebensversicherung AG"^^xsd:string.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Aachen"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "52064"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Aachen"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "52064"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "AachenMünchener-Platz 1"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-NW>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005KH7FO1T5TMX47#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120>,
+                                                                                       <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20161021>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005KH7FO1T5TMX47#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "AKTIENGESELLSCHAFT"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493005KH7FO1T5TMX47>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493005KH7FO1T5TMX47#LegalEntityManifestation-20151120-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493005KH7FO1T5TMX47#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "AachenMünchener Lebensversicherung AG"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "AachenMünchener Lebensversicherung AG"^^xsd:string.

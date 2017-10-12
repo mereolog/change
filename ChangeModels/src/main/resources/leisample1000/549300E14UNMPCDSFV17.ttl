@@ -1,0 +1,126 @@
+﻿@base <graph://lei.info/549300E14UNMPCDSFV17>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300E14UNMPCDSFV17> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-09-30T02:02:22.189Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20160908>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20150930>,
+                                                                                <http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20160908>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300E14UNMPCDSFV17"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300E14UNMPCDSFV17#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20150930> <http://lei.info/gleio/hasGLEICode> "549300E14UNMPCDSFV17"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-17T15:35:32.004Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-09-30T02:02:22.154Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300E14UNMPCDSFV17>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20160908> <http://lei.info/gleio/hasGLEICode> "549300E14UNMPCDSFV17"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-09-06T15:01:35.521Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300E14UNMPCDSFV17#GLEIManifestation-20150930>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-09-08T02:07:19.018Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300E14UNMPCDSFV17>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300E14UNMPCDSFV17>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Proctor LC"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-09-30T02:02:22.154Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Proctor LC"^^xsd:string.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Nokomis"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "34275"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "937 Casey Key Road"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "937 Casey Key Road"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Nokomis"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "34275"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Nokomis"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "34275"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "937 Casey Key Road"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "937 Casey Key Road"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Nokomis"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "34275"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CA>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Proctor LC"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-09-08T02:07:19.018Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300E14UNMPCDSFV17#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Proctor LC"^^xsd:string.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Newmarket"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "L3Y 4W1"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "7 David Wright Court"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-ON>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Newmarket"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CA>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L3Y 4W1"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "7 David Wright Court"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CA-ON>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300E14UNMPCDSFV17#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930>,
+                                                                                       <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20160908>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300E14UNMPCDSFV17#LegalEntityManifestation-20150930-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Proctor LC"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/549300E14UNMPCDSFV17#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Proctor LC"^^xsd:string.

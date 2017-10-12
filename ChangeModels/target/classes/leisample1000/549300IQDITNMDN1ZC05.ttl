@@ -1,0 +1,100 @@
+﻿@base <graph://lei.info/549300IQDITNMDN1ZC05>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300IQDITNMDN1ZC05> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-07T20:01:29.924Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300IQDITNMDN1ZC05#GLEIManifestation-20150207>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300IQDITNMDN1ZC05#GLEIManifestation-20150207>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300IQDITNMDN1ZC05#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300IQDITNMDN1ZC05"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300IQDITNMDN1ZC05#BLEIManifestation-20150207> <http://lei.info/gleio/hasBusinessIdentifierCode> "B171535"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-02-07T10:15:53.004Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300IQDITNMDN1ZC05#BLEIManifestation-20150207>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300IQDITNMDN1ZC05#BLEIManifestation-20150207>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300IQDITNMDN1ZC05#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/LU001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/LU001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300IQDITNMDN1ZC05#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "B171535"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300IQDITNMDN1ZC05#GLEIManifestation-20150207> <http://lei.info/gleio/hasGLEICode> "549300IQDITNMDN1ZC05"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2015-02-06T16:30:07.142Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-02-07T10:15:53.004Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETE A RESPONSABILITE LIMITEE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/LU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "NAEV Lime Street S.à r.l."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "NAEV Lime Street S.a.r.l."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-02-07T10:15:53.004Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IQDITNMDN1ZC05>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300IQDITNMDN1ZC05#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "NAEV Lime Street S.à r.l."^^xsd:string.
+<http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Munsbach"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "L-5365"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Universal-Investment-Luxembourg S.A.
+18-20, rue Gabriel Lippmann"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-L>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Universal-Investment-Luxembourg S.A.
+18-20, rue Gabriel Lippmann"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Munsbach"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "L-5365"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-L>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Munsbach"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-5365"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "18-20, rue Gabriel Lippmann"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-L>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "18-20, rue Gabriel Lippmann"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Munsbach"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "L-5365"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/LU-L>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300IQDITNMDN1ZC05#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETE A RESPONSABILITE LIMITEE"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300IQDITNMDN1ZC05>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300IQDITNMDN1ZC05#LegalEntityManifestation-20150207-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "NAEV Lime Street S.à r.l."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/549300IQDITNMDN1ZC05#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "NAEV Lime Street S.à r.l."^^xsd:string.

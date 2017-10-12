@@ -1,0 +1,83 @@
+﻿@base <graph://lei.info/747800O0K83DKOVN8426>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/747800O0K83DKOVN8426> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-11-17T10:28:24Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/747800O0K83DKOVN8426#GLEIManifestation-20151117>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/747800O0K83DKOVN8426#GLEIManifestation-20151117>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/7478000050A040C0D041#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/7478000050A040C0D041#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/747800O0K83DKOVN8426#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "747800O0K83DKOVN8426"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/747800O0K83DKOVN8426#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/747800O0K83DKOVN8426#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/747800O0K83DKOVN8426#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/747800O0K83DKOVN8426#GLEIManifestation-20151117> <http://lei.info/gleio/hasGLEICode> "747800O0K83DKOVN8426"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-17T22:59:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-17T09:28:24Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/747800O0K83DKOVN8426>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/747800O0K83DKOVN8426>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LLC"@en;
+                                                                         <http://lei.info/gleio/hasLegalName> "LYUBENA LIMITED"@en,
+                                                                                                              "LYUBENA LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "LYUBENA LIMITED"@en;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-17T09:28:24Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/747800O0K83DKOVN8426>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/747800O0K83DKOVN8426#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/747800O0K83DKOVN8426#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "LYUBENA LIMITED"@en.
+<http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "NICOSIA"@en;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CY>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "1087"@en;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "12 ESPERIDON STREET 4TH FLOOR"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "12 ESPERIDON STREET 4TH FLOOR"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "NICOSIA"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1087"@en;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "NICOSIA"@en;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "1087"@en;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "12 ESPERIDON STREET 4TH FLOOR"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "12 ESPERIDON STREET 4TH FLOOR"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "NICOSIA"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CY>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1087"@en;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/747800O0K83DKOVN8426#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/747800O0K83DKOVN8426#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LLC"@en;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/747800O0K83DKOVN8426>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/747800O0K83DKOVN8426#LegalEntityManifestation-20151117-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/747800O0K83DKOVN8426#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "LYUBENA LIMITED"^^xsd:string,
+                                                                                                                     "LYUBENA LIMITED"@en;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "LYUBENA LIMITED"@en.

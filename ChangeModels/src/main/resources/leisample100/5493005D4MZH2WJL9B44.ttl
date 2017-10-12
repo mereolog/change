@@ -1,0 +1,131 @@
+﻿@base <graph://lei.info/5493005D4MZH2WJL9B44>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493005D4MZH2WJL9B44> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-11-27T03:04:31.269Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20160903>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20151031>,
+                                                                                <http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20160903>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493005D4MZH2WJL9B44"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493005D4MZH2WJL9B44#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20151031> <http://lei.info/gleio/hasGLEICode> "5493005D4MZH2WJL9B44"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-28T18:01:47.578Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-31T01:55:53.143Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20160903> <http://lei.info/gleio/hasGLEICode> "5493005D4MZH2WJL9B44"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-08-25T14:36:07.062Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493005D4MZH2WJL9B44#GLEIManifestation-20151031>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-09-03T01:52:55.939Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS ORDINARY NON-RESIDENT COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Havens Master Fund, Ltd."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-31T01:55:53.143Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Havens Master Fund, Ltd."^^xsd:string.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """25th Floor
+600 Lexington Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """25th Floor
+600 Lexington Avenue"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-1104"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Maples and Calder
+PO Box 309
+Ugland House"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Maples and Calder
+PO Box 309
+Ugland House"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "KY1-1104"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS ORDINARY NON-RESIDENT COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Havens Master Fund, Ltd."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-09-03T01:52:55.939Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493005D4MZH2WJL9B44#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Havens Master Fund, Ltd."^^xsd:string.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10022"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """25th Floor
+600 Lexington Avenue"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-1104"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Maples and Calder
+PO Box 309
+Ugland House"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493005D4MZH2WJL9B44#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031>,
+                                                                                       <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20160903>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493005D4MZH2WJL9B44#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "CAYMAN ISLANDS ORDINARY NON-RESIDENT COMPANY"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493005D4MZH2WJL9B44>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493005D4MZH2WJL9B44#LegalEntityManifestation-20151031-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493005D4MZH2WJL9B44#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Havens Master Fund, Ltd."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Havens Master Fund, Ltd."^^xsd:string.

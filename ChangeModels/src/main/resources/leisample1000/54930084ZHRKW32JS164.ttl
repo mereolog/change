@@ -1,0 +1,100 @@
+﻿@base <graph://lei.info/54930084ZHRKW32JS164>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/54930084ZHRKW32JS164> <http://lei.info/gleio/hasInitialRegistrationDate> "2017-03-09T02:15:15.813Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/54930084ZHRKW32JS164#GLEIManifestation-20170309>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/54930084ZHRKW32JS164#GLEIManifestation-20170309>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/54930084ZHRKW32JS164#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "54930084ZHRKW32JS164"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/54930084ZHRKW32JS164#BLEIManifestation-20170309> <http://lei.info/gleio/hasBusinessIdentifierCode> "950 161 469"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-03-09T02:15:15.777Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/54930084ZHRKW32JS164#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/54930084ZHRKW32JS164#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/54930084ZHRKW32JS164#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/54930084ZHRKW32JS164#BLEIManifestation-20170309>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/54930084ZHRKW32JS164#BLEIManifestation-20170309>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/54930084ZHRKW32JS164#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/NO001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/NO001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/54930084ZHRKW32JS164#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "950 161 469"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/54930084ZHRKW32JS164#GLEIManifestation-20170309> <http://lei.info/gleio/hasGLEICode> "54930084ZHRKW32JS164"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-03-07T07:43:36.822Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-03-09T02:15:15.777Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/54930084ZHRKW32JS164>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/54930084ZHRKW32JS164>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "AKSJESELSKAP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/NO>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Hagevik AS"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-03-09T02:15:15.777Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/54930084ZHRKW32JS164>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/54930084ZHRKW32JS164#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/54930084ZHRKW32JS164#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hagevik AS"^^xsd:string.
+<http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Ålesund"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NO>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "6057"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Bjørge Industriveg 41
+Ellingsøy"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/NO-15>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Bjørge Industriveg 41
+Ellingsøy"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Ålesund"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NO>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6057"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/NO-15>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Ålesund"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NO>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "6057"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Bjørge Industriveg 41
+Ellingsøy"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/NO-15>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Bjørge Industriveg 41
+Ellingsøy"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Ålesund"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NO>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6057"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/NO-15>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/54930084ZHRKW32JS164#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/54930084ZHRKW32JS164#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/54930084ZHRKW32JS164>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/54930084ZHRKW32JS164#LegalEntityManifestation-20170309-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Hagevik AS"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "AKSJESELSKAP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/54930084ZHRKW32JS164#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Hagevik AS"^^xsd:string.

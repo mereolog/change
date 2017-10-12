@@ -1,0 +1,93 @@
+﻿@base <graph://lei.info/549300QJ7NLQTLNWUN87>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300QJ7NLQTLNWUN87> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-12-24T02:05:57.742Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300QJ7NLQTLNWUN87#GLEIManifestation-20151224>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300QJ7NLQTLNWUN87#GLEIManifestation-20151224>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300QJ7NLQTLNWUN87#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300QJ7NLQTLNWUN87"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300QJ7NLQTLNWUN87#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300QJ7NLQTLNWUN87#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300QJ7NLQTLNWUN87#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300QJ7NLQTLNWUN87#GLEIManifestation-20151224> <http://lei.info/gleio/hasGLEICode> "549300QJ7NLQTLNWUN87"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-21T20:42:22.335Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-24T02:05:57.071Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300QJ7NLQTLNWUN87>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300QJ7NLQTLNWUN87>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED LIABILITY COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "kDalton, LLC"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-24T02:05:57.071Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300QJ7NLQTLNWUN87>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300QJ7NLQTLNWUN87#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300QJ7NLQTLNWUN87#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "kDalton, LLC"^^xsd:string.
+<http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Kennesaw"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "30144"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Building 100
+3450 Acworth Due West Road
+Suite 120"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-GA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Building 100
+3450 Acworth Due West Road
+Suite 120"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Kennesaw"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "30144"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-GA>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Kennesaw"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "30144"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Dalton, Kenneth
+4047 Palisades Main"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-GA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Dalton, Kenneth
+4047 Palisades Main"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Kennesaw"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "30144"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-GA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300QJ7NLQTLNWUN87#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300QJ7NLQTLNWUN87#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED LIABILITY COMPANY"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300QJ7NLQTLNWUN87>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300QJ7NLQTLNWUN87#LegalEntityManifestation-20151224-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300QJ7NLQTLNWUN87#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "kDalton, LLC"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "kDalton, LLC"^^xsd:string.

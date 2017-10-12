@@ -1,0 +1,129 @@
+﻿@base <graph://lei.info/5493009PT4GQG206N804>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493009PT4GQG206N804> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-09-30T02:05:24.009Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20160930>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20151006>,
+                                                                                <http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20160930>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493009PT4GQG206N804"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493009PT4GQG206N804#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20151006> <http://lei.info/gleio/hasGLEICode> "5493009PT4GQG206N804"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-27T21:20:24.133Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-06T01:57:16.734Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493009PT4GQG206N804>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20160930> <http://lei.info/gleio/hasGLEICode> "5493009PT4GQG206N804"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-09-23T16:09:23.247Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493009PT4GQG206N804#GLEIManifestation-20151006>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-09-30T01:48:00.406Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493009PT4GQG206N804>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493009PT4GQG206N804>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BM>;
+                                                                         <http://lei.info/gleio/hasLegalName> "HFR MF Mondiale Master Trust"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-06T01:57:16.734Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "HFR MF Mondiale Master Trust"^^xsd:string.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Chicago"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60606"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """10 South Riverside Plaza
+Suite 700"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """10 South Riverside Plaza
+Suite 700"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Chicago"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "60606"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Hamilton"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BM>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "HM 12"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Butterfield Trust (Bermuda) Limited
+65 Front Street"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Butterfield Trust (Bermuda) Limited
+65 Front Street"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Hamilton"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BM>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "HM 12"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BM>;
+                                                                         <http://lei.info/gleio/hasLegalName> "HFR MF Mondiale Master Trust"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-09-30T01:48:00.406Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493009PT4GQG206N804#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "HFR MF Mondiale Master Trust"^^xsd:string.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Chicago"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60606"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """10 South Riverside Plaza
+Suite 700"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Hamilton"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BM>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "HM 12"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Butterfield Trust (Bermuda) Limited
+65 Front Street"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493009PT4GQG206N804#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006>,
+                                                                                       <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20160930>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493009PT4GQG206N804#LegalEntityManifestation-20151006-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "HFR MF Mondiale Master Trust"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/5493009PT4GQG206N804#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "HFR MF Mondiale Master Trust"^^xsd:string.

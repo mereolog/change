@@ -1,0 +1,137 @@
+﻿@base <graph://lei.info/549300EDWW6UQXQ56M77>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300EDWW6UQXQ56M77> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-10-10T02:40:11.478Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20161008>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20151010>,
+                                                                                <http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20161008>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300EDWW6UQXQ56M77"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300EDWW6UQXQ56M77#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20151010> <http://lei.info/gleio/hasGLEICode> "549300EDWW6UQXQ56M77"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-07T14:27:15.051Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-10T02:40:11.456Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20161008> <http://lei.info/gleio/hasGLEICode> "549300EDWW6UQXQ56M77"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-07T14:27:15.051Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300EDWW6UQXQ56M77#GLEIManifestation-20151010>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-08T10:13:33.951Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Glantre Engineering Limited"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-10T02:40:11.456Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Glantre Engineering Limited"^^xsd:string.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Wokingham"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Wokingham"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wokingham"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Wokingham"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Glantre Engineering Limited"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-08T10:13:33.951Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300EDWW6UQXQ56M77#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Glantre Engineering Limited"^^xsd:string.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Wokingham"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wokingham"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "RG41 2RF"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Wokingham Commerical Centre
+Molly Millars Lane
+Unit 5"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/GB-ENG>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300EDWW6UQXQ56M77#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010>,
+                                                                                       <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20161008>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300EDWW6UQXQ56M77#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300EDWW6UQXQ56M77>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300EDWW6UQXQ56M77#LegalEntityManifestation-20151010-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300EDWW6UQXQ56M77#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Glantre Engineering Limited"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Glantre Engineering Limited"^^xsd:string.

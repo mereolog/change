@@ -1,0 +1,96 @@
+﻿@base <graph://lei.info/549300OWEN4KJDPKX181>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300OWEN4KJDPKX181> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-07-29T13:17:36.194Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300OWEN4KJDPKX181#GLEIManifestation-20140805>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300OWEN4KJDPKX181#GLEIManifestation-20140805>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300OWEN4KJDPKX181#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300OWEN4KJDPKX181"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300OWEN4KJDPKX181#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300OWEN4KJDPKX181#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300OWEN4KJDPKX181#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300OWEN4KJDPKX181#GLEIManifestation-20140805> <http://lei.info/gleio/hasGLEICode> "549300OWEN4KJDPKX181"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2014-07-29T13:12:13.744Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-08-05T11:18:04.283Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300OWEN4KJDPKX181>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300OWEN4KJDPKX181>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED LIABILITY COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "MDS Baldwin Park LLC"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2014-08-05T11:18:04.283Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300OWEN4KJDPKX181>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300OWEN4KJDPKX181#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300OWEN4KJDPKX181#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "MDS Baldwin Park LLC"^^xsd:string.
+<http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Winter Park"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "32789"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Swann Hadley Stump Dietrich & Spears
+1031 West Morse Boulevard
+Suite 350"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Swann Hadley Stump Dietrich & Spears
+1031 West Morse Boulevard
+Suite 350"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Winter Park"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "32789"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Winter Park"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "32789"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Swann Hadley Stump Dietrich & Spears
+1031 West Morse Boulevard
+Suite 350"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Swann Hadley Stump Dietrich & Spears
+1031 West Morse Boulevard
+Suite 350"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Winter Park"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "32789"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-FL>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300OWEN4KJDPKX181#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300OWEN4KJDPKX181#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED LIABILITY COMPANY"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300OWEN4KJDPKX181>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300OWEN4KJDPKX181#LegalEntityManifestation-20140805-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300OWEN4KJDPKX181#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "MDS Baldwin Park LLC"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/549300OWEN4KJDPKX181#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "MDS Baldwin Park LLC"^^xsd:string.

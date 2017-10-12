@@ -1,0 +1,173 @@
+﻿@base <graph://lei.info/549300CUFULINZP8NA72>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300CUFULINZP8NA72> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-04-01T14:19:20.639Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20170308>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20150326>,
+                                                                                <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20160309>,
+                                                                                <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20170308>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300CUFULINZP8NA72"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300CUFULINZP8NA72#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20150326> <http://lei.info/gleio/hasGLEICode> "549300CUFULINZP8NA72"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-03-16T17:27:59.241Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-26T01:35:59.094Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20160309> <http://lei.info/gleio/hasGLEICode> "549300CUFULINZP8NA72"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-03-02T19:43:43.149Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20150326>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-09T02:06:09.815Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20170308> <http://lei.info/gleio/hasGLEICode> "549300CUFULINZP8NA72"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-02-22T12:26:24.484Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300CUFULINZP8NA72#GLEIManifestation-20160309>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-03-08T01:55:22.925Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BS>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Armory Fund Limited"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-03-26T01:35:59.094Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Armory Fund Limited"^^xsd:string.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Recife"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "50741-904"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Alameda Antônio Brennand S/N
+Várzea"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/BR-PE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Alameda Antônio Brennand S/N
+Várzea"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Recife"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "50741-904"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/BR-PE>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Nassau"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BS>;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Winterbotham Place
+Marlborough and Queen Streets"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Winterbotham Place
+Marlborough and Queen Streets"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Nassau"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BS>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BS>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Armory Fund Limited"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-03-09T02:06:09.815Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Armory Fund Limited"^^xsd:string.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Recife"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "50741-904"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Alameda Antônio Brennand S/N
+Várzea"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/BR-PE>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Nassau"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BS>;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Winterbotham Place
+Marlborough and Queen Streets"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BS>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Armory Fund Limited"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-03-08T01:55:22.925Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300CUFULINZP8NA72#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Armory Fund Limited"^^xsd:string.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Recife"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "50741-904"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Alameda Antônio Brennand S/N
+Várzea"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/BR-PE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Alameda Antônio Brennand S/N
+Várzea"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Recife"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "50741-904"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/BR-PE>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Nassau"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BS>;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Winterbotham Place
+Marlborough and Queen Streets"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Winterbotham Place
+Marlborough and Queen Streets"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Nassau"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BS>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300CUFULINZP8NA72#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20150326>,
+                                                                                       <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20160309>,
+                                                                                       <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300CUFULINZP8NA72#LegalEntityManifestation-20170308-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Armory Fund Limited"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300CUFULINZP8NA72#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "LIMITED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Armory Fund Limited"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Armory Fund Limited"^^xsd:string.

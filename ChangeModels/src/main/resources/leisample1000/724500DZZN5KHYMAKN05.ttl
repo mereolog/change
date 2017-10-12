@@ -1,0 +1,90 @@
+﻿@base <graph://lei.info/724500DZZN5KHYMAKN05>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/724500DZZN5KHYMAKN05> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-12-07T23:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500DZZN5KHYMAKN05#GLEIManifestation-20151120>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/724500DZZN5KHYMAKN05#GLEIManifestation-20151120>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/724500DZZN5KHYMAKN05#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "724500DZZN5KHYMAKN05"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/724500DZZN5KHYMAKN05#BLEIManifestation-20151120> <http://lei.info/gleio/hasBusinessIdentifierCode> "56588747"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-20T13:54:15.452Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/724500DZZN5KHYMAKN05#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500DZZN5KHYMAKN05#BLEIManifestation-20151120>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/724500DZZN5KHYMAKN05#BLEIManifestation-20151120>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/724500DZZN5KHYMAKN05#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/724500DZZN5KHYMAKN05#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "56588747"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/724500DZZN5KHYMAKN05#GLEIManifestation-20151120> <http://lei.info/gleio/hasGLEICode> "724500DZZN5KHYMAKN05"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2015-12-08T14:40:07.302+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-20T13:54:15.452Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Besloten Vennootschap"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "Dombosch-Fish Holding B.V."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-20T13:54:15.452Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/724500DZZN5KHYMAKN05>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/724500DZZN5KHYMAKN05#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Dombosch-Fish Holding B.V."^^xsd:string.
+<http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Raamsdonksveer"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4941SC"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Snoekweg 6"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Snoekweg 6"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Raamsdonksveer"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4941SC"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Raamsdonksveer"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4941SC"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Snoekweg 6"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Snoekweg 6"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Raamsdonksveer"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4941SC"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/724500DZZN5KHYMAKN05#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/724500DZZN5KHYMAKN05#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Besloten Vennootschap"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/724500DZZN5KHYMAKN05>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/724500DZZN5KHYMAKN05#LegalEntityManifestation-20151120-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/724500DZZN5KHYMAKN05#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Dombosch-Fish Holding B.V."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Dombosch-Fish Holding B.V."^^xsd:string.

@@ -1,0 +1,93 @@
+﻿@base <graph://lei.info/815600C0229447EA9326>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/815600C0229447EA9326> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-04-15T07:16:04Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600C0229447EA9326#GLEIManifestation-20150606>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/815600C0229447EA9326#GLEIManifestation-20150606>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600C0229447EA9326#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "815600C0229447EA9326"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/815600C0229447EA9326#BLEIManifestation-20150606> <http://lei.info/gleio/hasBusinessIdentifierCode> "01700430018"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-06-06T12:08:29Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600C0229447EA9326#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600C0229447EA9326#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600C0229447EA9326#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600C0229447EA9326#BLEIManifestation-20150606>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/815600C0229447EA9326#BLEIManifestation-20150606>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/815600C0229447EA9326#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600C0229447EA9326#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "01700430018"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/815600C0229447EA9326#GLEIManifestation-20150606> <http://lei.info/gleio/hasGLEICode> "815600C0229447EA9326"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "1970-01-01T00:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-06-06T12:08:29Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600C0229447EA9326>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600C0229447EA9326>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."@it,
+                                                                                                              "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-06-06T12:08:29Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600C0229447EA9326>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600C0229447EA9326#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600C0229447EA9326#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."@it.
+<http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "TORINO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10129"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CORSO DUCA DEGLI ABRUZZI,34 BIS TO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CORSO DUCA DEGLI ABRUZZI,34 BIS TO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "TORINO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10129"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "TORINO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "10129"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "CORSO DUCA DEGLI ABRUZZI,34 BIS TO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CORSO DUCA DEGLI ABRUZZI,34 BIS TO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "TORINO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10129"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600C0229447EA9326#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600C0229447EA9326#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/815600C0229447EA9326>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/815600C0229447EA9326#LegalEntityManifestation-20150606-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/815600C0229447EA9326#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."@it,
+                                                                                                                     "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "POIMEC - SOCIETA' A RESPONSABILITA' LIMITATA SIGLABILE POIMEC - S.R.L."@it.

@@ -1,0 +1,171 @@
+﻿@base <graph://lei.info/815600D71C6E92E09E74>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/815600D71C6E92E09E74> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-09-16T08:03:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20160916>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20151022>,
+                                                                                <http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20160916>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "815600D71C6E92E09E74"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/815600D71C6E92E09E74#BLEIManifestation-20151022> <http://lei.info/gleio/hasBusinessIdentifierCode> "00925260150"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-22T22:59:49Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600D71C6E92E09E74#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600D71C6E92E09E74#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600D71C6E92E09E74#BLEIManifestation-20151022>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/815600D71C6E92E09E74#BLEIManifestation-20151022>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "00925260150"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20151022> <http://lei.info/gleio/hasGLEICode> "815600D71C6E92E09E74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-17T22:08:00+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-22T22:59:49Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20160916> <http://lei.info/gleio/hasGLEICode> "815600D71C6E92E09E74"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-09-17T22:08:00+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/815600D71C6E92E09E74#GLEIManifestation-20151022>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-09-16T15:23:17Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600D71C6E92E09E74>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"^^xsd:string,
+                                                                                                              "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-22T22:59:49Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE,0063 MI"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA DELLA LIBERAZIONE,0063 MI"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "20068"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE,0063 MI"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA DELLA LIBERAZIONE,0063 MI"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "20068"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it,
+                                                                                                              "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-09-16T15:23:17Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE, 0063"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE, 0063"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"^^xsd:string,
+                                                                                                              "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-04-06T00:22:31Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/815600D71C6E92E09E74#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE, 63/29"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA DELLA LIBERAZIONE, 63/29"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "20068"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "20068"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA DELLA LIBERAZIONE, 63/29"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA DELLA LIBERAZIONE, 63/29"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PESCHIERA BORROMEO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "20068"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-MI>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/815600D71C6E92E09E74#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20151022>,
+                                                                                       <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20160916>,
+                                                                                       <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/815600D71C6E92E09E74#LegalEntityManifestation-20170406-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/815600D71C6E92E09E74#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"^^xsd:string,
+                                                                                                                     "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "CEDIC - SOCIETA' A RESPONSABILITA' LIMITATA"@it.

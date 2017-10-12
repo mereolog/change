@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/7245003EMH0GKMRQ4Y67>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/7245003EMH0GKMRQ4Y67> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-10T23:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20160412>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20150129>,
+                                                                                <http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20160412>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/724500A93Z8V1MJK5349#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/7245003EMH0GKMRQ4Y67#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "7245003EMH0GKMRQ4Y67"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#BLEIManifestation-20150129> <http://lei.info/gleio/hasBusinessIdentifierCode> "18084157"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-01-29T12:25:06.303Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#BLEIManifestation-20150129>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#BLEIManifestation-20150129>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/7245003EMH0GKMRQ4Y67#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Kamer-van-Koophandel>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/7245003EMH0GKMRQ4Y67#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "18084157"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20150129> <http://lei.info/gleio/hasGLEICode> "7245003EMH0GKMRQ4Y67"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-02-11T12:53:57.913+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-01-29T12:25:06.303Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20160412> <http://lei.info/gleio/hasGLEICode> "7245003EMH0GKMRQ4Y67"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-02-11T12:53:57.913+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#GLEIManifestation-20150129>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-04-12T09:02:57.49Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Besloten Vennootschap"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "Brouwers Lichttechniek B.V."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-01-29T12:25:06.303Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/7245003EMH0GKMRQ4Y67>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/7245003EMH0GKMRQ4Y67#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Brouwers Lichttechniek B.V."^^xsd:string.
+<http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Tilburg"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "5048AH"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Jules de Beerstraat 15"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Jules de Beerstraat 15"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Tilburg"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "5048AH"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Tilburg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "5048AH"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Jules de Beerstraat 15"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Jules de Beerstraat 15"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Tilburg"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/NL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "5048AH"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/7245003EMH0GKMRQ4Y67#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/7245003EMH0GKMRQ4Y67#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Besloten Vennootschap"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/7245003EMH0GKMRQ4Y67>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/7245003EMH0GKMRQ4Y67#LegalEntityManifestation-20150129-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/7245003EMH0GKMRQ4Y67#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Brouwers Lichttechniek B.V."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Brouwers Lichttechniek B.V."^^xsd:string.

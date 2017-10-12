@@ -1,0 +1,95 @@
+﻿@base <graph://lei.info/74780090ND4TXRKKO752>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/74780090ND4TXRKKO752> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-06-24T10:16:28Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/74780090ND4TXRKKO752#GLEIManifestation-20160624>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/74780090ND4TXRKKO752#GLEIManifestation-20160624>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/7478000050A040C0D041#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/7478000050A040C0D041#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/74780090ND4TXRKKO752#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "74780090ND4TXRKKO752"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/74780090ND4TXRKKO752#BLEIManifestation-20160624> <http://lei.info/gleio/hasBusinessIdentifierCode> "080042653"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-24T10:16:28Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/74780090ND4TXRKKO752#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/74780090ND4TXRKKO752#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/74780090ND4TXRKKO752#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/74780090ND4TXRKKO752#BLEIManifestation-20160624>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/74780090ND4TXRKKO752#BLEIManifestation-20160624>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/74780090ND4TXRKKO752#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Trgovacki-sud-u-Zagrebu>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Trgovacki-sud-u-Zagrebu>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/74780090ND4TXRKKO752#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "080042653"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/74780090ND4TXRKKO752#GLEIManifestation-20160624> <http://lei.info/gleio/hasGLEICode> "74780090ND4TXRKKO752"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-24T21:59:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-24T10:16:28Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/74780090ND4TXRKKO752>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/74780090ND4TXRKKO752>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LLC"@en;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/HR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Zagrebacki Holding d.o.o."@en,
+                                                                                                              "Zagrebacki Holding d.o.o."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "Zagrebacki Holding d.o.o."@en;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-24T10:16:28Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/74780090ND4TXRKKO752>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/74780090ND4TXRKKO752#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/74780090ND4TXRKKO752#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Zagrebacki Holding d.o.o."@en.
+<http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Zagreb"@en;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10000"@en;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Ulica grada Vukovara 41"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Ulica grada Vukovara 41"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Zagreb"@en;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/HR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10000"@en;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Zagreb"@en;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/HR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "10000"@en;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Ulica grada Vukovara 41"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Ulica grada Vukovara 41"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Zagreb"@en;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/HR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10000"@en;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/74780090ND4TXRKKO752#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/74780090ND4TXRKKO752#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LLC"@en;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/74780090ND4TXRKKO752>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/74780090ND4TXRKKO752#LegalEntityManifestation-20160624-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/74780090ND4TXRKKO752#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Zagrebacki Holding d.o.o."@en,
+                                                                                                                     "Zagrebacki Holding d.o.o."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Zagrebacki Holding d.o.o."@en.

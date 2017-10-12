@@ -1,0 +1,135 @@
+﻿@base <graph://lei.info/5TRACI5HRMELWV32OF39>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5TRACI5HRMELWV32OF39> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-06-06T15:51:07.819Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20161008>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20151009>,
+                                                                                <http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20161008>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5TRACI5HRMELWV32OF39"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5TRACI5HRMELWV32OF39#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20151009> <http://lei.info/gleio/hasGLEICode> "5TRACI5HRMELWV32OF39"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-06T14:43:08.817Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-10-09T01:59:42.905Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20161008> <http://lei.info/gleio/hasGLEICode> "5TRACI5HRMELWV32OF39"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-10-04T20:27:03.251Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#GLEIManifestation-20151009>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-08T01:48:57.006Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "American Capital Agency Corp."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-10-09T01:59:42.905Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "American Capital Agency Corp."^^xsd:string.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Bethesda"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "20814"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """14th Floor
+2 Bethesda Metro Center"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MD>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """14th Floor
+2 Bethesda Metro Center"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Bethesda"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "20814"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MD>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AGNC Investment Corp."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-08T01:48:57.006Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5TRACI5HRMELWV32OF39#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AGNC Investment Corp."^^xsd:string.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Bethesda"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "20814"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """12th Floor
+2 Bethesda Metro Center"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MD>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5TRACI5HRMELWV32OF39#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009>,
+                                                                                       <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20161008>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5TRACI5HRMELWV32OF39#LegalEntityManifestation-20151009-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "American Capital Agency Corp."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/5TRACI5HRMELWV32OF39#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "American Capital Agency Corp."^^xsd:string.

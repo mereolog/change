@@ -1,0 +1,126 @@
+﻿@base <graph://lei.info/5493002UIQMBB7IRUO16>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493002UIQMBB7IRUO16> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-03-26T01:53:21.069Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20160223>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20150312>,
+                                                                                <http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20160223>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493002UIQMBB7IRUO16"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493002UIQMBB7IRUO16#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20150312> <http://lei.info/gleio/hasGLEICode> "5493002UIQMBB7IRUO16"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-02-23T09:11:00.844Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-12T01:43:52.056Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20160223> <http://lei.info/gleio/hasGLEICode> "5493002UIQMBB7IRUO16"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-02-23T09:11:00.844Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493002UIQMBB7IRUO16#GLEIManifestation-20150312>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-23T10:11:18.878Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/AT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "UniCredit Turn-Around Management GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-03-12T01:43:52.056Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "UniCredit Turn-Around Management GmbH"^^xsd:string.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Vienna"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "1020"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Lassallestraße 5"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Lassallestraße 5"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Vienna"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1020"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Vienna"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "1020"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Lassallestraße 5"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Lassallestraße 5"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Vienna"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "1020"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/AT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "UniCredit Turn-Around Management GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-23T10:11:18.878Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493002UIQMBB7IRUO16#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "UniCredit Turn-Around Management GmbH"^^xsd:string.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Vienna"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "1020"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Lassallestraße 5"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Vienna"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "1020"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Lassallestraße 5"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AT-9>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493002UIQMBB7IRUO16#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312>,
+                                                                                       <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20160223>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493002UIQMBB7IRUO16#LegalEntityManifestation-20150312-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "UniCredit Turn-Around Management GmbH"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/5493002UIQMBB7IRUO16#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "UniCredit Turn-Around Management GmbH"^^xsd:string.

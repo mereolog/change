@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/9695002K2HDLD20JU790>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/9695002K2HDLD20JU790> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-01-13T19:00:39Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/9695002K2HDLD20JU790#GLEIManifestation-20160120>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/9695002K2HDLD20JU790#GLEIManifestation-20160120>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/9695002K2HDLD20JU790#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "9695002K2HDLD20JU790"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/9695002K2HDLD20JU790#BLEIManifestation-20160120> <http://lei.info/gleio/hasBusinessIdentifierCode> "799055629"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-20T19:00:55Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/9695002K2HDLD20JU790#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/9695002K2HDLD20JU790#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/9695002K2HDLD20JU790#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/9695002K2HDLD20JU790#BLEIManifestation-20160120>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/9695002K2HDLD20JU790#BLEIManifestation-20160120>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/9695002K2HDLD20JU790#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/FR001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/FR001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/9695002K2HDLD20JU790#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "799055629"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/9695002K2HDLD20JU790#GLEIManifestation-20160120> <http://lei.info/gleio/hasGLEICode> "9695002K2HDLD20JU790"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-29T06:13:22+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-01-20T19:00:55Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/9695002K2HDLD20JU790>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/9695002K2HDLD20JU790>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"@fr;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Société anonyme à conseil d'administration"@fr;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/FR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"@fr,
+                                                                                                              "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-01-20T19:00:55Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/9695002K2HDLD20JU790>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/9695002K2HDLD20JU790#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/9695002K2HDLD20JU790#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"@fr.
+<http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "PARIS 7"@fr;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "75007"@fr;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """41 QUAI D ORSAY
+75007 PARIS 7"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """41 QUAI D ORSAY
+75007 PARIS 7"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PARIS 7"@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "75007"@fr;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "PARIS 7"@fr;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "75007"@fr;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """41 QUAI D ORSAY
+75007 PARIS 7"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """41 QUAI D ORSAY
+75007 PARIS 7"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "PARIS 7"@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "75007"@fr;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/9695002K2HDLD20JU790#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/9695002K2HDLD20JU790#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Société anonyme à conseil d'administration"@fr;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/9695002K2HDLD20JU790>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/9695002K2HDLD20JU790#LegalEntityManifestation-20160120-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/9695002K2HDLD20JU790#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"@fr,
+                                                                                                                     "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "AGENCE FRANCE LOCAL-SOCIETE TERRITORIALE"@fr.

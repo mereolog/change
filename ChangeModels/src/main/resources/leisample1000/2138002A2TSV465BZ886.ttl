@@ -1,0 +1,134 @@
+﻿@base <graph://lei.info/2138002A2TSV465BZ886>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/2138002A2TSV465BZ886> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-03-11T00:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20160302>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20140311>,
+                                                                                <http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20160302>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "2138002A2TSV465BZ886"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/2138002A2TSV465BZ886#BLEIManifestation-20140311> <http://lei.info/gleio/hasBusinessIdentifierCode> "07077203"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-03-11T11:59:48.74Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/2138002A2TSV465BZ886#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/2138002A2TSV465BZ886#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/2138002A2TSV465BZ886#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/2138002A2TSV465BZ886#BLEIManifestation-20140311>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/2138002A2TSV465BZ886#BLEIManifestation-20140311>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/COMPANIES-HOUSE>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/COMPANIES-HOUSE>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "07077203"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20140311> <http://lei.info/gleio/hasGLEICode> "2138002A2TSV465BZ886"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-03-11T00:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-03-11T11:59:48.74Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/2138002A2TSV465BZ886>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20160302> <http://lei.info/gleio/hasGLEICode> "2138002A2TSV465BZ886"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-03-11T00:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/2138002A2TSV465BZ886#GLEIManifestation-20140311>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-02T09:12:35.893Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/2138002A2TSV465BZ886>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/2138002A2TSV465BZ886>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "PRIVATE LIMITED COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CLEMENT WINDOWS LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2014-03-11T11:59:48.74Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/2138002A2TSV465BZ886>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CLEMENT WINDOWS LIMITED"^^xsd:string.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "PRIVATE LIMITED COMPANY"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/GB>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CLEMENT WINDOWS LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-03-02T09:12:35.893Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/2138002A2TSV465BZ886>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/2138002A2TSV465BZ886#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CLEMENT WINDOWS LIMITED"^^xsd:string.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "HASLEMERE"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/GB>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "GU27 1HR"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """CLEMENT HOUSE
+WEYDOWN ROAD INDUSTRIAL ESTATE"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/2138002A2TSV465BZ886#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311>,
+                                                                                       <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20160302>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/2138002A2TSV465BZ886#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "PRIVATE LIMITED COMPANY"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/2138002A2TSV465BZ886>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/2138002A2TSV465BZ886#LegalEntityManifestation-20140311-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/2138002A2TSV465BZ886#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "CLEMENT WINDOWS LIMITED"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "CLEMENT WINDOWS LIMITED"^^xsd:string.

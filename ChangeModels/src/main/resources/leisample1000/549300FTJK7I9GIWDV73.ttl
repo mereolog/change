@@ -1,0 +1,176 @@
+﻿@base <graph://lei.info/549300FTJK7I9GIWDV73>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300FTJK7I9GIWDV73> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-03-28T11:59:08.393Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20170122>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20140407>,
+                                                                                <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20160324>,
+                                                                                <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20170122>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300FTJK7I9GIWDV73"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300FTJK7I9GIWDV73#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20140407> <http://lei.info/gleio/hasGLEICode> "549300FTJK7I9GIWDV73"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2014-03-28T11:56:38.052Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-04-07T22:16:57.653Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20160324> <http://lei.info/gleio/hasGLEICode> "549300FTJK7I9GIWDV73"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-03-10T07:54:48.457Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20140407>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-24T01:53:33.792Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20170122> <http://lei.info/gleio/hasGLEICode> "549300FTJK7I9GIWDV73"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-01-03T11:51:47.772Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300FTJK7I9GIWDV73#GLEIManifestation-20160324>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-01-22T01:43:21.544Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Dräger Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "Draeger Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2014-04-07T22:16:57.653Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Dräger Medical International GmbH"^^xsd:string.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lübeck"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "23558"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lübeck"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "23558"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Dräger Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "Drager Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-03-24T01:53:33.792Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Dräger Medical International GmbH"^^xsd:string.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Dräger Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324>;
+                                                                         <http://lei.info/gleio/hasPreferredTransliteratedLegalName> "Drager Medical International GmbH"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-01-22T01:43:21.544Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300FTJK7I9GIWDV73#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Dräger Medical International GmbH"^^xsd:string.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lübeck"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "23558"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Lübeck"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "23558"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Moislinger Allee 53-55"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lübeck"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "23558"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/DE-SH>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300FTJK7I9GIWDV73#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20140407>,
+                                                                                       <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20160324>,
+                                                                                       <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300FTJK7I9GIWDV73#LegalEntityManifestation-20170122-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Dräger Medical International GmbH"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300FTJK7I9GIWDV73#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "GESELLSCHAFT MIT BESCHRANKTER HAFTUNG"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Dräger Medical International GmbH"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Dräger Medical International GmbH"^^xsd:string.

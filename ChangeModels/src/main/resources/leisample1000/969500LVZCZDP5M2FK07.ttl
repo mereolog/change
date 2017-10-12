@@ -1,0 +1,99 @@
+﻿@base <graph://lei.info/969500LVZCZDP5M2FK07>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/969500LVZCZDP5M2FK07> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-06-07T18:01:29Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500LVZCZDP5M2FK07#GLEIManifestation-20160626>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/969500LVZCZDP5M2FK07#GLEIManifestation-20160626>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/969500Q2MA9VBQ8BG884#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500LVZCZDP5M2FK07#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "969500LVZCZDP5M2FK07"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/969500LVZCZDP5M2FK07#BLEIManifestation-20160626> <http://lei.info/gleio/hasBusinessIdentifierCode> "479806630"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-26T18:01:06Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500LVZCZDP5M2FK07#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500LVZCZDP5M2FK07#BLEIManifestation-20160626>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/969500LVZCZDP5M2FK07#BLEIManifestation-20160626>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/969500LVZCZDP5M2FK07#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/969500LVZCZDP5M2FK07#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "479806630"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/969500LVZCZDP5M2FK07#GLEIManifestation-20160626> <http://lei.info/gleio/hasGLEICode> "969500LVZCZDP5M2FK07"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-24T11:23:20+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-26T18:01:06Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "ECOLE DE MANAGEMENT DE NORMANDIE"@fr;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Association loi 1901 ou assimilé"@fr;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/FR>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ECOLE DE MANAGEMENT DE NORMANDIE"^^xsd:string,
+                                                                                                              "ECOLE DE MANAGEMENT DE NORMANDIE"@fr;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-26T18:01:06Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500LVZCZDP5M2FK07>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/969500LVZCZDP5M2FK07#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ECOLE DE MANAGEMENT DE NORMANDIE"@fr.
+<http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "LE HAVRE"@fr;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "76600"@fr;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """30 RUE RICHELIEU
+76600 LE HAVRE"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """30 RUE RICHELIEU
+76600 LE HAVRE"""@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "LE HAVRE"@fr;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "76600"@fr;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "LE HAVRE"@fr;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "76600"@fr;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """30 RUE RICHELIEU
+76600 LE HAVRE"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """30 RUE RICHELIEU
+76600 LE HAVRE"""@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "LE HAVRE"@fr;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "76600"@fr;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/969500LVZCZDP5M2FK07#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/969500LVZCZDP5M2FK07#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Association loi 1901 ou assimilé"@fr;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/969500LVZCZDP5M2FK07>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/969500LVZCZDP5M2FK07#LegalEntityManifestation-20160626-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/969500LVZCZDP5M2FK07#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "ECOLE DE MANAGEMENT DE NORMANDIE"@fr,
+                                                                                                                     "ECOLE DE MANAGEMENT DE NORMANDIE"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "ECOLE DE MANAGEMENT DE NORMANDIE"@fr.

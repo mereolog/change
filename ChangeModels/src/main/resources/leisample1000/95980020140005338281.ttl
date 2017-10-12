@@ -1,0 +1,91 @@
+﻿@base <graph://lei.info/95980020140005338281>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/95980020140005338281> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-12T14:03:01.187Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005338281#GLEIManifestation-20160209>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005338281#GLEIManifestation-20160209>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140005338281#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "95980020140005338281"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/95980020140005338281#BLEIManifestation-20160209> <http://lei.info/gleio/hasBusinessIdentifierCode> "B224716"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-09T11:41:08.8183037Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005338281#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005338281#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140005338281#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005338281#BLEIManifestation-20160209>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005338281#BLEIManifestation-20160209>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/95980020140005338281#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/BARCELONA-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/BARCELONA-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140005338281#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "B224716"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/95980020140005338281#GLEIManifestation-20160209> <http://lei.info/gleio/hasGLEICode> "95980020140005338281"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-02-09T12:41:08.8183037+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-09T11:41:08.8183037Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005338281>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005338281>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140005338281#LegalEntityManifestation-20160209> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Fondo de Pensiones"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "DB PREVISION 12, FONDO DE PENSIONES"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-09T11:41:08.8183037Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140005338281>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140005338281#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140005338281#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "DB PREVISION 12, FONDO DE PENSIONES"^^xsd:string.
+<http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "BARCELONA"@es;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "08021"@es;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA AUGUSTA"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA AUGUSTA"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "BARCELONA"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08021"@es;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "BARCELONA"@es;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "08021"@es;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA AUGUSTA 200"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA AUGUSTA 200"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "BARCELONA"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08021"@es;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140005338281#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140005338281#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Fondo de Pensiones"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/95980020140005338281>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/95980020140005338281#LegalEntityManifestation-20160209-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/95980020140005338281#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "DB PREVISION 12, FONDO DE PENSIONES"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "DB PREVISION 12, FONDO DE PENSIONES"^^xsd:string.

@@ -1,0 +1,188 @@
+﻿@base <graph://lei.info/FFVCM51OBC0ZPR6SVW06>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-10-16T22:22:23.419Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20170420>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20150429>,
+                                                                                <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20160426>,
+                                                                                <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20170420>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "FFVCM51OBC0ZPR6SVW06"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20150429> <http://lei.info/gleio/hasGLEICode> "FFVCM51OBC0ZPR6SVW06"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-04-22T19:27:33.876Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-04-29T01:50:14.321Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20160426> <http://lei.info/gleio/hasGLEICode> "FFVCM51OBC0ZPR6SVW06"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-04-20T15:16:38.125Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20150429>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-04-26T01:58:06.086Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20170420> <http://lei.info/gleio/hasGLEICode> "FFVCM51OBC0ZPR6SVW06"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-03-30T14:40:29.165Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#GLEIManifestation-20160426>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-04-20T02:13:33.518Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-04-29T01:50:14.321Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lansing"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "48951"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Jackson
+1 Corporate Way"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MI>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jackson
+1 Corporate Way"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lansing"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "48951"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MI>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Boston"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "02109"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+84 State Street
+Suite 500"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Corporation Service Company
+84 State Street
+Suite 500"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Boston"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "02109"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-04-26T01:58:06.086Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lansing"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "48951"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Jackson
+1 Corporate Way"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MI>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Boston"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "02109"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+84 State Street
+Suite 500"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MA>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-04-20T02:13:33.518Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/FFVCM51OBC0ZPR6SVW06#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Lansing"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "48951"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """C/O Jackson
+1 Corporate Way"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MI>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jackson
+1 Corporate Way"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lansing"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "48951"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MI>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Boston"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "02109"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+84 State Street
+Suite 500"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Corporation Service Company
+84 State Street
+Suite 500"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Boston"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "02109"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-MA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/FFVCM51OBC0ZPR6SVW06#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20150429>,
+                                                                                       <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20160426>,
+                                                                                       <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/FFVCM51OBC0ZPR6SVW06#LegalEntityManifestation-20170420-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/FFVCM51OBC0ZPR6SVW06#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Jackson Variable Series Trust - JNL/Neuberger Berman Currency Fund"^^xsd:string.

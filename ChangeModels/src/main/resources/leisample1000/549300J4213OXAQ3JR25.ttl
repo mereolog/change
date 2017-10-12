@@ -1,0 +1,97 @@
+﻿@base <graph://lei.info/549300J4213OXAQ3JR25>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300J4213OXAQ3JR25> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-12-18T01:54:33.469Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300J4213OXAQ3JR25#GLEIManifestation-20151218>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300J4213OXAQ3JR25#GLEIManifestation-20151218>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300J4213OXAQ3JR25#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300J4213OXAQ3JR25"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300J4213OXAQ3JR25#BLEIManifestation-20151218> <http://lei.info/gleio/hasBusinessIdentifierCode> "0459.229.276"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-18T01:54:33.434Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300J4213OXAQ3JR25#BLEIManifestation-20151218>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300J4213OXAQ3JR25#BLEIManifestation-20151218>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300J4213OXAQ3JR25#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/BE001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/BE001>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300J4213OXAQ3JR25#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "0459.229.276"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300J4213OXAQ3JR25#GLEIManifestation-20151218> <http://lei.info/gleio/hasGLEICode> "549300J4213OXAQ3JR25"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-10T11:22:52.009Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-18T01:54:33.434Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300J4213OXAQ3JR25>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300J4213OXAQ3JR25>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "BESLOTEN VENNOOTSCHAP MET BEPERKTE AANSPRAKELIJKHEID"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/BE>;
+                                                                         <http://lei.info/gleio/hasLegalName> "SERATEX BVBA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-18T01:54:33.434Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300J4213OXAQ3JR25>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300J4213OXAQ3JR25#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300J4213OXAQ3JR25#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "SERATEX BVBA"^^xsd:string.
+<http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Heist-op-den-Berg"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "2220"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Industriepark A 43"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/BE-VAN>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Industriepark A 43"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Heist-op-den-Berg"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "2220"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/BE-VAN>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Lier"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "2500"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Eeuwfeestlaan 56"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/BE-VAN>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Eeuwfeestlaan 56"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Lier"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/BE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "2500"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/BE-VAN>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300J4213OXAQ3JR25#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "BESLOTEN VENNOOTSCHAP MET BEPERKTE AANSPRAKELIJKHEID"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300J4213OXAQ3JR25>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300J4213OXAQ3JR25#LegalEntityManifestation-20151218-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "SERATEX BVBA"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/549300J4213OXAQ3JR25#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "SERATEX BVBA"^^xsd:string.

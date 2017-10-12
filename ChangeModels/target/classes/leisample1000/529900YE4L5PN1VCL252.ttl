@@ -1,0 +1,185 @@
+﻿@base <graph://lei.info/529900YE4L5PN1VCL252>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/529900YE4L5PN1VCL252> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-12-11T08:15:43Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20170522>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20151209>,
+                                                                                <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20160510>,
+                                                                                <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20161212>,
+                                                                                <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20170522>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "529900YE4L5PN1VCL252"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/529900YE4L5PN1VCL252#BLEIManifestation-20151209> <http://lei.info/gleio/hasBusinessIdentifierCode> "A58173287"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-09T09:41:08Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900YE4L5PN1VCL252#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900YE4L5PN1VCL252#BLEIManifestation-20151209>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/529900YE4L5PN1VCL252#BLEIManifestation-20151209>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Registro-Mercantil-de-Barcelona>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Registro-Mercantil-de-Barcelona>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "A58173287"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20151209> <http://lei.info/gleio/hasGLEICode> "529900YE4L5PN1VCL252"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-11T09:15:43+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-09T09:41:08Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20160510> <http://lei.info/gleio/hasGLEICode> "529900YE4L5PN1VCL252"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-11T09:15:43+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20151209>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-05-10T06:10:36Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20161212> <http://lei.info/gleio/hasGLEICode> "529900YE4L5PN1VCL252"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-11T09:15:43+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20160510>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-12-12T00:10:27Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20170522> <http://lei.info/gleio/hasGLEICode> "529900YE4L5PN1VCL252"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-12-12T00:00:00+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900YE4L5PN1VCL252#GLEIManifestation-20161212>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-05-22T06:06:10Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-09T09:41:08Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Polinyà"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08213"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Polinyà"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08213"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/ES>;
+                                                                         <http://lei.info/gleio/hasLegalName> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-05-10T06:10:36Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "MAGNA MIRRORS ESPANA SA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/ES>;
+                                                                         <http://lei.info/gleio/hasLegalName> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-05-22T06:06:10Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900YE4L5PN1VCL252#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/ES-CT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Polinyà"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08213"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/ES-CT>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Polinyà"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "08213"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/ES-CT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Carrer Santiago Rusiñol, 11"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Polinyà"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "08213"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/ES-CT>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900YE4L5PN1VCL252#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20151209>,
+                                                                                       <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20160510>,
+                                                                                       <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/529900YE4L5PN1VCL252#LegalEntityManifestation-20170522-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/529900YE4L5PN1VCL252#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "MAGNA MIRRORS ESPAÑA SA"^^xsd:string.

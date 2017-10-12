@@ -1,0 +1,138 @@
+﻿@base <graph://lei.info/5299004T5Z04UEVD9O95>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5299004T5Z04UEVD9O95> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-11-12T09:00:56Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20161006>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20151110>,
+                                                                                <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20160510>,
+                                                                                <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20161006>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5299004T5Z04UEVD9O95"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5299004T5Z04UEVD9O95#BLEIManifestation-20151110> <http://lei.info/gleio/hasBusinessIdentifierCode> "CHE-107.359.454"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5299004T5Z04UEVD9O95#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5299004T5Z04UEVD9O95#BLEIManifestation-20151110>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/5299004T5Z04UEVD9O95#BLEIManifestation-20151110>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Basel-Stadt>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Basel-Stadt>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "CHE-107.359.454"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20151110> <http://lei.info/gleio/hasGLEICode> "5299004T5Z04UEVD9O95"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-12T10:00:56+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20160510> <http://lei.info/gleio/hasGLEICode> "5299004T5Z04UEVD9O95"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-12T10:00:56+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20151110>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-05-10T06:10:19Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20161006> <http://lei.info/gleio/hasGLEICode> "5299004T5Z04UEVD9O95"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-11-12T10:00:56+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5299004T5Z04UEVD9O95#GLEIManifestation-20160510>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-06T12:37:41Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "Bayer Consumer Care AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Aktiengesellschaft"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "Bayer Consumer Care AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-11-10T08:23:13Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Bayer Consumer Care AG"^^xsd:string.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4052"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4052"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "Bayer Consumer Care AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Aktiengesellschaft"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CH>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Bayer Consumer Care AG"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-05-10T06:10:19Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5299004T5Z04UEVD9O95#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Bayer Consumer Care AG"^^xsd:string.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "Peter Merian-Str. 84"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5299004T5Z04UEVD9O95#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110>,
+                                                                                       <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20160510>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5299004T5Z04UEVD9O95#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Aktiengesellschaft"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5299004T5Z04UEVD9O95>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5299004T5Z04UEVD9O95#LegalEntityManifestation-20151110-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5299004T5Z04UEVD9O95#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Bayer Consumer Care AG"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Bayer Consumer Care AG"^^xsd:string.

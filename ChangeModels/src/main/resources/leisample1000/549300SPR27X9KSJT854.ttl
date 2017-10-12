@@ -1,0 +1,89 @@
+﻿@base <graph://lei.info/549300SPR27X9KSJT854>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300SPR27X9KSJT854> <http://lei.info/gleio/hasInitialRegistrationDate> "2015-07-14T01:40:20.306Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20160708>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20150714>,
+                                                                                <http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20160708>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300SPR27X9KSJT854#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300SPR27X9KSJT854"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300SPR27X9KSJT854#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300SPR27X9KSJT854#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300SPR27X9KSJT854#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20150714> <http://lei.info/gleio/hasGLEICode> "549300SPR27X9KSJT854"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-07-08T03:21:26.362Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-07-14T01:40:20.238Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300SPR27X9KSJT854>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20160708> <http://lei.info/gleio/hasGLEICode> "549300SPR27X9KSJT854"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-07-08T03:21:26.362Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300SPR27X9KSJT854#GLEIManifestation-20150714>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-07-08T10:11:44.487Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/EntitySuppliedOnly>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300SPR27X9KSJT854>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300SPR27X9KSJT854>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "COMPANY LIMITED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CN>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ALSTOM HYDRO CHINA CO.,LTD."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-07-14T01:40:20.238Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300SPR27X9KSJT854>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300SPR27X9KSJT854#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300SPR27X9KSJT854#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ALSTOM HYDRO CHINA CO.,LTD."^^xsd:string.
+<http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "3 avenue Andre Malraux - F - 92309 Levallois-Perret cedex FRANCE"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "3 avenue Andre Malraux - F - 92309 Levallois-Perret cedex FRANCE"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Paris"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/FR>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Tianjin"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CN>;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "No.237 Jingsan Road Tianjin Airport Economic Zone Tianjin China"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "No.237 Jingsan Road Tianjin Airport Economic Zone Tianjin China"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Tianjin"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CN>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300SPR27X9KSJT854#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300SPR27X9KSJT854#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "COMPANY LIMITED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300SPR27X9KSJT854>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300SPR27X9KSJT854#LegalEntityManifestation-20150714-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300SPR27X9KSJT854#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "ALSTOM HYDRO CHINA CO.,LTD."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "ALSTOM HYDRO CHINA CO.,LTD."^^xsd:string.

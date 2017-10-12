@@ -1,0 +1,91 @@
+﻿@base <graph://lei.info/95980020140006031443>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/95980020140006031443> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-10-28T11:24:39.923Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140006031443#GLEIManifestation-20151204>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140006031443#GLEIManifestation-20151204>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/959800R2X69K6Y6MX775#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140006031443#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "95980020140006031443"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/95980020140006031443#BLEIManifestation-20151204> <http://lei.info/gleio/hasBusinessIdentifierCode> "TOMO 150 FOLIO 111 HOJA AS-7922"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-04T12:45:25.1564251Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140006031443#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140006031443#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140006031443#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140006031443#BLEIManifestation-20151204>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140006031443#BLEIManifestation-20151204>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/95980020140006031443#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/OVIEDO-3-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/OVIEDO-3-MERCANTIL>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/95980020140006031443#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "TOMO 150 FOLIO 111 HOJA AS-7922"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/95980020140006031443#GLEIManifestation-20151204> <http://lei.info/gleio/hasGLEICode> "95980020140006031443"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-12-04T13:45:25.1564251+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-04T12:45:25.1564251Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140006031443>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140006031443>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/95980020140006031443#LegalEntityManifestation-20151204> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "INDUSTRIAS LACTEAS ASTURIANAS SA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-04T12:45:25.1564251Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140006031443>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/95980020140006031443#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/95980020140006031443#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "INDUSTRIAS LACTEAS ASTURIANAS SA"^^xsd:string.
+<http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "MADRID"@es;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "28006"@es;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CL VELAZQUEZ Nº 140"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CL VELAZQUEZ Nº 140"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "MADRID"@es;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "28006"@es;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "NAVIA"@es;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "33719"@es;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "LG ANLEO"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "LG ANLEO"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "NAVIA"@es;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/ES>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "33719"@es;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/95980020140006031443#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/95980020140006031443#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Sociedad Anónima"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/95980020140006031443>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/95980020140006031443#LegalEntityManifestation-20151204-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/95980020140006031443#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "INDUSTRIAS LACTEAS ASTURIANAS SA"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "INDUSTRIAS LACTEAS ASTURIANAS SA"^^xsd:string.

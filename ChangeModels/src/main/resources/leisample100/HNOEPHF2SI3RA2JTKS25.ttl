@@ -1,0 +1,128 @@
+﻿@base <graph://lei.info/HNOEPHF2SI3RA2JTKS25>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-06-06T15:58:00.844Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20170104>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20160202>,
+                                                                                <http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20170104>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "HNOEPHF2SI3RA2JTKS25"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20160202> <http://lei.info/gleio/hasGLEICode> "HNOEPHF2SI3RA2JTKS25"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-01-12T10:06:51.722Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-02T02:52:13.946Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20170104> <http://lei.info/gleio/hasGLEICode> "HNOEPHF2SI3RA2JTKS25"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-12-19T13:12:23.103Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#GLEIManifestation-20160202>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-01-04T02:11:35.177Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CH>;
+                                                                         <http://lei.info/gleio/hasLegalName> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-02T02:52:13.946Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4002"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "PO Box"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O UBS Fund Management (Switzerland) AG
+Aeschenplatz 6"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/CH>;
+                                                                         <http://lei.info/gleio/hasLegalName> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-01-04T02:11:35.177Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/HNOEPHF2SI3RA2JTKS25#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "4002"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "PO Box"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "PO Box"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Basel"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4002"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "4052"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O UBS Fund Management (Switzerland) AG
+Aeschenplatz 6"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O UBS Fund Management (Switzerland) AG
+Aeschenplatz 6"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Basel"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/CH>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "4052"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/CH-BS>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/HNOEPHF2SI3RA2JTKS25#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20160202>,
+                                                                                       <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/HNOEPHF2SI3RA2JTKS25#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/HNOEPHF2SI3RA2JTKS25>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/HNOEPHF2SI3RA2JTKS25#LegalEntityManifestation-20170104-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/HNOEPHF2SI3RA2JTKS25#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "UBS (CH) Institutional Fund - Bonds CHF Inland"^^xsd:string.

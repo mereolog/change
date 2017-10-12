@@ -1,0 +1,94 @@
+﻿@base <graph://lei.info/81560032D3E1080E2C50>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/81560032D3E1080E2C50> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-02-07T23:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/81560032D3E1080E2C50#GLEIManifestation-20160210>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/81560032D3E1080E2C50#GLEIManifestation-20160210>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/81560032D3E1080E2C50#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "81560032D3E1080E2C50"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/81560032D3E1080E2C50#BLEIManifestation-20160210> <http://lei.info/gleio/hasBusinessIdentifierCode> "03965210283"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-10T02:47:16Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/81560032D3E1080E2C50#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/81560032D3E1080E2C50#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/81560032D3E1080E2C50#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/81560032D3E1080E2C50#BLEIManifestation-20160210>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/81560032D3E1080E2C50#BLEIManifestation-20160210>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/81560032D3E1080E2C50#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/81560032D3E1080E2C50#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "03965210283"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/81560032D3E1080E2C50#GLEIManifestation-20160210> <http://lei.info/gleio/hasGLEICode> "81560032D3E1080E2C50"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-02-09T14:10:49+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-02-10T02:47:16Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/81560032D3E1080E2C50>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/81560032D3E1080E2C50>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' IN ACCOMANDITA SEMPLICE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."@it,
+                                                                                                              "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-02-10T02:47:16Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/81560032D3E1080E2C50>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/81560032D3E1080E2C50#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/81560032D3E1080E2C50#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."@it.
+<http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "SAN GIORGIO DELLE PERTICHE"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "35010"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA ROMA,206 PD"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA ROMA,206 PD"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "SAN GIORGIO DELLE PERTICHE"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "35010"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "SAN GIORGIO DELLE PERTICHE"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "35010"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA ROMA,206 PD"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA ROMA,206 PD"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "SAN GIORGIO DELLE PERTICHE"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "35010"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/81560032D3E1080E2C50#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/81560032D3E1080E2C50#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' IN ACCOMANDITA SEMPLICE"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/81560032D3E1080E2C50>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/81560032D3E1080E2C50#LegalEntityManifestation-20160210-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/81560032D3E1080E2C50#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."@it,
+                                                                                                                     "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "TONDELLO TECNOLOGIE SAS DI TONDELLO ALESSANDRO E SILVIA & C."@it.

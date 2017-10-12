@@ -1,0 +1,140 @@
+﻿@base <graph://lei.info/549300GZIZ03IJNN2G42>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300GZIZ03IJNN2G42> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-07T19:56:38.006Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20161119>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20151202>,
+                                                                                <http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20161119>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300GZIZ03IJNN2G42"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300GZIZ03IJNN2G42#BLEIManifestation-20151202> <http://lei.info/gleio/hasBusinessIdentifierCode> "C0609387"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-02T02:31:51.985Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300GZIZ03IJNN2G42#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300GZIZ03IJNN2G42#BLEIManifestation-20151202>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/549300GZIZ03IJNN2G42#BLEIManifestation-20151202>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/US005>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/US005>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "C0609387"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20151202> <http://lei.info/gleio/hasGLEICode> "549300GZIZ03IJNN2G42"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-11-25T20:44:58.749Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-02T02:31:51.985Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20161119> <http://lei.info/gleio/hasGLEICode> "549300GZIZ03IJNN2G42"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-11-14T13:34:39.754Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300GZIZ03IJNN2G42#GLEIManifestation-20151202>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-11-19T02:03:22.051Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Philips Medical Systems (Cleveland), Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-02T02:31:51.985Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Philips Medical Systems (Cleveland), Inc."^^xsd:string.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Highland Heights"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "44143"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "595 Miner Road"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-OH>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "595 Miner Road"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Highland Heights"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "44143"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-OH>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Sacramento"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "95833"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+2710 Gateway Oaks Drive
+Suite 150N"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Corporation Service Company
+2710 Gateway Oaks Drive
+Suite 150N"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Sacramento"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "95833"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Philips Medical Systems (Cleveland), Inc."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-11-19T02:03:22.051Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300GZIZ03IJNN2G42#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Philips Medical Systems (Cleveland), Inc."^^xsd:string.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Highland Heights"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "44143"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "595 Miner Road"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-OH>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Sacramento"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "95833"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+2710 Gateway Oaks Drive
+Suite 150N"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-CA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300GZIZ03IJNN2G42#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202>,
+                                                                                       <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20161119>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300GZIZ03IJNN2G42#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "INCORPORATED"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300GZIZ03IJNN2G42>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300GZIZ03IJNN2G42#LegalEntityManifestation-20151202-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300GZIZ03IJNN2G42#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Philips Medical Systems (Cleveland), Inc."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Philips Medical Systems (Cleveland), Inc."^^xsd:string.

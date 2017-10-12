@@ -1,0 +1,94 @@
+﻿@base <graph://lei.info/213800FZRMZGJ6CRB559>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/213800FZRMZGJ6CRB559> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-05T00:00:00Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800FZRMZGJ6CRB559#GLEIManifestation-20140205>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/213800FZRMZGJ6CRB559#GLEIManifestation-20140205>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/213800D1EI4B9WTWWD28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800FZRMZGJ6CRB559#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "213800FZRMZGJ6CRB559"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/213800FZRMZGJ6CRB559#BLEIManifestation-20140205> <http://lei.info/gleio/hasBusinessIdentifierCode> "18629100"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-02-05T06:43:14.273Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800FZRMZGJ6CRB559#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800FZRMZGJ6CRB559#BLEIManifestation-20140205>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/213800FZRMZGJ6CRB559#BLEIManifestation-20140205>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/213800FZRMZGJ6CRB559#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/CENTRAL-COMPANY-REGISTER>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/CENTRAL-COMPANY-REGISTER>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/213800FZRMZGJ6CRB559#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "18629100"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/213800FZRMZGJ6CRB559#GLEIManifestation-20140205> <http://lei.info/gleio/hasGLEICode> "213800FZRMZGJ6CRB559"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Lapsed>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2015-02-05T00:00:00Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2014-02-05T06:43:14.273Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "AKTIESELSKAB"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/DK>;
+                                                                         <http://lei.info/gleio/hasLegalName> "ICOM COMPOSITES A/S"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2014-02-05T06:43:14.273Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800FZRMZGJ6CRB559>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/213800FZRMZGJ6CRB559#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "ICOM COMPOSITES A/S"^^xsd:string.
+<http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "KOLDING"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DK>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "BIRKEDAM 10 C/7"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "BIRKEDAM 10 C/7"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "KOLDING"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DK>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "KOLDING"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/DK>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """BIRKEDAM 10 C
+HARTE"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """BIRKEDAM 10 C
+HARTE"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "KOLDING"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/DK>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/213800FZRMZGJ6CRB559#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/213800FZRMZGJ6CRB559#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "AKTIESELSKAB"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/213800FZRMZGJ6CRB559>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/213800FZRMZGJ6CRB559#LegalEntityManifestation-20140205-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/213800FZRMZGJ6CRB559#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "ICOM COMPOSITES A/S"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "ICOM COMPOSITES A/S"^^xsd:string.

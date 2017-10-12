@@ -1,0 +1,193 @@
+﻿@base <graph://lei.info/SG1IS7FU5D26CIXA1M13>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-11-26T16:02:25.053Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20170520>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20150909>,
+                                                                                <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20160713>,
+                                                                                <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20170520>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "SG1IS7FU5D26CIXA1M13"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20150909> <http://lei.info/gleio/hasGLEICode> "SG1IS7FU5D26CIXA1M13"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-09-07T00:03:51.025Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-09-09T01:50:06.506Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20160713> <http://lei.info/gleio/hasGLEICode> "SG1IS7FU5D26CIXA1M13"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-07-11T07:00:30.776Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20150909>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-07-13T01:54:53.225Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20170520> <http://lei.info/gleio/hasGLEICode> "SG1IS7FU5D26CIXA1M13"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-05-18T00:09:50.089Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#GLEIManifestation-20160713>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-05-20T01:50:17.523Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/AU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Government Employees Superannuation Board"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-09-09T01:50:06.506Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Employees Superannuation Board"^^xsd:string.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Perth"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Perth"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/AU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Government Employees Superannuation Board"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-07-13T01:54:53.225Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Employees Superannuation Board"^^xsd:string.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/AU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Government Employees Superannuation Board"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-05-20T01:50:17.523Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/SG1IS7FU5D26CIXA1M13#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Employees Superannuation Board"^^xsd:string.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Perth"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Perth"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """Level 4
+Central Park
+152 Saint Georges Terrace"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Perth"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/AU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "6000"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/AU-WA>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/SG1IS7FU5D26CIXA1M13#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20150909>,
+                                                                                       <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20160713>,
+                                                                                       <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/SG1IS7FU5D26CIXA1M13#LegalEntityManifestation-20170520-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Government Employees Superannuation Board"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/SG1IS7FU5D26CIXA1M13#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "OTHER"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Government Employees Superannuation Board"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Government Employees Superannuation Board"^^xsd:string.

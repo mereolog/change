@@ -1,0 +1,171 @@
+﻿@base <graph://lei.info/8156008A810A06176270>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/8156008A810A06176270> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-27T10:33:16Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156008A810A06176270#GLEIManifestation-20160317>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/8156008A810A06176270#GLEIManifestation-20150306>,
+                                                                                <http://lei.info/8156008A810A06176270#GLEIManifestation-20160317>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156008A810A06176270#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "8156008A810A06176270"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/8156008A810A06176270#BLEIManifestation-20150306> <http://lei.info/gleio/hasBusinessIdentifierCode> "02052730401"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-06T21:07:51Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156008A810A06176270#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156008A810A06176270#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156008A810A06176270#BLEIManifestation-20150306>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/8156008A810A06176270#BLEIManifestation-20150306>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/8156008A810A06176270#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156008A810A06176270#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "02052730401"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/8156008A810A06176270#GLEIManifestation-20150306> <http://lei.info/gleio/hasGLEICode> "8156008A810A06176270"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-03-11T10:47:50+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-03-06T21:07:51Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156008A810A06176270#GLEIManifestation-20160317> <http://lei.info/gleio/hasGLEICode> "8156008A810A06176270"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-03-11T10:47:50+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156008A810A06176270#GLEIManifestation-20150306>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-17T13:08:58Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156008A810A06176270>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' SEMPLICE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."^^xsd:string,
+                                                                                                              "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-03-06T21:07:51Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156008A810A06176270>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA,467/A FO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA RAVEGNANA,467/A FO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FORLI'"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "47122"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA,467/A FO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA RAVEGNANA,467/A FO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FORLI'"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "47122"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' SEMPLICE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it,
+                                                                                                              "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-03-17T13:08:58Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156008A810A06176270>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA, 467/A"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA, 467/A"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "SOCIETA' SEMPLICE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "SOCIETA' AGRICOLA SALIMBENI E GUARDIGLI S.S."@it,
+                                                                                                              "SOCIETA' AGRICOLA SALIMBENI E GUARDIGLI S.S."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-03-07T00:14:32Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156008A810A06176270>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156008A810A06176270#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156008A810A06176270#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "SOCIETA' AGRICOLA SALIMBENI E GUARDIGLI S.S."@it.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA, 467/A"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA RAVEGNANA, 467/A"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FORLI'"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "47122"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "FORLI'"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "47122"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "VIA RAVEGNANA, 467/A"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "VIA RAVEGNANA, 467/A"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FORLI'"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "47122"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FO>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156008A810A06176270#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20150306>,
+                                                                                       <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20160317>,
+                                                                                       <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156008A810A06176270#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "SOCIETA' SEMPLICE"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/8156008A810A06176270>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/8156008A810A06176270#LegalEntityManifestation-20170307-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "SOCIETA' AGRICOLA SALIMBENI E GUARDIGLI S.S."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/8156008A810A06176270#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."^^xsd:string,
+                                                                                                                     "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "AZIENDA AGRICOLA SALIMBENI E GUARDIGLI S.S."@it.

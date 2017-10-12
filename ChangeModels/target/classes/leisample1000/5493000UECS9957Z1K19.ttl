@@ -1,0 +1,125 @@
+﻿@base <graph://lei.info/5493000UECS9957Z1K19>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/5493000UECS9957Z1K19> <http://lei.info/gleio/hasInitialRegistrationDate> "2016-06-30T01:46:24.325Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20170616>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20160630>,
+                                                                                <http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20170616>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "5493000UECS9957Z1K19"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/5493000UECS9957Z1K19#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20160630> <http://lei.info/gleio/hasGLEICode> "5493000UECS9957Z1K19"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-06-28T20:09:02.539Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-06-30T01:46:24.289Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493000UECS9957Z1K19>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20170616> <http://lei.info/gleio/hasGLEICode> "5493000UECS9957Z1K19"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-06-14T21:43:50.176Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493000UECS9957Z1K19#GLEIManifestation-20160630>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-06-16T01:51:19.065Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493000UECS9957Z1K19>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493000UECS9957Z1K19>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Apollo Principal Holdings VII, L.P."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-06-30T01:46:24.289Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493000UECS9957Z1K19>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Apollo Principal Holdings VII, L.P."^^xsd:string.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """48th Floor
+9 West 57th Street"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-9005"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "190 Elgin Avenue"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/KY>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Apollo Principal Holdings VII, L.P."^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-06-16T01:51:19.065Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493000UECS9957Z1K19>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/5493000UECS9957Z1K19#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Apollo Principal Holdings VII, L.P."^^xsd:string.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """48th Floor
+9 West 57th Street"""^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """48th Floor
+9 West 57th Street"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "KY1-9005"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "190 Elgin Avenue"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "190 Elgin Avenue"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "George Town"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/KY>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "KY1-9005"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/5493000UECS9957Z1K19#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20160630>,
+                                                                                       <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/5493000UECS9957Z1K19#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/5493000UECS9957Z1K19>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/5493000UECS9957Z1K19#LegalEntityManifestation-20170616-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Apollo Principal Holdings VII, L.P."^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/5493000UECS9957Z1K19#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "CAYMAN ISLANDS EXEMPTED LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Apollo Principal Holdings VII, L.P."^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Apollo Principal Holdings VII, L.P."^^xsd:string.

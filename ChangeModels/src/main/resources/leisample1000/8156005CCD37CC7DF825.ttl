@@ -1,0 +1,133 @@
+﻿@base <graph://lei.info/8156005CCD37CC7DF825>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/8156005CCD37CC7DF825> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-10-27T13:00:10Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20161004>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20150925>,
+                                                                                <http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20161004>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/815600EAD78C57FCE690#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "8156005CCD37CC7DF825"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/8156005CCD37CC7DF825#BLEIManifestation-20150925> <http://lei.info/gleio/hasBusinessIdentifierCode> "PLZNDR61E04F522D"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-09-25T12:10:40Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCD37CC7DF825#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCD37CC7DF825#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCD37CC7DF825#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCD37CC7DF825#BLEIManifestation-20150925>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCD37CC7DF825#BLEIManifestation-20150925>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/IT_1>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "PLZNDR61E04F522D"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20150925> <http://lei.info/gleio/hasGLEICode> "8156005CCD37CC7DF825"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-10-30T22:06:01+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-09-25T12:10:40Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCD37CC7DF825>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20161004> <http://lei.info/gleio/hasGLEICode> "8156005CCD37CC7DF825"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-10-30T22:06:01+01:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156005CCD37CC7DF825#GLEIManifestation-20150925>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-10-04T12:11:12Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCD37CC7DF825>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCD37CC7DF825>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "IMPRESA INDIVIDUALE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it,
+                                                                                                              "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-09-25T12:10:40Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCD37CC7DF825>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "FERMO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "63900"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CONTRADA CAMPIGLIONE,20 FM"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CONTRADA CAMPIGLIONE,20 FM"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FERMO"@it;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "63900"@it;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "FERMO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "63900"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "CONTRADA CAMPIGLIONE,20 FM"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "CONTRADA CAMPIGLIONE,20 FM"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "FERMO"@it;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "63900"@it;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "IMPRESA INDIVIDUALE"@it;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/IT>;
+                                                                         <http://lei.info/gleio/hasLegalName> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it,
+                                                                                                              "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-10-04T12:11:12Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCD37CC7DF825>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/8156005CCD37CC7DF825#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "FERMO"@it;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "63900"@it;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "CONTRADA CAMPIGLIONE, 20"@it;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FM>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "FERMO"@it;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/IT>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "63900"@it;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> "CONTRADA CAMPIGLIONE, 20"@it;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/IT-FM>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/8156005CCD37CC7DF825#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925>,
+                                                                                       <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20161004>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/8156005CCD37CC7DF825#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "IMPRESA INDIVIDUALE"@it;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/8156005CCD37CC7DF825>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/8156005CCD37CC7DF825#LegalEntityManifestation-20150925-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/8156005CCD37CC7DF825#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it,
+                                                                                                                     "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "TM STAMPAGGIO DI MATERIE PLASTICHE DI PALAZZETTI ANDREA"@it.

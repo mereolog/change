@@ -1,0 +1,162 @@
+﻿@base <graph://lei.info/529900FFDJ8H72EG2N04>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/529900FFDJ8H72EG2N04> <http://lei.info/gleio/hasInitialRegistrationDate> "2014-02-13T12:33:34Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20160519>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20151201>,
+                                                                                <http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20160519>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/5299000J2N45DDNE4Y28#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "529900FFDJ8H72EG2N04"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/529900FFDJ8H72EG2N04#BLEIManifestation-20151201> <http://lei.info/gleio/hasBusinessIdentifierCode> "B126927"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-01T09:25:50Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#BusinessLegalEntityIdentifier>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#BusinessLegalEntityIdentifier>;
+                                                                  a <http://lei.info/gleio/BusinessLegalEntityIDManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900FFDJ8H72EG2N04#BusinessLegalEntityIdentifier> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900FFDJ8H72EG2N04#BLEIManifestation-20151201>;
+                                                                     <http://lei.info/gleio/hasManifestation> <http://lei.info/529900FFDJ8H72EG2N04#BLEIManifestation-20151201>;
+                                                                     <http://lei.info/gleio/identifies> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/Registre-de-Commerce-et-des-Societes-Luxembourg>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/Registre-de-Commerce-et-des-Societes-Luxembourg>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "B126927"^^xsd:string;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20151201> <http://lei.info/gleio/hasGLEICode> "529900FFDJ8H72EG2N04"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-05-14T10:42:53+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-12-01T09:25:50Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20160519> <http://lei.info/gleio/hasGLEICode> "529900FFDJ8H72EG2N04"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-05-17T00:00:00+02:00"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900FFDJ8H72EG2N04#GLEIManifestation-20151201>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-05-19T14:41:46Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS ?- Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Société d'investissement à capital variable"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS - Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-12-01T09:25:50Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS - Ver Capital Credit Fund"^^xsd:string.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Luxembourg"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS ?- Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Société d'investissement à capital variable"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalName> "NEXTAM PARTNERS SICAV - Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-04-14T12:04:18Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "NEXTAM PARTNERS SICAV - Ver Capital Credit Fund"^^xsd:string.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "L-1258"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+16, rue Brasseur"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-1258"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+16, rue Brasseur"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasAutoTransliteratedLegalName> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS ?- Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "Société d'investissement à capital variable"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/LU>;
+                                                                         <http://lei.info/gleio/hasLegalName> "NEXTAM PARTNERS SICAV - Ver Capital Credit Fund"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-05-19T14:41:46Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/529900FFDJ8H72EG2N04#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "NEXTAM PARTNERS SICAV - Ver Capital Credit Fund"^^xsd:string.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Luxembourg"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/LU>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "L-1219"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """c/o Nextam Partners
+24, rue Beaumont"""^^xsd:string;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/529900FFDJ8H72EG2N04#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201>,
+                                                                                       <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160414>,
+                                                                                       <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20160519>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "Société d'investissement à capital variable"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/529900FFDJ8H72EG2N04#LegalEntityManifestation-20151201-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/529900FFDJ8H72EG2N04#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS - Ver Capital Credit Fund"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "NEXTAM PARTNERS SICAV - NEXTAM PARTNERS - Ver Capital Credit Fund"^^xsd:string.

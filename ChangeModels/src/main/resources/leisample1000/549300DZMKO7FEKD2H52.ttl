@@ -1,0 +1,178 @@
+﻿@base <graph://lei.info/549300DZMKO7FEKD2H52>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/549300DZMKO7FEKD2H52> <http://lei.info/gleio/hasInitialRegistrationDate> "2013-04-09T19:42:37.834Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20170311>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20150410>,
+                                                                                <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20160310>,
+                                                                                <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20170311>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "549300DZMKO7FEKD2H52"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/549300DZMKO7FEKD2H52#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20150410> <http://lei.info/gleio/hasGLEICode> "549300DZMKO7FEKD2H52"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-04-07T15:57:25.809Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-04-10T01:39:26.372Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20160310> <http://lei.info/gleio/hasGLEICode> "549300DZMKO7FEKD2H52"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-03-08T20:38:58.156Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20150410>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-03-10T02:44:47.098Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20170311> <http://lei.info/gleio/hasGLEICode> "549300DZMKO7FEKD2H52"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2018-03-09T16:12:49.936Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DZMKO7FEKD2H52#GLEIManifestation-20160310>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2017-03-11T02:05:59.432Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Knox Presbyterian Church"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-04-10T01:39:26.372Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Knox Presbyterian Church"^^xsd:string.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Naperville"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60540"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "1105 Catalpa Lane"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "1105 Catalpa Lane"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Naperville"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "60540"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Springfield"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "62703"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jackie Stites
+1401 East Cottonwood"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jackie Stites
+1401 East Cottonwood"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Springfield"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "62703"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Knox Presbyterian Church"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-03-10T02:44:47.098Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Knox Presbyterian Church"^^xsd:string.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Naperville"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60540"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "1105 Catalpa Lane"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              a <http://lei.info/gleio/Address>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Springfield"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "62703"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jackie Stites
+1401 East Cottonwood"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                       a <http://lei.info/gleio/Address>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "Knox Presbyterian Church"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2017-03-11T02:05:59.432Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/549300DZMKO7FEKD2H52#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Knox Presbyterian Church"^^xsd:string.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "Naperville"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "60540"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "1105 Catalpa Lane"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "1105 Catalpa Lane"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Naperville"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "60540"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Springfield"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "62703"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Jackie Stites
+1401 East Cottonwood"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O Jackie Stites
+1401 East Cottonwood"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Springfield"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "62703"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-IL>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/549300DZMKO7FEKD2H52#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20150410>,
+                                                                                       <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20160310>,
+                                                                                       <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/549300DZMKO7FEKD2H52#LegalEntityManifestation-20170311-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasLegalName> "Knox Presbyterian Church"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/549300DZMKO7FEKD2H52#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalFormAbbreviation> "CORPORATION"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "Knox Presbyterian Church"^^xsd:string;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Knox Presbyterian Church"^^xsd:string.

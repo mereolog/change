@@ -1,0 +1,132 @@
+﻿@base <graph://lei.info/G15KRVMAISO2E39VVV20>.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[] owl:imports <http://lei.info/gleio/>.
+<http://lei.info/G15KRVMAISO2E39VVV20> <http://lei.info/gleio/hasInitialRegistrationDate> "2012-10-04T23:22:05.242Z"^^xsd:dateTime;
+                                       <http://lei.info/gleio/hasLastManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20160907>;
+                                       <http://lei.info/gleio/hasManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20150903>,
+                                                                                <http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20160907>;
+                                       <http://lei.info/gleio/identifies> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907>;
+                                       <http://lei.info/gleio/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/EVK05KS7XY1DEII3R011#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                       <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasUniqueIdentifier> "G15KRVMAISO2E39VVV20"^^xsd:string;
+                                       a <http://lei.info/gleio/GlobalLegalEntityIdentifier>,
+                                         <http://lei.info/gleio/LegalEntityIdentifier>,
+                                         <http://lei.info/gleio/VariableEntity>,
+                                         <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalEntityIdentifier>.
+<http://lei.info/G15KRVMAISO2E39VVV20#BusinessLegalEntityIdentifier> <http://lei.info/gleio/identifies> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                                                     <http://lei.info/gleio/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://lei.info/gleio/business-registries/undefined>;
+                                                                     <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/identifies> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                                                     a <http://lei.info/gleio/BusinessLegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/LegalEntityIdentifier>,
+                                                                       <http://lei.info/gleio/VariableEntity>,
+                                                                       <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/RegistrationIdentifier>.
+<http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20150903> <http://lei.info/gleio/hasGLEICode> "G15KRVMAISO2E39VVV20"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2016-08-31T20:45:34.332Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2015-09-03T02:24:26.078Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20160907> <http://lei.info/gleio/hasGLEICode> "G15KRVMAISO2E39VVV20"^^xsd:string;
+                                                                  <http://lei.info/gleio/hasGLEIRegistrationStatus> <http://lei.info/gleio/Issued>;
+                                                                  <http://lei.info/gleio/hasNextRenewalDate> "2017-08-31T02:59:10.618Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#GLEIManifestation-20150903>;
+                                                                  <http://lei.info/gleio/hasUpdateDate> "2016-09-07T02:08:25.045Z"^^xsd:dateTime;
+                                                                  <http://lei.info/gleio/hasValidationSource> <http://lei.info/gleio/FullyCorroborated>;
+                                                                  <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                                                  <http://lei.info/gleio/isManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                                                  a <http://lei.info/gleio/GLEIManifestation>,
+                                                                    <http://lei.info/gleio/VariableEntityManifestation>.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CPI Capital Partners North America LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2015-09-03T02:24:26.078Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CPI Capital Partners North America LP"^^xsd:string.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "9 West 57th Street"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> "9 West 57th Street"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "New York"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasAddressLine1> """C/O The Corporation Trust Company
+Corporation Trust Center
+1209 Orange Street"""^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasPostalCode> "19801"^^xsd:string;
+                                                                                       <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907> <http://lei.info/gleio/hasAddressOfLegalFormation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907-LEGAL_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasHeadquartersAddress> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907-HEADQUARTERS_ADDRESS>;
+                                                                         <http://lei.info/gleio/hasLegalEntityStatus> <http://lei.info/gleio/Active>;
+                                                                         <http://lei.info/gleio/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasLegalJurisdiction> <http://lei.info/gleio/countries/US>;
+                                                                         <http://lei.info/gleio/hasLegalName> "CPI Capital Partners North America LP"^^xsd:string;
+                                                                         <http://lei.info/gleio/hasPredecessorEntityManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903>;
+                                                                         <http://lei.info/gleio/hasUpdateDate> "2016-09-07T02:08:25.045Z"^^xsd:dateTime;
+                                                                         <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                                                         <http://lei.info/gleio/isLastManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                                                         <http://lei.info/gleio/isManifestationOf> <http://lei.info/G15KRVMAISO2E39VVV20#entity>;
+                                                                         a <http://lei.info/gleio/LegalEntityManifestation>,
+                                                                           <http://lei.info/gleio/VariableEntityManifestation>;
+                                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "CPI Capital Partners North America LP"^^xsd:string.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907-HEADQUARTERS_ADDRESS> <http://lei.info/gleio/hasCity> "New York"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                              <http://lei.info/gleio/hasPostalCode> "10019"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasStreetAddress> "9 West 57th Street"^^xsd:string;
+                                                                                              <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-NY>;
+                                                                                              a <http://lei.info/gleio/Address>,
+                                                                                                <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907-LEGAL_ADDRESS> <http://lei.info/gleio/hasCity> "Wilmington"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasCountry> <http://lei.info/gleio/countries/US>;
+                                                                                       <http://lei.info/gleio/hasPostalCode> "19808"^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasStreetAddress> """C/O Corporation Service Company
+2711 Centerville Road
+Suite 400"""^^xsd:string;
+                                                                                       <http://lei.info/gleio/hasSubdivision> <http://lei.info/gleio/subdivisions/US-DE>;
+                                                                                       a <http://lei.info/gleio/Address>,
+                                                                                         <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/BusinessRegistries/RegistrationAddress>.
+<http://lei.info/G15KRVMAISO2E39VVV20#entity> <http://lei.info/gleio/hasLastManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903>;
+                                              <http://lei.info/gleio/hasManifestation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903>,
+                                                                                       <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20160907>;
+                                              <http://lei.info/gleio/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/BE/Corporations/Corporations/hasLegalFormAbbreviation> "LIMITED PARTNERSHIP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/hasHeadquartersAddress> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-HEADQUARTERS_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FBC/FunctionalEntities/RegistrationAuthorities/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/hasAddressOfLegalFormation> <http://lei.info/G15KRVMAISO2E39VVV20#LegalEntityManifestation-20150903-LEGAL_ADDRESS>;
+                                              <http://spec.edmcouncil.org/fibo/FND/AgentsAndPeople/Agents/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20#BusinessLegalEntityIdentifier>;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/hasLegalName> "CPI Capital Partners North America LP"^^xsd:string;
+                                              <http://spec.edmcouncil.org/fibo/FND/Relations/Relations/isIdentifiedBy> <http://lei.info/G15KRVMAISO2E39VVV20#BusinessLegalEntityIdentifier>;
+                                              a <http://lei.info/gleio/LegalEntity>,
+                                                <http://lei.info/gleio/VariableEntity>,
+                                                <http://spec.edmcouncil.org/fibo/BE/LegalEntities/LegalPersons/LegalEntity>;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "CPI Capital Partners North America LP"^^xsd:string.

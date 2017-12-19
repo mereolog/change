@@ -1,0 +1,148 @@
+@prefix : <http://onto.kul.pl/change/contextslice/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://onto.kul.pl/change/contextslice> .
+
+<http://onto.kul.pl/change/contextslice> rdf:type owl:Ontology ;
+                                          rdfs:label "ContextSlice Pattern"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/contextslice/hasContext
+:hasContext rdf:type owl:ObjectProperty ;
+            rdfs:range :Context ;
+            rdfs:label "has context"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/hasProjection
+:hasProjection rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:range :ContextSlice ;
+               rdfs:label "has projection"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/contextslice/hasBeginning
+:hasBeginning rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Context ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "has beginning"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Context ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/contextslice/Context
+:Context rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasProjection ;
+                           owl:someValuesFrom :Location
+                         ] ;
+         owl:disjointWith :ContextSlice ;
+         rdfs:label "Context"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/ContextSlice
+:ContextSlice rdf:type owl:Class ;
+              rdfs:label "Context Slice"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/Location
+:Location rdf:type owl:Class ;
+          rdfs:label "Location"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/Settlement
+:Settlement rdf:type owl:Class ;
+            rdfs:label "Settlement"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/contextslice/context1
+:context1 rdf:type owl:NamedIndividual ,
+                   :Context ;
+          :hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+          :hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+          rdfs:label "context 1"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/context2
+:context2 rdf:type owl:NamedIndividual ,
+                   :Context ;
+          :hasEnd "1460-01-01T00:00:00"^^xsd:dateTime ;
+          rdfs:label "context 2"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/location1
+:location1 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           :hasProjection :location1_context1_slice ;
+           rdfs:label "localization 1"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/location1_context1_slice
+:location1_context1_slice rdf:type owl:NamedIndividual ,
+                                   :ContextSlice ;
+                          :hasContext :context1 ;
+                          rdfs:label "context 1 slice of location 1"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/location2
+:location2 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           :hasProjection :location2_context2_slice ;
+           rdfs:label "localization 2"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/location2_context2_slice
+:location2_context2_slice rdf:type owl:NamedIndividual ,
+                                   :ContextSlice ;
+                          :hasContext :context2 ;
+                          rdfs:label "context 2 slice of location 2"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/settlement1
+:settlement1 rdf:type owl:NamedIndividual ,
+                      :Settlement ;
+             :hasProjection :settlement1_context1_slice ,
+                            :settlement1_context2_slice ;
+             rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/settlement1_context1_slice
+:settlement1_context1_slice rdf:type owl:NamedIndividual ,
+                                     :ContextSlice ;
+                            :hasContext :context1 ;
+                            rdfs:label "context 1 slice of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/contextslice/settlement1_context2_slice
+:settlement1_context2_slice rdf:type owl:NamedIndividual ,
+                                     :ContextSlice ;
+                            :hasContext :context2 ;
+                            rdfs:label "context 2 slice of Nieszawa"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

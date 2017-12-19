@@ -1,0 +1,164 @@
+@prefix : <http://onto.kul.pl/change/manifestation/> .
+@prefix oc: <http://ontologies.makolab.com/oc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://onto.kul.pl/change/manifestation/> .
+
+<http://onto.kul.pl/change/manifestation/> rdf:type owl:Ontology ;
+                                            owl:imports oc: ;
+                                            rdfs:label "Manifestation-Based Pattern"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/manifestation/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:label "has location"@en .
+
+
+###  http://ontologies.makolab.com/oc/hasLastManifestation
+oc:hasLastManifestation rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf oc:hasManifestation ;
+                        owl:inverseOf oc:isLastManifestationOf ;
+                        rdfs:label "has last manifestation"@en .
+
+
+###  http://ontologies.makolab.com/oc/hasManifestation
+oc:hasManifestation rdf:type owl:ObjectProperty ;
+                    owl:inverseOf oc:isManifestationOf ;
+                    rdfs:domain oc:VariableEntity ;
+                    rdfs:range oc:VariableEntityManifestation ;
+                    rdfs:label "has manifestation"@en .
+
+
+###  http://ontologies.makolab.com/oc/hasPredecessorEntityManifestation
+oc:hasPredecessorEntityManifestation rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf oc:isPredecessorEntityManifestationOf ;
+                                     rdfs:domain oc:VariableEntityManifestation ;
+                                     rdfs:range oc:VariableEntityManifestation ;
+                                     rdfs:label "is predecessor entity manifestation of"@en .
+
+
+###  http://ontologies.makolab.com/oc/isLastManifestationOf
+oc:isLastManifestationOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf oc:isManifestationOf ;
+                         rdfs:label "is last manifestation of"@en .
+
+
+###  http://ontologies.makolab.com/oc/isManifestationOf
+oc:isManifestationOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain oc:VariableEntityManifestation ;
+                     rdfs:range oc:VariableEntity ;
+                     rdfs:label "is manifestation of"@en .
+
+
+###  http://ontologies.makolab.com/oc/isPredecessorEntityManifestationOf
+oc:isPredecessorEntityManifestationOf rdf:type owl:ObjectProperty ;
+                                      rdfs:domain oc:VariableEntityManifestation ;
+                                      rdfs:range oc:VariableEntityManifestation ;
+                                      rdfs:label "has predecessor entity manifestation"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/manifestation/hasBeginning
+:hasBeginning rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain oc:VariableEntityManifestation ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "has beginning"@en .
+
+
+###  http://onto.kul.pl/change/manifestation/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain oc:VariableEntityManifestation ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/manifestation/Location
+:Location rdf:type owl:Class ;
+          rdfs:label "location"@en .
+
+
+###  http://ontologies.makolab.com/oc/NonVariableEntity
+oc:NonVariableEntity rdf:type owl:Class ;
+                     owl:disjointWith oc:VariableEntity ;
+                     rdfs:label "non-variable entity"@en .
+
+
+###  http://ontologies.makolab.com/oc/VariableEntity
+oc:VariableEntity rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty oc:hasManifestation ;
+                                    owl:someValuesFrom oc:VariableEntityManifestation
+                                  ] ;
+                  rdfs:label "variable entity"@en .
+
+
+###  http://ontologies.makolab.com/oc/VariableEntityManifestation
+oc:VariableEntityManifestation rdf:type owl:Class ;
+                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty oc:isManifestationOf ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass oc:VariableEntity
+                                               ] ;
+                               rdfs:label "variable entity manifestation"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/manifestation/location1
+:location1 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           rdfs:label "localization 1"@en .
+
+
+###  http://onto.kul.pl/change/manifestation/location2
+:location2 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           rdfs:label "localization 2"@en .
+
+
+###  http://onto.kul.pl/change/manifestation/settlement1
+:settlement1 rdf:type owl:NamedIndividual ,
+                      oc:VariableEntity ;
+             rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/manifestation/settlement1_manifestation1
+:settlement1_manifestation1 rdf:type owl:NamedIndividual ,
+                                     oc:VariableEntityManifestation ;
+                            :hasLocation :location1 ;
+                            oc:isManifestationOf :settlement1 ;
+                            :hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+                            :hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+                            rdfs:label "manifestation 1 of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/manifestation/settlement1_manifestation2
+:settlement1_manifestation2 rdf:type owl:NamedIndividual ,
+                                     oc:VariableEntityManifestation ;
+                            :hasLocation :location2 ;
+                            oc:isManifestationOf :settlement1 ;
+                            :hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
+                            rdfs:label "manifestation 2 of Nieszawa"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

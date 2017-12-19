@@ -1,0 +1,124 @@
+@prefix : <http://onto.kul.pl/change/situation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://onto.kul.pl/change/situation/> .
+
+<http://onto.kul.pl/change/situation/> rdf:type owl:Ontology ;
+                                        rdfs:label "Situation Pattern"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/situation/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :SettlementLocationSituation ;
+             rdfs:range :Location ;
+             rdfs:label "has location"@en .
+
+
+###  http://onto.kul.pl/change/situation/hasLocationParticipant
+:hasLocationParticipant rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain :SettlementLocationSituation ;
+                        rdfs:range :Settlement ;
+                        rdfs:label "has location participant"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/situation/hasBeginning
+:hasBeginning rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "has beginning"@en .
+
+
+###  http://onto.kul.pl/change/situation/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/situation/Location
+:Location rdf:type owl:Class ;
+          rdfs:label "Location"@en .
+
+
+###  http://onto.kul.pl/change/situation/Settlement
+:Settlement rdf:type owl:Class ;
+            rdfs:label "Settlement"@en .
+
+
+###  http://onto.kul.pl/change/situation/SettlementLocationSituation
+:SettlementLocationSituation rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasLocation ;
+                                               owl:someValuesFrom :Location
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasLocationParticipant ;
+                                               owl:someValuesFrom :Settlement
+                                             ] ;
+                             owl:hasKey ( :hasLocation
+                                          :hasLocationParticipant
+                                          :hasBeginning
+                                        ) ;
+                             rdfs:label "Settlement Location Situation"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/situation/location1
+:location1 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           rdfs:label "localization 1"@en .
+
+
+###  http://onto.kul.pl/change/situation/location2
+:location2 rdf:type owl:NamedIndividual ,
+                    :Location ;
+           rdfs:label "localization 2"@en .
+
+
+###  http://onto.kul.pl/change/situation/settlement1
+:settlement1 rdf:type owl:NamedIndividual ,
+                      :Settlement ;
+             rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/situation/settlement1_location_situation1
+:settlement1_location_situation1 rdf:type owl:NamedIndividual ,
+                                          :SettlementLocationSituation ;
+                                 :hasLocation :location1 ;
+                                 :hasLocationParticipant :settlement1 ;
+                                 :hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+                                 :hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+                                 rdfs:label "Nieszawa's location 1 situation"@en .
+
+
+###  http://onto.kul.pl/change/situation/settlement1_location_situation2
+:settlement1_location_situation2 rdf:type owl:NamedIndividual ,
+                                          :SettlementLocationSituation ;
+                                 :hasLocation :location2 ;
+                                 :hasLocationParticipant :settlement1 ;
+                                 :hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
+                                 rdfs:label "Nieszawa's location 2 situation"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

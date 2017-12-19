@@ -1,0 +1,168 @@
+@prefix : <http://onto.kul.pl/change/perdurantism_individualconcept/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gfo: <http://www.onto-med.de/ontologies/gfo.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gfo1: <http://onto.kul.pl/change/gfo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://onto.kul.pl/change/perdurantism_individualconcept> .
+
+<http://onto.kul.pl/change/perdurantism_individualconcept> rdf:type owl:Ontology ;
+                                                            rdfs:label "Perdurantist Pattern"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/hasLocation
+:hasLocation rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:label "has location"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/hasTemporalEntity
+:hasTemporalEntity rdf:type owl:ObjectProperty ;
+                   rdfs:label "has temporal entity"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/hasTemporalPart
+:hasTemporalPart rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isTemporalPartOf ;
+                 rdfs:label "has temporal part"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/isTemporalPartOf
+:isTemporalPartOf rdf:type owl:ObjectProperty ;
+                  rdfs:label "is temporal part of"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/hasBegining
+:hasBegining rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "has begining at"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end at"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/IndividualConcept
+:IndividualConcept rdf:type owl:Class ;
+                   owl:disjointWith :TimeSlice .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :IndividualConcept .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/Settlement
+:Settlement rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( :IndividualConcept
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasTemporalPart ;
+                                                         owl:someValuesFrom :SettlementTimeSlice
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasTemporalPart ;
+                                                         owl:allValuesFrom :SettlementTimeSlice
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf :IndividualConcept .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/SettlementTimeSlice
+:SettlementTimeSlice rdf:type owl:Class ;
+                     rdfs:subClassOf :TimeSlice ,
+                                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTemporalPartOf ;
+                                                              owl:someValuesFrom :Settlement
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :isTemporalPartOf ;
+                                                              owl:allValuesFrom :Settlement
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/TemporalEntity
+:TemporalEntity rdf:type owl:Class ;
+                rdfs:subClassOf :IndividualConcept .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/TimeSlice
+:TimeSlice rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasTemporalEntity ;
+                                                        owl:allValuesFrom :TemporalEntity
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasTemporalEntity ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :TemporalEntity
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/location_1
+:location_1 rdf:type owl:NamedIndividual ,
+                     :Location ;
+            rdfs:label "1st location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/location_2
+:location_2 rdf:type owl:NamedIndividual ,
+                     :Location ;
+            rdfs:label "2nd location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/settlement_1
+:settlement_1 rdf:type owl:NamedIndividual ,
+                       :Settlement ;
+              :hasTemporalPart :temporalpart_1_settlementunit_1 ,
+                               :temporalpart_2_settlementunit_1 ;
+              rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/temporalpart_1_settlementunit_1
+:temporalpart_1_settlementunit_1 rdf:type owl:NamedIndividual ,
+                                          :SettlementTimeSlice ;
+                                 :hasLocation :location_1 ;
+                                 :hasBegining "1245-01-01T00:00:00"^^xsd:dateTime ;
+                                 :hasEnd "1259-12-31T23:59:59"^^xsd:dateTime ;
+                                 rdfs:label "temporal part of Nieszawa between 1425 and 1260"@en .
+
+
+###  http://onto.kul.pl/change/perdurantism_individualconcept/temporalpart_2_settlementunit_1
+:temporalpart_2_settlementunit_1 rdf:type owl:NamedIndividual ,
+                                          :SettlementTimeSlice ;
+                                 :hasLocation :location_2 ;
+                                 :hasBegining "1260-01-01T00:00:00"^^xsd:dateTime ;
+                                 rdfs:label "temporal part of Nieszawa since 1260"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

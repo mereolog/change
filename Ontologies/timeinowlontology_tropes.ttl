@@ -1,0 +1,233 @@
+@prefix : <http://onto.kul.pl/change/tropes/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://onto.kul.pl/change/tropes> .
+
+<http://onto.kul.pl/change/tropes> rdf:type owl:Ontology ;
+                                    rdfs:label "Trope-Based Pattern"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/tropes/existentiallyDependentOf
+:existentiallyDependentOf rdf:type owl:ObjectProperty .
+
+
+###  http://onto.kul.pl/change/tropes/hasTimeExtent
+:hasTimeExtent rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Individual ;
+               rdfs:range :TemporalExtent ;
+               rdfs:label "has time extent"@en .
+
+
+###  http://onto.kul.pl/change/tropes/inheresIn
+:inheresIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :existentiallyDependentOf .
+
+
+###  http://onto.kul.pl/change/tropes/mediates
+:mediates rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :existentiallyDependentOf .
+
+
+###  http://onto.kul.pl/change/tropes/partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :existentiallyDependentOf .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/tropes/hasBegining
+:hasBegining rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :TemporalExtent ;
+             rdfs:range xsd:dateTime ;
+             rdfs:label "has begining at"@en .
+
+
+###  http://onto.kul.pl/change/tropes/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :TemporalExtent ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end at"@en .
+
+
+###  http://onto.kul.pl/change/tropes/hasValue
+:hasValue rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Quality .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/tropes/Individual
+:Individual rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTimeExtent ;
+                              owl:someValuesFrom :TemporalExtent
+                            ] ;
+            owl:disjointWith :TemporalExtent ;
+            owl:disjointUnionOf ( :Moment
+                                  :Object
+                                ) ;
+            rdfs:label "Individual"@en .
+
+
+###  http://onto.kul.pl/change/tropes/IntrinsicMoment
+:IntrinsicMoment rdf:type owl:Class ;
+                 rdfs:subClassOf :Moment ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :inheresIn ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :Individual
+                                 ] ;
+                 owl:disjointWith :Relator ;
+                 rdfs:label "Intrinsic Moment"@en .
+
+
+###  http://onto.kul.pl/change/tropes/Location
+:Location rdf:type owl:Class ;
+          rdfs:subClassOf :Object .
+
+
+###  http://onto.kul.pl/change/tropes/Moment
+:Moment rdf:type owl:Class ;
+        rdfs:subClassOf :Individual ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :existentiallyDependentOf ;
+                          owl:someValuesFrom :Individual
+                        ] ;
+        owl:disjointUnionOf ( :IntrinsicMoment
+                              :Relator
+                            ) ;
+        rdfs:comment "The term Moment denotes, in general terms, what is sometimes named trope, abstract particular, individual accident, or property instance (e.g. a kiss, an enrollment). In this work we regard a moment as a reified individual that is existentially dependent on other individuals (their bearers)."@en ;
+        rdfs:label "Moment"@en .
+
+
+###  http://onto.kul.pl/change/tropes/Object
+:Object rdf:type owl:Class ;
+        rdfs:subClassOf :Individual ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty [ owl:inverseOf :existentiallyDependentOf
+                                         ] ;
+                          owl:someValuesFrom :Moment
+                        ] ;
+        rdfs:comment "An Object is an (not-reified) individual that is not (necessarily) existentially dependent of other individuals (e.g. a person, a house, a car)."@en ;
+        rdfs:label "Object"@en .
+
+
+###  http://onto.kul.pl/change/tropes/QuaIndividual
+:QuaIndividual rdf:type owl:Class ;
+               rdfs:subClassOf :IntrinsicMoment ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :existentiallyDependentOf ;
+                                 owl:someValuesFrom :QuaIndividual
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :partOf ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Relator
+                               ] ;
+               owl:disjointWith :Quality ;
+               rdfs:comment "Qua-Individual: it represents (or reify) the way an individual participates in a relation or the role it plays in that context. The name qua- individual comes from considering an individual only w.r.t. certain aspects (e.g., John-qua-student). Qua-individuals inhere in a single individual but they are also existentially dependent of other individuals disjoint from theirs bearers. Indeed, the relator is an aggregation of qua-individuals."@en ;
+               rdfs:label "QuaIndividual"@en .
+
+
+###  http://onto.kul.pl/change/tropes/Quality
+:Quality rdf:type owl:Class ;
+         rdfs:subClassOf :IntrinsicMoment ;
+         rdfs:comment "Quality: a moment that is existentially dependent on a single individual reifying its internal properties (e.g., a particular electric charge of a conductor). In this case, the moment is said to inhere in that individual."@en ;
+         rdfs:label "Quality"@en .
+
+
+###  http://onto.kul.pl/change/tropes/Relator
+:Relator rdf:type owl:Class ;
+         rdfs:subClassOf :Moment ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :mediates ;
+                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Individual
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty [ owl:inverseOf :partOf
+                                          ] ;
+                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                           owl:onClass :QuaIndividual
+                         ] ;
+         rdfs:comment "Relator: a moment that is existentially dependent on two or more individuals (e.g., a marriage, an enrollment). In this case, the moment is said to mediate its bearers and capturing all the relational properties that individuals bear in the scope a relation."@en ;
+         rdfs:label "Relator"@en .
+
+
+###  http://onto.kul.pl/change/tropes/TemporalExtent
+:TemporalExtent rdf:type owl:Class ;
+                rdfs:label "Temporal Extent"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/tropes/location_1
+:location_1 rdf:type owl:NamedIndividual ,
+                     :Location ;
+            :hasTimeExtent :settlement1_position1_te ;
+            :inheresIn :settlement1 ;
+            rdfs:label "1st location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/tropes/location_2
+:location_2 rdf:type owl:NamedIndividual ,
+                     :Location ;
+            :hasTimeExtent :settlement1_position2_te ;
+            :inheresIn :settlement1 ;
+            rdfs:label "2nd location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/tropes/settlement1
+:settlement1 rdf:type owl:NamedIndividual ,
+                      :Object ;
+             rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/tropes/settlement1_position1_te
+:settlement1_position1_te rdf:type owl:NamedIndividual ,
+                                   :TemporalExtent ;
+                          :hasBegining "1425-01-01T00:00:00"^^xsd:dateTime ;
+                          :hasEnd "1459-12-31T00:00:00"^^xsd:dateTime ;
+                          rdfs:label "temporal extent of 1st location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/tropes/settlement1_position2_te
+:settlement1_position2_te rdf:type owl:NamedIndividual ,
+                                   :TemporalExtent ;
+                          :hasBegining "1460-01-01T00:00:00"^^xsd:dateTime ;
+                          rdfs:label "temporal extent of 2nd location of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/tropes/settlement1_position1
+:settlement1_position1 rdf:type owl:NamedIndividual ,
+                                :Relator ;
+                       :mediates :location_1 ,
+                                 :settlement1 ;
+                       rdfs:label "Nieszawa position in location 1"@en .
+
+
+###  http://onto.kul.pl/change/tropes/settlement1_position2
+:settlement1_position2 rdf:type owl:NamedIndividual ,
+                                :Relator ;
+                       :mediates :location_2 ,
+                                 :settlement1 ;
+                       rdfs:label "Nieszawa position in location 2"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

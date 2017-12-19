@@ -28,7 +28,7 @@ public class LEIDataBaseCreation {
 
         RepositoryConnection conn = MemoryStoreConnection.getConnection();
 
-        System.out.println("   Getting all files in " + directory.getCanonicalPath());
+        System.out.println("Getting all files in " + directory.getCanonicalPath());
         List<File> files = (List<File>) FileUtils.listFiles(directory, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
         for (File file : files) {
             String filename = file.getName();

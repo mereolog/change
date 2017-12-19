@@ -1,0 +1,91 @@
+@prefix : <http://onto.kul.pl/change/statementreification#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://onto.kul.pl/change/statementreification> .
+
+<http://onto.kul.pl/change/statementreification> rdf:type owl:Ontology ;
+                                                  rdfs:label "StatementReification Pattern"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://onto.kul.pl/change/statementreification/hasBeginning
+<http://onto.kul.pl/change/statementreification/hasBeginning> rdf:type owl:AnnotationProperty ;
+                                                              rdfs:label "has beginning at"@en .
+
+
+###  http://onto.kul.pl/change/statementreification/hasEnd
+<http://onto.kul.pl/change/statementreification/hasEnd> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "has end at"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://onto.kul.pl/change/statementreification/hasLocation
+<http://onto.kul.pl/change/statementreification/hasLocation> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <http://onto.kul.pl/change/statementreification/Settlement> ;
+                                                             rdfs:range <http://onto.kul.pl/change/statementreification/Location> ;
+                                                             rdfs:label "has location"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://onto.kul.pl/change/statementreification/Location
+<http://onto.kul.pl/change/statementreification/Location> rdf:type owl:Class ;
+                                                          rdfs:label "Location"@en .
+
+
+###  http://onto.kul.pl/change/statementreification/Settlement
+<http://onto.kul.pl/change/statementreification/Settlement> rdf:type owl:Class ;
+                                                            rdfs:label "Settlement"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/statementreification/location1
+<http://onto.kul.pl/change/statementreification/location1> rdf:type owl:NamedIndividual ,
+                                                                    <http://onto.kul.pl/change/statementreification/Location> ;
+                                                           rdfs:label "localization 1"@en .
+
+
+###  http://onto.kul.pl/change/statementreification/location2
+<http://onto.kul.pl/change/statementreification/location2> rdf:type owl:NamedIndividual ,
+                                                                    <http://onto.kul.pl/change/statementreification/Location> ;
+                                                           rdfs:label "localization 2"@en .
+
+
+###  http://onto.kul.pl/change/statementreification/settlement1
+<http://onto.kul.pl/change/statementreification/settlement1> rdf:type owl:NamedIndividual ,
+                                                                      <http://onto.kul.pl/change/statementreification/Settlement> ;
+                                                             <http://onto.kul.pl/change/statementreification/hasLocation> <http://onto.kul.pl/change/statementreification/location1> ,
+                                                                                                                          <http://onto.kul.pl/change/statementreification/location2> ;
+                                                             rdfs:label "Nieszawa"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://onto.kul.pl/change/statementreification/settlement1> ;
+   owl:annotatedProperty <http://onto.kul.pl/change/statementreification/hasLocation> ;
+   owl:annotatedTarget <http://onto.kul.pl/change/statementreification/location1> ;
+   <http://onto.kul.pl/change/statementreification/hasBeginning> "1425-01-01T00:00:00"^^xsd:dateTime ;
+   <http://onto.kul.pl/change/statementreification/hasEnd> "1459-12-31T23:59:59"^^xsd:dateTime
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://onto.kul.pl/change/statementreification/settlement1> ;
+   owl:annotatedProperty <http://onto.kul.pl/change/statementreification/hasLocation> ;
+   owl:annotatedTarget <http://onto.kul.pl/change/statementreification/location2> ;
+   <http://onto.kul.pl/change/statementreification/hasEnd> "1460-01-01T00:00:00"^^xsd:dateTime
+ ] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

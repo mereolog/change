@@ -1,0 +1,232 @@
+@prefix : <http://onto.kul.pl/change/bfo-tqc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tqc: <http://www.halbordnung.de/ontologies/tqc.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://onto.kul.pl/change/bfo-tqc/> .
+
+<http://onto.kul.pl/change/bfo-tqc/> rdf:type owl:Ontology ;
+                                      owl:imports <http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl> ;
+                                      rdfs:label "TQC Pattern"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.purl.org/ontolink/tawny#name
+<http://www.purl.org/ontolink/tawny#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000083
+<http://purl.obolibrary.org/obo/BFO_0000083> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000108
+<http://purl.obolibrary.org/obo/BFO_0000108> rdf:type owl:ObjectProperty ;
+                                             rdfs:label "exists at"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000117
+<http://purl.obolibrary.org/obo/BFO_0000117> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000185
+<http://purl.obolibrary.org/obo/BFO_0000185> rdf:type owl:ObjectProperty .
+
+
+###  http://www.halbordnung.de/ontologies/tqc.owl#ab4d5f-130c-5369-95b5-6a7668842497
+tqc:ab4d5f-130c-5369-95b5-6a7668842497 rdf:type owl:ObjectProperty ;
+                                       owl:inverseOf tqc:f0c5-4cde-5cbc-94e3-ffb2281d885a ;
+                                       rdf:type owl:InverseFunctionalProperty ;
+                                       rdfs:label "has phase"@en ,
+                                                  "has-phase"@en .
+
+
+###  http://www.halbordnung.de/ontologies/tqc.owl#f0c5-4cde-5cbc-94e3-ffb2281d885a
+tqc:f0c5-4cde-5cbc-94e3-ffb2281d885a rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000070> ;
+                                     rdf:type owl:FunctionalProperty ;
+                                     rdfs:domain tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
+                                     rdfs:range tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+                                     rdfs:label "phase of"@en ,
+                                                "phase-of"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://onto.kul.pl/change/bfo-tqc/hasBeginning
+:hasBeginning rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:range xsd:dateTime ;
+              rdfs:label "has beginning"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/hasEnd
+:hasEnd rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:range xsd:dateTime ;
+        rdfs:label "has end"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000182>
+                                                             ] .
+
+
+###  http://www.halbordnung.de/ontologies/tqc.owl#a217d5d-4ae1-547e-a46e-65f6f2504fc2
+tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2 rdf:type owl:Class ;
+                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
+                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000182>
+                                                            ] ;
+                                        rdfs:subClassOf tqc:d18a354c-df65-57f0-b52d-e35a6116494b ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty tqc:f0c5-4cde-5cbc-94e3-ffb2281d885a ;
+                                                          owl:someValuesFrom tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652
+                                                        ] ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
+                                                          owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:complementOf <http://purl.obolibrary.org/obo/BFO_0000144>
+                                                                            ]
+                                                        ] ;
+                                        owl:disjointWith tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+                                        rdfs:comment """Phases are restricted counterparts of histories. They
+are temporal parts of histories and share the
+following characteristics:
+
+  * They are comprised of a sum of processes.
+  * The process sum that makes up the part is the
+    totality of all processes taking place in a
+    certain spatiotemporal region.
+  * They pertain to a single entity."""@en ;
+                                        rdfs:label "phase"@en .
+
+
+###  http://www.halbordnung.de/ontologies/tqc.owl#d18a354c-df65-57f0-b52d-e35a6116494b
+tqc:d18a354c-df65-57f0-b52d-e35a6116494b rdf:type owl:Class ;
+                                         owl:equivalentClass [ rdf:type owl:Class ;
+                                                               owl:unionOf ( tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2
+                                                                             tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652
+                                                                           )
+                                                             ] ;
+                                         rdfs:comment "holder type for tqc entities"@en ;
+                                         rdfs:label "*entity"@en ,
+                                                    "xntity"@en .
+
+
+###  http://www.halbordnung.de/ontologies/tqc.owl#def5f6c5-f1aa-56b3-a188-ff3790d91652
+tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 rdf:type owl:Class ;
+                                         rdfs:subClassOf tqc:d18a354c-df65-57f0-b52d-e35a6116494b ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty tqc:ab4d5f-130c-5369-95b5-6a7668842497 ;
+                                                           owl:someValuesFrom tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2
+                                                         ] ;
+                                         rdfs:comment """A temporally qualified continuant is an analog of a
+process profile in the domain of continuants. Just as
+a process having a certain profile implies its being
+such and such in a specific structural dimension,
+being a temporally qualified continuant implies that a
+continuant shares a certain feature over a specific
+period of its existance.
+
+Each temporally qualified continuants maps to a
+specific subinterval of the history of the
+continuant."""@en ;
+                                         rdfs:label "temporally qualified continuant"@en ,
+                                                    "tq-continuant"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://onto.kul.pl/change/bfo-tqc/location1
+:location1 rdf:type owl:NamedIndividual ,
+                    <http://purl.obolibrary.org/obo/BFO_0000006> ;
+           rdfs:label "localization 1"@en ,
+                      "spatial region 1"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/location2
+:location2 rdf:type owl:NamedIndividual ,
+                    <http://purl.obolibrary.org/obo/BFO_0000006> ;
+           rdfs:label "spatial region 2"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1
+:settlement1 rdf:type owl:NamedIndividual ,
+                      <http://purl.obolibrary.org/obo/BFO_0000030> ;
+             <http://purl.obolibrary.org/obo/BFO_0000185> :settlement1_history ;
+             rdfs:label "Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1_TQC1
+:settlement1_TQC1 rdf:type owl:NamedIndividual ,
+                           tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+                  <http://purl.obolibrary.org/obo/BFO_0000083> :location1 ;
+                  :hasBeginning "1425-01-01T00:00:00"^^xsd:dateTime ;
+                  :hasEnd "1459-12-31T23:59:59"^^xsd:dateTime ;
+                  rdfs:label "temporally qualified Nieszawa 1"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1_TQC2
+:settlement1_TQC2 rdf:type owl:NamedIndividual ,
+                           tqc:def5f6c5-f1aa-56b3-a188-ff3790d91652 ;
+                  <http://purl.obolibrary.org/obo/BFO_0000083> :location2 ;
+                  :hasBeginning "1460-01-01T00:00:00"^^xsd:dateTime ;
+                  rdfs:label "temporally qualified Nieszawa 2"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1_history
+:settlement1_history rdf:type owl:NamedIndividual ,
+                              <http://purl.obolibrary.org/obo/BFO_0000182> ;
+                     <http://purl.obolibrary.org/obo/BFO_0000117> :settlement1_phase1 ,
+                                                                  :settlement1_phase2 ;
+                     rdfs:label "history (life) of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1_phase1
+:settlement1_phase1 rdf:type owl:NamedIndividual ,
+                             tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
+                    tqc:f0c5-4cde-5cbc-94e3-ffb2281d885a :settlement1_TQC1 ;
+                    rdfs:label "phase 1 of Nieszawa"@en .
+
+
+###  http://onto.kul.pl/change/bfo-tqc/settlement1_phase2
+:settlement1_phase2 rdf:type owl:NamedIndividual ,
+                             tqc:a217d5d-4ae1-547e-a46e-65f6f2504fc2 ;
+                    tqc:f0c5-4cde-5cbc-94e3-ffb2281d885a :settlement1_TQC2 ;
+                    rdfs:label "phase 2 of Nieszawa"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
